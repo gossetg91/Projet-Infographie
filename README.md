@@ -7,7 +7,7 @@
 	- Sapin avec squelette : NA
 	- Arbre pourri sans squellete : 3/personnes
 	- Clef : Eric
-	- Caillou : 5-10 /pers
+	GV 7-  Caillou : 5-10 /pers
 	- Echelle : Eric le con
 	- Maison : Eric
 	- Grande Porte : Eric
