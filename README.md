@@ -1,19 +1,19 @@
 	- Grotte : NA
 	- Montagne : NA
-	- Mur : Guigui
+	x Mur : Guigui
 	- Manteau : Eric
 	- Torche : Guigui
 	- Silex : Eric
 	- Sapin avec squelette : NA
 	- Arbre pourri sans squellete : 3/personnes
 	- Clef : Eric
-	GV 7-  Caillou : 5-10 /pers
+	Gx 7-  Caillou : 5-10 /pers
 	- Echelle : Eric le con
 	- Maison : Eric
 	- Grande Porte : Eric
 	- Skybox : Guigui fait le stp
-	- Porte manteau + Table + lit + chaise : GuiGui
+	x Porte manteau + Table + lit + chaise : GuiGui
 	- Token + piedestal : GuiGui
-	- Bout de bois / torche : GuiGui
+	x Bout de bois / torche : GuiGui
 	- Bandage : Eric
 	- Hub : NA
