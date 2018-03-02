@@ -2,7 +2,7 @@
 	- Montagne : NA
 	x Mur : Guigui
 	- Manteau : Eric
-	- Torche : Guigui
+	x Torche : Guigui
 	- Silex : Eric
 	- Sapin avec squelette : NA
 	- Arbre pourri sans squellete : 3/personnes
