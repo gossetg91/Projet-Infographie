@@ -7,10 +7,10 @@ path="res://.import/bed.png-21034bb6c406f28adf04800ecd3027c5.stex"
 [deps]
 
 source_file="res://textures/completed/bed.png"
-source_md5="e9f41bdb0b67d647e3dc7b1fea719635"
+source_md5="d796423e23fdf4cb0d4485f6669c71fe"
 
 dest_files=[ "res://.import/bed.png-21034bb6c406f28adf04800ecd3027c5.stex" ]
-dest_md5="d420fe6117177735851f48395f82f8ac"
+dest_md5="7e09846d6f4e1c29ec20b23a1bada5af"
 
 [params]
 

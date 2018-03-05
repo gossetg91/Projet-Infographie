@@ -2,15 +2,15 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/token_untaken.dae-5b29c5afc75f2fe27040241aeba5244d.scn"
+path="res://.import/playerModel.dae-d8f077df52cbee2f6bcaaaf76dcdb3fc.scn"
 
 [deps]
 
-source_file="res://originals/exported/items/token_untaken.dae"
-source_md5="1fa23224cef662eea0802d1725b8b3b1"
+source_file="res://originals/exported/playerModel.dae"
+source_md5="cc3992169f5429f9aeb26780523731a4"
 
-dest_files=[ "res://.import/token_untaken.dae-5b29c5afc75f2fe27040241aeba5244d.scn" ]
-dest_md5="10e5ad79fbbb6f3c9a78600c6c3073ad"
+dest_files=[ "res://.import/playerModel.dae-d8f077df52cbee2f6bcaaaf76dcdb3fc.scn" ]
+dest_md5="b7640e9cd89a09818f4b3f26e65dda7d"
 
 [params]
 
