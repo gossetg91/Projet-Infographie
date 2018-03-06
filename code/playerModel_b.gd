@@ -6,7 +6,7 @@ extends Spatial
 
 var currentPosition
 var rotation_ori
-var genralSpeedOffset = 500
+var genralSpeedOffset = 50
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED);
@@ -16,7 +16,7 @@ func _ready():
 
 func _process(delta):
 
-	set_linear_velocity(get_mvt()*500)
+	set_linear_velocity(get_mvt()*100)
 	pass
 
 func _input(event):
@@ -39,21 +39,52 @@ func get_mvt():
 	var translation = Vector3(0,0,0)
 	var yaw = rad2deg(get_rotation().y)
 	
-	if yaw < 0:
-		yaw+=360
+	if(yaw < 0):
+		yaw +=360 
 	
 	print(yaw)
-		
+	print(yaw-90)
+	print(yaw-180)
+	print(yaw-270)
 	
-	#reading inputs
+	
+	#reading and increasing vector with angle correction
 	if(Input.is_key_pressed(KEY_Z)):
-		translation += Vector3(0,0,-1)
+		if yaw >=0 and yaw <= 90:
+			translation += Vector3(-yaw/90,0,-(90-yaw)/90)
+		if yaw > 90 and yaw <= 180:
+			translation += Vector3(-(90-(yaw-90))/90,0,((yaw-90))/90)
+		if yaw > 180 and yaw <= 270:
+			translation += Vector3((yaw-180)/90,0,(90-(yaw-180))/90)
+		if yaw > 270 and yaw < 360:
+			translation += Vector3((90-(yaw-270))/90,0,-(yaw-270)/90)
 	if(Input.is_key_pressed(KEY_Q)):
-		translation += Vector3(-1,0,0)
+		if yaw >=0 and yaw <= 90:
+			translation += Vector3(-(90-yaw)/90,0,yaw/90)
+		if yaw > 90 and yaw <= 180:
+			translation += Vector3(((yaw-90))/90,0,(90-(yaw-90))/90)
+		if yaw > 180 and yaw <= 270:
+			translation += Vector3((90-(yaw-180))/90,0,-(yaw-180)/90)
+		if yaw > 270 and yaw < 360:
+			translation += Vector3(-(yaw-270)/90,0,-(90-(yaw-270))/90)
 	if(Input.is_key_pressed(KEY_S)):
-		translation += Vector3(0,0,1)
-	if(Input.is_key_pressed(KEY_D)):
-		translation += Vector3(1,0,0)
+		if yaw >=0 and yaw <= 90:
+			translation += Vector3(yaw/90,0,(90-yaw)/90)
+		if yaw > 90 and yaw <= 180:
+			translation += Vector3((90-(yaw-90))/90,0,(-(yaw-90))/90)
+		if yaw > 180 and yaw <= 270:
+			translation += Vector3(-(yaw-180)/90,0,-(90-(yaw-180))/90)
+		if yaw > 270 and yaw < 360:
+			translation += Vector3(-(90-(yaw-270))/90,0,(yaw-270)/90)
+	if(Input.is_key_pressed(KEY_D)):	
+		if yaw >=0 and yaw <= 90:
+			translation += Vector3((90-yaw)/90,0,-yaw/90)
+		if yaw > 90 and yaw <= 180:
+			translation += Vector3((-(yaw-90))/90,0,-(90-(yaw-90))/90)
+		if yaw > 180 and yaw <= 270:
+			translation += Vector3(-(90-(yaw-180))/90,0,(yaw-180)/90)
+		if yaw > 270 and yaw < 360:
+			translation += Vector3((yaw-270)/90,0,(90-(yaw-270))/90)
 	
 	return translation
 	
