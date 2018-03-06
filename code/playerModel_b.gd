@@ -15,6 +15,7 @@ func _ready():
 	pass
 
 func _process(delta):
+
 	set_linear_velocity(get_mvt()*500)
 	pass
 
@@ -25,7 +26,7 @@ func _input(event):
 		#rotation relative
 		
 		#var rotationState = get_rotation_deg()
-		var yaw = rad2deg(get_node("model/Camera").get_rotation().y)
+		var yaw = rad2deg(get_rotation().y)
 		var pitch = rad2deg(get_node("model/Camera").get_rotation().x)
 	
 		yaw = fmod(yaw - event.relative.x * 0.5 , 360)
@@ -35,7 +36,15 @@ func _input(event):
 		get_node("model/Camera").set_rotation(Vector3(deg2rad(pitch),0,0))
 		
 func get_mvt():
-	var translation = Vector3()
+	var translation = Vector3(0,0,0)
+	var yaw = rad2deg(get_rotation().y)
+	
+	if yaw < 0:
+		yaw+=360
+	
+	print(yaw)
+		
+	
 	#reading inputs
 	if(Input.is_key_pressed(KEY_Z)):
 		translation += Vector3(0,0,-1)
@@ -45,5 +54,6 @@ func get_mvt():
 		translation += Vector3(0,0,1)
 	if(Input.is_key_pressed(KEY_D)):
 		translation += Vector3(1,0,0)
+	
 	return translation
 	
