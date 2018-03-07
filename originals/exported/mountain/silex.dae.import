@@ -2,15 +2,15 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/token_untaken.dae-5b29c5afc75f2fe27040241aeba5244d.scn"
+path="res://.import/silex.dae-0b1850a96d445bda59760fd0507b414a.scn"
 
 [deps]
 
-source_file="res://originals/exported/items/token_untaken.dae"
-source_md5="1fa23224cef662eea0802d1725b8b3b1"
+source_file="res://originals/exported/mountain/silex.dae"
+source_md5="8316d1a25aa37e1b1f0a64f3343dd228"
 
-dest_files=[ "res://.import/token_untaken.dae-5b29c5afc75f2fe27040241aeba5244d.scn" ]
-dest_md5="10e5ad79fbbb6f3c9a78600c6c3073ad"
+dest_files=[ "res://.import/silex.dae-0b1850a96d445bda59760fd0507b414a.scn" ]
+dest_md5="30fa6e42f84afb615c70b51d86acfffc"
 
 [params]
 

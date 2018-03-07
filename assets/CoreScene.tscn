@@ -1,14 +1,18 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://code/game.gd" type="Script" id=1]
-[ext_resource path="res://assets/floor.tscn" type="PackedScene" id=2]
-[ext_resource path="res://code/playerModel.gd" type="Script" id=3]
-[ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://torch.tscn" type="PackedScene" id=5]
-[ext_resource path="res://code/torch.gd" type="Script" id=6]
-[ext_resource path="res://token.tscn" type="PackedScene" id=7]
-[ext_resource path="res://code/token.gd" type="Script" id=8]
-[ext_resource path="res://originals/exported/forest/branch/branch.dae" type="PackedScene" id=9]
+[ext_resource path="res://default_env.tres" type="Environment" id=2]
+[ext_resource path="res://assets/floor.tscn" type="PackedScene" id=3]
+[ext_resource path="res://code/playerModel.gd" type="Script" id=4]
+[ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://torch.tscn" type="PackedScene" id=6]
+[ext_resource path="res://code/torch.gd" type="Script" id=7]
+[ext_resource path="res://token.tscn" type="PackedScene" id=8]
+[ext_resource path="res://code/token.gd" type="Script" id=9]
+[ext_resource path="res://originals/exported/items/token_taken/token_taken.dae" type="PackedScene" id=10]
+[ext_resource path="res://originals/exported/forest/branch/branch.dae" type="PackedScene" id=11]
+[ext_resource path="res://originals/exported/items/strip/strip.dae" type="PackedScene" id=12]
+[ext_resource path="res://originals/exported/mountain/silex.dae" type="PackedScene" id=13]
 
 [sub_resource type="BoxShape" id=1]
 
@@ -30,10 +34,15 @@ extents = Vector3( 1.93212, 2.62381, 1.94222 )
 
 [node name="Spatial" type="Spatial" index="0"]
 
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.417542, 0.924114, -1.07033 )
 script = ExtResource( 1 )
 _sections_unfolded = [ "Pause" ]
 
-[node name="StaticBody" type="StaticBody" parent="." index="0"]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="0"]
+
+environment = ExtResource( 2 )
+
+[node name="StaticBody" type="StaticBody" parent="." index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00197601, -0.0097279, -0.00477958 )
 input_ray_pickable = true
@@ -45,7 +54,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="floor" parent="StaticBody" index="0" instance=ExtResource( 2 )]
+[node name="floor" parent="StaticBody" index="0" instance=ExtResource( 3 )]
 
 [node name="floor collision" type="CollisionShape" parent="StaticBody" index="1"]
 
@@ -182,7 +191,7 @@ shape = SubResource( 2 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="player" type="RigidBody" parent="." index="1"]
+[node name="player" type="RigidBody" parent="." index="2"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0153379, 0.511673, 0.0102205 )
 input_ray_pickable = true
@@ -210,10 +219,10 @@ linear_velocity = Vector3( 0, 0, 0 )
 linear_damp = -1.0
 angular_velocity = Vector3( 0, 0, 0 )
 angular_damp = -1.0
-script = ExtResource( 3 )
+script = ExtResource( 4 )
 _sections_unfolded = [ "Axis Lock", "Linear" ]
 
-[node name="model" parent="player" index="0" instance=ExtResource( 4 )]
+[node name="model" parent="player" index="0" instance=ExtResource( 5 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.370699, 1.52588e-05, 0.440626 )
 _sections_unfolded = [ "Pause" ]
@@ -225,10 +234,10 @@ shape = SubResource( 3 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="Torch" parent="player" index="2" instance=ExtResource( 5 )]
+[node name="Torch" parent="player" index="2" instance=ExtResource( 6 )]
 
 transform = Transform( 1.50697, 0, 0, 0, 1.26871, 0.586819, 0, -0.679649, 1.46941, 0.620707, 1.43776, -0.153211 )
-script = ExtResource( 6 )
+script = ExtResource( 7 )
 
 [node name="Cooldown" type="Timer" parent="player/Torch" index="7"]
 
@@ -237,7 +246,7 @@ wait_time = 0.25
 one_shot = false
 autostart = false
 
-[node name="StaticBody2" type="StaticBody" parent="." index="2"]
+[node name="token1" type="StaticBody" parent="." index="3"]
 
 transform = Transform( 1, 0, 0, 0, 1, -2.98023e-08, 0, 0, 1, -1.10474, -0.0296073, -11.8762 )
 input_ray_pickable = true
@@ -249,20 +258,87 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Token" parent="StaticBody2" index="0" instance=ExtResource( 7 )]
+[node name="Token" parent="token1" index="0" instance=ExtResource( 8 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.04777e-07, 0 )
-script = ExtResource( 8 )
+script = ExtResource( 9 )
 
-[node name="CollisionShape" type="CollisionShape" parent="StaticBody2" index="1"]
+[node name="unanimated" parent="token1" index="1" instance=ExtResource( 10 )]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="token1" index="2"]
 
 transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.04777e-07, 0 )
 shape = SubResource( 4 )
 disabled = false
 
-[node name="branch" parent="." index="3" instance=ExtResource( 9 )]
+[node name="token2" type="StaticBody" parent="." index="4"]
+
+transform = Transform( 1, 0, 0, 0, 1, -2.98023e-08, 0, 0, 1, -11.5621, -0.0296073, -11.8762 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="Token" parent="token2" index="0" instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.04777e-07, 0 )
+script = ExtResource( 9 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="unanimated" type="Spatial" parent="token2" index="1" instance=ExtResource( 10 )]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="token2" index="2"]
+
+transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.04777e-07, 0 )
+shape = SubResource( 4 )
+disabled = false
+
+[node name="token3" type="StaticBody" parent="." index="5"]
+
+transform = Transform( 1, 0, 0, 0, 1, -2.98023e-08, 0, 0, 1, 9.26367, -0.0296073, -11.8762 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="Token" parent="token3" index="0" instance=ExtResource( 8 )]
+
+transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.04777e-07, 0 )
+script = ExtResource( 9 )
+
+[node name="unanimated" parent="token3" index="1" instance=ExtResource( 10 )]
+
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="token3" index="2"]
+
+transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.04777e-07, 0 )
+shape = SubResource( 4 )
+disabled = false
+
+[node name="branch" parent="." index="6" instance=ExtResource( 11 )]
 
 transform = Transform( 1.74427, 0, 0, 0, 1.99088, 0, 0, 0, 1.89045, -6.53224, 0.0841786, -1.12225 )
+
+[node name="strip" type="Spatial" parent="." index="7" instance=ExtResource( 12 )]
+
+transform = Transform( 0.125914, 0, 0, 0, 0.157673, 0, 0, 0, 0.142781, -5.82859, 0.0160239, 1.46021 )
+
+[node name="silex" type="Spatial" parent="." index="8" instance=ExtResource( 13 )]
+
+transform = Transform( 0.124255, 0, 0, 0, 0.175531, 0, 0, 0, 0.101535, -4.72525, 0.0994419, 4.13135 )
 
 [connection signal="timeout" from="player/Torch/Cooldown" to="player/Torch" method="_on_Cooldown_timeout"]
 
