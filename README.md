@@ -11,9 +11,9 @@
 	- Echelle : Eric le con
 	x Maison : Eric
 	x Grande Porte : Eric
-	- Skybox : Guigui fait le stp
+	x Skybox : Guigui fait le stp
 	x Porte manteau + Table + lit + chaise : GuiGui
 	x Token + piedestal : GuiGui
 	x Bout de bois / torche : GuiGui
-	- Bandage : Eric
+	x Bandage : Guillaume
 	- Hub : NA
