@@ -2,31 +2,32 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/branch.png-29d28c7f4fcc42bf3835a06aea9ec2d9.stex"
+path.s3tc="res://.import/branch.png-29d28c7f4fcc42bf3835a06aea9ec2d9.s3tc.stex"
+path.etc2="res://.import/branch.png-29d28c7f4fcc42bf3835a06aea9ec2d9.etc2.stex"
 
 [deps]
 
 source_file="res://textures/completed/branch.png"
 source_md5="556d6dcdd2799442b0c38b5c61d8f385"
 
-dest_files=[ "res://.import/branch.png-29d28c7f4fcc42bf3835a06aea9ec2d9.stex" ]
-dest_md5="e778c9c9ca0b0bc10c3e9e05e892ebfb"
+dest_files=[ "res://.import/branch.png-29d28c7f4fcc42bf3835a06aea9ec2d9.s3tc.stex", "res://.import/branch.png-29d28c7f4fcc42bf3835a06aea9ec2d9.etc2.stex" ]
+dest_md5="c4645b1c246b0512d8b91fd398e597a3"
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
-flags/repeat=0
+flags/repeat=true
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
-flags/srgb=2
+flags/srgb=1
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

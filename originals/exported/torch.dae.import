@@ -2,15 +2,15 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/branch.dae-fdaa678a49d7d10e4a7013e6dce008bf.scn"
+path="res://.import/torch.dae-1e18a321086d07fe0b043bb59fe82adc.scn"
 
 [deps]
 
-source_file="res://originals/exported/forest/branch.dae"
-source_md5="b4482efcaa98dec0a1a5056a2cc71209"
+source_file="res://originals/exported/torch.dae"
+source_md5="895b8a8a5895b22456bf03e6230755b0"
 
-dest_files=[ "res://.import/branch.dae-fdaa678a49d7d10e4a7013e6dce008bf.scn" ]
-dest_md5="5b3355aa52a93b330e7aeca4cf344a76"
+dest_files=[ "res://.import/torch.dae-1e18a321086d07fe0b043bb59fe82adc.scn" ]
+dest_md5="72b7e9a49f896a7635a769544dcbc88c"
 
 [params]
 

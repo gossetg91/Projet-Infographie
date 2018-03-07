@@ -17,8 +17,12 @@ config/icon="res://icon.png"
 [physics]
 
 3d/physics_engine="GodotPhysics"
-3d/default_gravity=10000.0
+3d/default_gravity=5000.0
 
 [rendering]
 
+quality/filters/use_nearest_mipmap_filter=true
+quality/filters/anisotropic_filter_level=1
+environment/default_clear_color=Color( 0.527344, 0.527344, 0.527344, 1 )
+quality/filters/msaa=2
 environment/default_environment="res://default_env.tres"

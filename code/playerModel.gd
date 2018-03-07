@@ -15,8 +15,8 @@ func _ready():
 	pass
 
 func _process(delta):
-
 	set_linear_velocity(get_mvt()*100)
+	#jump()
 	pass
 
 func _input(event):
@@ -42,10 +42,6 @@ func get_mvt():
 	if(yaw < 0):
 		yaw +=360 
 	
-	print(yaw)
-	print(yaw-90)
-	print(yaw-180)
-	print(yaw-270)
 	
 	
 	#reading and increasing vector with angle correction
@@ -85,6 +81,10 @@ func get_mvt():
 			translation += Vector3(-(90-(yaw-180))/90,0,(yaw-180)/90)
 		if yaw > 270 and yaw < 360:
 			translation += Vector3((yaw-270)/90,0,(90-(yaw-270))/90)
-	
 	return translation
-	
+
+"""func jump():
+	print(g
+	if(Input.is_key_pressed(KEY_SPACE) and get_linear_velocity().y == 0):
+		apply_impulse(Vector3(0,0,0),Vector3(0,1000,0))
+"""	

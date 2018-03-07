@@ -2,31 +2,32 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/token.png-8a5cf8e6f5db94f821dc85c96ae4864d.stex"
+path.s3tc="res://.import/token.png-8a5cf8e6f5db94f821dc85c96ae4864d.s3tc.stex"
+path.etc2="res://.import/token.png-8a5cf8e6f5db94f821dc85c96ae4864d.etc2.stex"
 
 [deps]
 
 source_file="res://textures/completed/token.png"
 source_md5="f6d0fbf8562df0e511a9dad14f866e85"
 
-dest_files=[ "res://.import/token.png-8a5cf8e6f5db94f821dc85c96ae4864d.stex" ]
-dest_md5="f46071bdadef5bc855a957a6bd1d2d47"
+dest_files=[ "res://.import/token.png-8a5cf8e6f5db94f821dc85c96ae4864d.s3tc.stex", "res://.import/token.png-8a5cf8e6f5db94f821dc85c96ae4864d.etc2.stex" ]
+dest_md5="6a9768a4b334806e02d82a4dd67e0940"
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
-flags/repeat=0
+flags/repeat=true
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
-flags/srgb=2
+flags/srgb=1
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

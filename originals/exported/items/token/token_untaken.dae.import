@@ -2,15 +2,15 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/torch.dae-e14922312550359d72c06526926d6055.scn"
+path="res://.import/token_untaken.dae-dc6b2c5de68a10e18ed083eff6ad79a2.scn"
 
 [deps]
 
-source_file="res://originals/exported/items/torch.dae"
-source_md5="3018c779b3c6f821b199e1aaf403e5a9"
+source_file="res://originals/exported/items/token/token_untaken.dae"
+source_md5="f2bf7d3fe1d6aa9ed6446eb5202ce803"
 
-dest_files=[ "res://.import/torch.dae-e14922312550359d72c06526926d6055.scn" ]
-dest_md5="bf5433af1f76a88db8fb298140317c79"
+dest_files=[ "res://.import/token_untaken.dae-dc6b2c5de68a10e18ed083eff6ad79a2.scn" ]
+dest_md5="03d3d1f35f5f72b55405d9dc98eaea0e"
 
 [params]
 
@@ -24,15 +24,15 @@ materials/storage=1
 materials/keep_on_reimport=true
 meshes/compress=true
 meshes/ensure_tangents=true
-meshes/storage=0
+meshes/storage=1
 meshes/light_baking=0
 meshes/lightmap_texel_size=0.1
 external_files/store_in_subdir=false
 animation/import=true
 animation/fps=15
 animation/filter_script=""
-animation/storage=false
-animation/keep_custom_tracks=false
+animation/storage=true
+animation/keep_custom_tracks=true
 animation/optimizer/enabled=true
 animation/optimizer/max_linear_error=0.05
 animation/optimizer/max_angular_error=0.01
