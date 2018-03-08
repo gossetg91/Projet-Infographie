@@ -2,31 +2,32 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/seamless-modèle-de-texture-bois-illustration_csp29985320.jpg-c8e51c8df5ac227f2c99580531a9a261.stex"
+path.s3tc="res://.import/seamless-modèle-de-texture-bois-illustration_csp29985320.jpg-c8e51c8df5ac227f2c99580531a9a261.s3tc.stex"
+path.etc2="res://.import/seamless-modèle-de-texture-bois-illustration_csp29985320.jpg-c8e51c8df5ac227f2c99580531a9a261.etc2.stex"
 
 [deps]
 
 source_file="res://textures/dowloaded/seamless-modèle-de-texture-bois-illustration_csp29985320.jpg"
 source_md5="17e5782f0fb543adf8eb334c24d11188"
 
-dest_files=[ "res://.import/seamless-modèle-de-texture-bois-illustration_csp29985320.jpg-c8e51c8df5ac227f2c99580531a9a261.stex" ]
-dest_md5="14168d478707fba8d88614c3ce177b8f"
+dest_files=[ "res://.import/seamless-modèle-de-texture-bois-illustration_csp29985320.jpg-c8e51c8df5ac227f2c99580531a9a261.s3tc.stex", "res://.import/seamless-modèle-de-texture-bois-illustration_csp29985320.jpg-c8e51c8df5ac227f2c99580531a9a261.etc2.stex" ]
+dest_md5="472ae900a0634cc479eca25a2f77672f"
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
-flags/repeat=0
+flags/repeat=true
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
-flags/srgb=2
+flags/srgb=1
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

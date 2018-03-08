@@ -2,31 +2,32 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TexturesCom_MetalBare0201_6_S.jpg-4a5027fa5e29c0aaccc644bac7bc9ed6.stex"
+path.s3tc="res://.import/TexturesCom_MetalBare0201_6_S.jpg-4a5027fa5e29c0aaccc644bac7bc9ed6.s3tc.stex"
+path.etc2="res://.import/TexturesCom_MetalBare0201_6_S.jpg-4a5027fa5e29c0aaccc644bac7bc9ed6.etc2.stex"
 
 [deps]
 
 source_file="res://textures/dowloaded/TexturesCom_MetalBare0201_6_S.jpg"
 source_md5="98a5dc586f21c2a71f649afb8f30be70"
 
-dest_files=[ "res://.import/TexturesCom_MetalBare0201_6_S.jpg-4a5027fa5e29c0aaccc644bac7bc9ed6.stex" ]
-dest_md5="32f85aac3007a1561b63bfbfa331fcfb"
+dest_files=[ "res://.import/TexturesCom_MetalBare0201_6_S.jpg-4a5027fa5e29c0aaccc644bac7bc9ed6.s3tc.stex", "res://.import/TexturesCom_MetalBare0201_6_S.jpg-4a5027fa5e29c0aaccc644bac7bc9ed6.etc2.stex" ]
+dest_md5="6f25af4f6ff7e7b3084374516e15af12"
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
-flags/repeat=0
+flags/repeat=true
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
-flags/srgb=2
+flags/srgb=1
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

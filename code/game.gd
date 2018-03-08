@@ -8,8 +8,10 @@ var woodStickTaken = false
 var stripTaken = false
 var silexTaken = false
 var tokenTaken = []
+var fin = false
 
 func _ready():
+	print(get_node("Herse").translation.y)
 	#desactivation de la torche par défaut
 	get_node("player/Torch").set("toggled",false)
 	#initialisation des 3 tokens
@@ -43,7 +45,8 @@ func _process(delta):
 	if !tokenTaken[2]:
 		checktoken3()
 	
-	cEndGame()
+	if !fin:
+		cEndGame()
 	pass
 	
 func cTWoodStick():
@@ -99,4 +102,6 @@ func checktoken3():
 				
 func cEndGame():
 	if tokenTaken[0] and tokenTaken[1] and tokenTaken[2]:
-		print("jeu fini GG")
+		get_node("Herse").set("wait",false)
+		print("fin")
+		fin = true

@@ -7,10 +7,10 @@ path="res://.import/environement_door.png-d9a6bc2d5931e898a8d1940086718ca3.stex"
 [deps]
 
 source_file="res://textures/original_canvas/environement_door.png"
-source_md5="1de97ab1ae79dd133690b198e99bc8dd"
+source_md5="b60d3f51396a77aa23cbbbe681e75f04"
 
 dest_files=[ "res://.import/environement_door.png-d9a6bc2d5931e898a8d1940086718ca3.stex" ]
-dest_md5="830d582b082e9258d8f9a20493f4f886"
+dest_md5="51da1670efe15242e0df078fce0f2ead"
 
 [params]
 

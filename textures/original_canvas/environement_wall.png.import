@@ -7,10 +7,10 @@ path="res://.import/environement_wall.png-ad3388caf2bb0235a1572d2741969e9b.stex"
 [deps]
 
 source_file="res://textures/original_canvas/environement_wall.png"
-source_md5="3b673648f4b16b080172754a24b48b34"
+source_md5="17a2ea487851df0d03e8c3c6227b909c"
 
 dest_files=[ "res://.import/environement_wall.png-ad3388caf2bb0235a1572d2741969e9b.stex" ]
-dest_md5="9fc15cd0cc64af9d0dec5e6c9b21ecc1"
+dest_md5="b9269cb5fb98dd83102d1657760b738c"
 
 [params]
 
