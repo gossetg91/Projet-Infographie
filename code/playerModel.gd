@@ -15,8 +15,11 @@ func _ready():
 	pass
 
 func _process(delta):
-	set_linear_velocity(get_mvt()*100)
-	#jump()
+	if(Input.is_key_pressed(KEY_SHIFT)):
+		set_linear_velocity(get_mvt()*100)
+	else:
+		set_linear_velocity(get_mvt()*25)
+	jump()
 	pass
 
 func _input(event):
@@ -83,8 +86,7 @@ func get_mvt():
 			translation += Vector3((yaw-270)/90,0,(90-(yaw-270))/90)
 	return translation
 
-"""func jump():
-	print(g
-	if(Input.is_key_pressed(KEY_SPACE) and get_linear_velocity().y == 0):
-		apply_impulse(Vector3(0,0,0),Vector3(0,1000,0))
-"""	
+func jump():
+	if(Input.is_key_pressed(KEY_SPACE)):
+		print(get_colliding_bodies())
+		apply_impulse(Vector3(0,0,0),Vector3(0,300,0))

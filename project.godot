@@ -17,7 +17,7 @@ config/icon="res://icon.png"
 [physics]
 
 3d/physics_engine="GodotPhysics"
-3d/default_gravity=5000.0
+3d/default_gravity=1900.0
 
 [rendering]
 

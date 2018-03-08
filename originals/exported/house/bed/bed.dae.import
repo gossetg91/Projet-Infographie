@@ -2,15 +2,15 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/hallstand.dae-c89996158c22588b9f5e480773a26328.scn"
+path="res://.import/bed.dae-df9a42e69ce8117952eb7bcad25e59a9.scn"
 
 [deps]
 
-source_file="res://originals/exported/house/hallstand.dae"
-source_md5="f6eb8b398edba032fd9436072b27df08"
+source_file="res://originals/exported/house/bed/bed.dae"
+source_md5="bc5fc7fabff03a9dcce90b9b7bca94f3"
 
-dest_files=[ "res://.import/hallstand.dae-c89996158c22588b9f5e480773a26328.scn" ]
-dest_md5="89fed4c768a73929326f43d773c4d925"
+dest_files=[ "res://.import/bed.dae-df9a42e69ce8117952eb7bcad25e59a9.scn" ]
+dest_md5="814c53efbab68d9e6b34e72068a02eb2"
 
 [params]
 

@@ -48,7 +48,7 @@ func _process(delta):
 	
 func cTWoodStick():
 	if(get_node("player").get_translation().x < get_node("branch").get_translation().x+1 and get_node("player").get_translation().x > get_node("branch").get_translation().x-1):
-		if (get_node("player").get_translation().y < get_node("branch").get_translation().y+1 and get_node("player").get_translation().y > get_node("branch").get_translation().y-1):
+		if (get_node("player").get_translation().z < get_node("branch").get_translation().z+1 and get_node("player").get_translation().z > get_node("branch").get_translation().z-1):
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("branch").translate(Vector3(0,-200,0))
 				woodStickTaken = true
@@ -57,14 +57,14 @@ func cTWoodStick():
 	
 func cTStrip():
 	if(get_node("player").get_translation().x < get_node("strip").get_translation().x+1 and get_node("player").get_translation().x > get_node("strip").get_translation().x-1):
-		if (get_node("player").get_translation().y < get_node("strip").get_translation().y+1 and get_node("player").get_translation().y > get_node("strip").get_translation().y-1):
+		if (get_node("player").get_translation().z < get_node("strip").get_translation().z+1 and get_node("player").get_translation().z > get_node("strip").get_translation().z-1):
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("strip").translate(Vector3(0,-200,0))
 				stripTaken = true
 
 func cTSilex():
 	if(get_node("player").get_translation().x < get_node("silex").get_translation().x+1 and get_node("player").get_translation().x > get_node("silex").get_translation().x-1):
-		if (get_node("player").get_translation().y < get_node("silex").get_translation().y+1 and get_node("player").get_translation().y > get_node("silex").get_translation().y-1):
+		if (get_node("player").get_translation().z < get_node("silex").get_translation().z+1 and get_node("player").get_translation().z > get_node("silex").get_translation().z-1):
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("silex").translate(Vector3(0,-200,0))
 				silexTaken = true
@@ -76,22 +76,22 @@ func cEnableTorch():
 		get_node("player/Torch").set("toggled",true)
 	
 func checktoken1():
-	if(get_node("player").get_translation().x < get_node("token1").get_translation().x+1 and get_node("player").get_translation().x > get_node("token1").get_translation().x-1):
-		if (get_node("player").get_translation().y < get_node("token1").get_translation().y+1 and get_node("player").get_translation().y > get_node("token1").get_translation().y-1):
+	if(get_node("player").get_translation().x < get_node("token1").get_translation().x+3 and get_node("player").get_translation().x > get_node("token1").get_translation().x-3):
+		if (get_node("player").get_translation().z < get_node("token1").get_translation().z+3 and get_node("player").get_translation().z > get_node("token1").get_translation().z-3):
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("token1/Token").translate(Vector3(0,-200,0))
 				get_node("token1/unanimated").translate(Vector3(0,200,0))
 				tokenTaken[0] = true
 func checktoken2():
-	if(get_node("player").get_translation().x < get_node("token2").get_translation().x+1 and get_node("player").get_translation().x > get_node("token2").get_translation().x-1):
-		if (get_node("player").get_translation().y < get_node("token2").get_translation().y+1 and get_node("player").get_translation().y > get_node("token2").get_translation().y-1):
+	if(get_node("player").get_translation().x < get_node("token2").get_translation().x+3 and get_node("player").get_translation().x > get_node("token2").get_translation().x-3):
+		if (get_node("player").get_translation().z < get_node("token2").get_translation().z+3 and get_node("player").get_translation().z > get_node("token2").get_translation().z-3):
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("token2/Token").translate(Vector3(0,-200,0))
 				get_node("token2/unanimated").translate(Vector3(0,200,0))
 				tokenTaken[1] = true
 func checktoken3():
-	if(get_node("player").get_translation().x < get_node("token3").get_translation().x+1 and get_node("player").get_translation().x > get_node("token3").get_translation().x-1):
-		if (get_node("player").get_translation().y < get_node("token3").get_translation().y+1 and get_node("player").get_translation().y > get_node("token3").get_translation().y-1):
+	if(get_node("player").get_translation().x < get_node("token3").get_translation().x+3 and get_node("player").get_translation().x > get_node("token3").get_translation().x-3):
+		if (get_node("player").get_translation().z < get_node("token3").get_translation().z+3 and get_node("player").get_translation().z > get_node("token3").get_translation().z-3):
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("token3/Token").translate(Vector3(0,-200,0))
 				get_node("token3/unanimated").translate(Vector3(0,200,0))
