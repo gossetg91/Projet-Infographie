@@ -61,7 +61,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" type="Spatial" parent="StaticBody" index="0" instance=ExtResource( 3 )]
+[node name="Scene Root" parent="StaticBody" index="0" instance=ExtResource( 3 )]
 
 transform = Transform( 1.045, 0, 0, 0, 1.03665, 0, 0, 0, 1.045, -0.00197601, 0.012298, 0.00477958 )
 _sections_unfolded = [ "Transform" ]
@@ -377,7 +377,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, -20.8099, 8.51087, 
 shape = SubResource( 5 )
 disabled = false
 
-[node name="herse" type="Spatial" parent="Herse" index="1" instance=ExtResource( 15 )]
+[node name="herse" parent="Herse" index="1" instance=ExtResource( 15 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, -16.1208, 0, 0.0397186 )
 
