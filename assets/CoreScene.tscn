@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://code/game.gd" type="Script" id=1]
 [ext_resource path="res://default_env.tres" type="Environment" id=2]
@@ -13,8 +13,13 @@
 [ext_resource path="res://originals/exported/forest/branch/branch.dae" type="PackedScene" id=11]
 [ext_resource path="res://originals/exported/items/strip/strip.dae" type="PackedScene" id=12]
 [ext_resource path="res://originals/exported/mountain/silex/silex.dae" type="PackedScene" id=13]
-[ext_resource path="res://code/Herse.gd" type="Script" id=14]
-[ext_resource path="res://originals/exported/outside/herse/herse.dae" type="PackedScene" id=15]
+[ext_resource path="res://originals/exported/items/clef/clef.dae" type="PackedScene" id=14]
+[ext_resource path="res://code/Herse.gd" type="Script" id=15]
+[ext_resource path="res://originals/exported/outside/herse/herse.dae" type="PackedScene" id=16]
+[ext_resource path="res://code/porte.gd" type="Script" id=17]
+[ext_resource path="res://originals/exported/house/porte/porte.dae" type="PackedScene" id=18]
+[ext_resource path="res://originals/exported/house/porte/default.anim" type="Animation" id=19]
+[ext_resource path="res://originals/exported/house/maison/maisonblend.dae" type="PackedScene" id=20]
 
 [sub_resource type="BoxShape" id=1]
 
@@ -38,7 +43,23 @@ extents = Vector3( 1.93212, 2.62381, 1.94222 )
 
 extents = Vector3( 9.67455, 8.55278, 0.113057 )
 
-[node name="Spatial" type="Spatial"]
+[sub_resource type="BoxShape" id=9]
+
+extents = Vector3( 0.0701907, 1.52444, 0.79511 )
+
+[sub_resource type="BoxShape" id=6]
+
+extents = Vector3( 0.835191, 5.51755, 19.2712 )
+
+[sub_resource type="BoxShape" id=7]
+
+extents = Vector3( 1.15351, 5.5448, 12.7206 )
+
+[sub_resource type="BoxShape" id=8]
+
+extents = Vector3( 0.912925, 5.59896, 5.32914 )
+
+[node name="Spatial" type="Spatial" index="0"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.417542, 0.924114, -1.07033 )
 script = ExtResource( 1 )
@@ -48,7 +69,7 @@ _sections_unfolded = [ "Pause" ]
 
 environment = ExtResource( 2 )
 
-[node name="StaticBody" type="StaticBody" parent="." index="1"]
+[node name="Environement" type="StaticBody" parent="." index="1"]
 
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 0.791013, 0, 0, 0, 1, 0.00197601, -0.0097279, -0.00477958 )
@@ -61,141 +82,141 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="StaticBody" index="0" instance=ExtResource( 3 )]
+[node name="floor" parent="Environement" index="0" instance=ExtResource( 3 )]
 
 transform = Transform( 1.045, 0, 0, 0, 1.03665, 0, 0, 0, 1.045, -0.00197601, 0.012298, 0.00477958 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="floor collision" type="CollisionShape" parent="StaticBody" index="1"]
+[node name="floor collision" type="CollisionShape" parent="Environement" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1.02, 0, -1.85609, 0 )
 shape = SubResource( 1 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="2"]
+[node name="CollisionShape" type="CollisionShape" parent="Environement" index="2"]
 
 transform = Transform( 1, 0, 0, 0, 1.00001, 0, 0, 0, 1, 163.557, 42.1506, -0.924503 )
 shape = SubResource( 2 )
 disabled = false
 
-[node name="CollisionShape5" type="CollisionShape" parent="StaticBody" index="3"]
+[node name="CollisionShape5" type="CollisionShape" parent="Environement" index="3"]
 
 transform = Transform( 0.919325, 0, 0.393499, 0, 1.00001, 0, -0.393499, 0, 0.919325, 152.693, 42.1506, -58.8633 )
 shape = SubResource( 2 )
 disabled = false
 
-[node name="CollisionShape6" type="CollisionShape" parent="StaticBody" index="4"]
+[node name="CollisionShape6" type="CollisionShape" parent="Environement" index="4"]
 
 transform = Transform( 0.732995, 0, 0.680234, 0, 1.00001, 0, -0.680234, 0, 0.732995, 116.367, 42.1506, -115.335 )
 shape = SubResource( 2 )
 disabled = false
 
-[node name="CollisionShape7" type="CollisionShape" parent="StaticBody" index="5"]
+[node name="CollisionShape7" type="CollisionShape" parent="Environement" index="5"]
 
 transform = Transform( 0.40239, 0, 0.915468, 0, 1.00001, 0, -0.915468, 0, 0.40239, 64.965, 42.5325, -149.822 )
 shape = SubResource( 2 )
 disabled = false
 
-[node name="CollisionShape2" type="CollisionShape" parent="StaticBody" index="6"]
+[node name="CollisionShape2" type="CollisionShape" parent="Environement" index="6"]
 
 transform = Transform( -1.62921e-07, 0, -1, 0, 1.00001, 0, 1, 0, -1.62921e-07, 0.575971, 42.6194, -164.777 )
 shape = SubResource( 2 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape8" type="CollisionShape" parent="StaticBody" index="7"]
+[node name="CollisionShape8" type="CollisionShape" parent="Environement" index="7"]
 
 transform = Transform( 0.354585, 0, -0.935024, 0, 1.00001, 0, 0.935024, 0, 0.354585, -61.5994, 42.6194, -151.328 )
 shape = SubResource( 2 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape9" type="CollisionShape" parent="StaticBody" index="8"]
+[node name="CollisionShape9" type="CollisionShape" parent="Environement" index="8"]
 
 transform = Transform( 0.580658, 0, -0.814148, 0, 1.00001, 0, 0.814148, 0, 0.580658, -76.0452, 44.8666, -146.82 )
 shape = SubResource( 2 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape10" type="CollisionShape" parent="StaticBody" index="9"]
+[node name="CollisionShape10" type="CollisionShape" parent="Environement" index="9"]
 
 transform = Transform( 0.902149, 0, -0.431425, 0, 1.00001, 0, 0.431425, 0, 0.902149, -162.826, 44.441, -48.3177 )
 shape = SubResource( 2 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape11" type="CollisionShape" parent="StaticBody" index="10"]
+[node name="CollisionShape11" type="CollisionShape" parent="Environement" index="10"]
 
 transform = Transform( 0.969926, 0, -0.243401, 0, 1.00001, 0, 0.243401, 0, 0.969926, -161.623, 44.441, -35.3216 )
 shape = SubResource( 2 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape3" type="CollisionShape" parent="StaticBody" index="11"]
+[node name="CollisionShape3" type="CollisionShape" parent="Environement" index="11"]
 
 transform = Transform( -1, 0, 3.25841e-07, 0, 1.00001, 0, -3.25841e-07, 0, -1, -164.878, 42.6194, -0.134974 )
 shape = SubResource( 2 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape12" type="CollisionShape" parent="StaticBody" index="12"]
+[node name="CollisionShape12" type="CollisionShape" parent="Environement" index="12"]
 
 transform = Transform( -0.950698, 0, -0.310118, 0, 1.00001, 0, 0.310118, 0, -0.950698, -154.324, 42.6194, 57.4734 )
 shape = SubResource( 2 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape13" type="CollisionShape" parent="StaticBody" index="13"]
+[node name="CollisionShape13" type="CollisionShape" parent="Environement" index="13"]
 
 transform = Transform( -0.768122, 0, -0.640304, 0, 1.00001, 0, 0.640304, 0, -0.768122, -125.989, 43.067, 106.494 )
 shape = SubResource( 2 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape14" type="CollisionShape" parent="StaticBody" index="14"]
+[node name="CollisionShape14" type="CollisionShape" parent="Environement" index="14"]
 
 transform = Transform( -0.548085, 0, -0.836422, 0, 1.00001, 0, 0.836422, 0, -0.548085, -91.2711, 42.7752, 136.827 )
 shape = SubResource( 2 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape15" type="CollisionShape" parent="StaticBody" index="15"]
+[node name="CollisionShape15" type="CollisionShape" parent="Environement" index="15"]
 
 transform = Transform( -0.285131, 0, -0.958489, 0, 1.00001, 0, 0.958489, 0, -0.285131, -46.7965, 42.7752, 157.706 )
 shape = SubResource( 2 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape4" type="CollisionShape" parent="StaticBody" index="16"]
+[node name="CollisionShape4" type="CollisionShape" parent="Environement" index="16"]
 
 transform = Transform( -1.62921e-07, 0, 1, 0, 1.00001, 0, -1, 0, -1.62921e-07, -2.72951, 43.193, 165.225 )
 shape = SubResource( 2 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape16" type="CollisionShape" parent="StaticBody" index="17"]
+[node name="CollisionShape16" type="CollisionShape" parent="Environement" index="17"]
 
 transform = Transform( -0.371175, 0, 0.928563, 0, 1.00001, 0, -0.928563, 0, -0.371175, 59.8882, 43.3039, 154.227 )
 shape = SubResource( 2 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape17" type="CollisionShape" parent="StaticBody" index="18"]
+[node name="CollisionShape17" type="CollisionShape" parent="Environement" index="18"]
 
 transform = Transform( -0.641051, 0, 0.767498, 0, 1.00001, 0, -0.767498, 0, -0.641051, 108.177, 42.9584, 124.285 )
 shape = SubResource( 2 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape18" type="CollisionShape" parent="StaticBody" index="19"]
+[node name="CollisionShape18" type="CollisionShape" parent="Environement" index="19"]
 
 transform = Transform( -0.863786, 0, 0.503859, 0, 1.00001, 0, -0.503859, 0, -0.863786, 141.308, 42.9584, 84.0946 )
 shape = SubResource( 2 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape19" type="CollisionShape" parent="StaticBody" index="20"]
+[node name="CollisionShape19" type="CollisionShape" parent="Environement" index="20"]
 
 transform = Transform( -0.963228, 0, 0.268684, 0, 1.00001, 0, -0.268684, 0, -0.963228, 158.712, 42.9584, 46.0161 )
 shape = SubResource( 2 )
@@ -205,7 +226,7 @@ _sections_unfolded = [ "Transform" ]
 [node name="player" type="RigidBody" parent="." index="2"]
 
 editor/display_folded = true
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0153379, 0.511673, 0.0102205 )
+transform = Transform( -0.549897, 0, -0.835232, 0, 1, 0, 0.835232, 0, -0.549897, -112.74, 0.511673, -94.9872 )
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -216,9 +237,9 @@ friction = 0.0
 bounce = 0.0
 gravity_scale = 1.0
 custom_integrator = false
-continuous_cd = false
-contacts_reported = 0
-contact_monitor = false
+continuous_cd = true
+contacts_reported = 4
+contact_monitor = true
 sleeping = false
 can_sleep = true
 axis_lock_linear_x = false
@@ -261,7 +282,7 @@ autostart = false
 [node name="token1" type="StaticBody" parent="." index="3"]
 
 editor/display_folded = true
-transform = Transform( 1, 0, 0, 0, 1, -2.98023e-08, 0, 0, 1, -1.10474, -0.0296073, -11.8762 )
+transform = Transform( 1, 0, 0, 0, 1, -2.98023e-08, 0, 0, 1, 83.2244, -0.0296073, 123.448 )
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -289,7 +310,7 @@ disabled = false
 [node name="token2" type="StaticBody" parent="." index="4"]
 
 editor/display_folded = true
-transform = Transform( 1, 0, 0, 0, 1, -2.98023e-08, 0, 0, 1, -11.5621, -0.0296073, -11.8762 )
+transform = Transform( 1, 0, 0, 0, 1, -2.98023e-08, 0, 0, 1, -11.5621, -0.0296073, -11.9551 )
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -318,7 +339,7 @@ disabled = false
 [node name="token3" type="StaticBody" parent="." index="5"]
 
 editor/display_folded = true
-transform = Transform( 1, 0, 0, 0, 1, -2.98023e-08, 0, 0, 1, 9.26367, -0.0296073, -11.8762 )
+transform = Transform( 1, 0, 0, 0, 1, -2.98023e-08, 0, 0, 1, -5.61453, -0.0296073, -11.8762 )
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -353,10 +374,15 @@ transform = Transform( 0.125914, 0, 0, 0, 0.157673, 0, 0, 0, 0.142781, -5.82859,
 
 [node name="silex" parent="." index="8" instance=ExtResource( 13 )]
 
-transform = Transform( 0.124255, 0, 0, 0, 0.175531, 0, 0, 0, 0.101535, -4.72525, 0.0994419, 4.13135 )
+transform = Transform( 0.104525, 0, 0, 0, 0.126435, 0, 0, 0, 0.100169, -6.31629, 0.038299, 3.16383 )
 
-[node name="Herse" type="KinematicBody" parent="." index="9"]
+[node name="Key" parent="." index="9" instance=ExtResource( 14 )]
 
+transform = Transform( 0.0753902, 0, 0, 0, 0.0818069, 0, 0, 0, 0.0870253, -5.96895, -0.123953, -2.84298 )
+
+[node name="Herse" type="KinematicBody" parent="." index="10"]
+
+editor/display_folded = true
 transform = Transform( 1.19172, 0, 0.753323, 0, 1.64735, 0, -1.36509, 0, 0.657651, -106.164, -1.51386, -133.614 )
 input_ray_pickable = true
 input_capture_on_drag = false
@@ -369,7 +395,7 @@ axis_lock_angular_x = false
 axis_lock_angular_y = false
 axis_lock_angular_z = false
 collision/safe_margin = 0.001
-script = ExtResource( 14 )
+script = ExtResource( 15 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Herse" index="0"]
 
@@ -377,21 +403,110 @@ transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, -20.8099, 8.51087, 
 shape = SubResource( 5 )
 disabled = false
 
-[node name="herse" parent="Herse" index="1" instance=ExtResource( 15 )]
+[node name="herse" parent="Herse" index="1" instance=ExtResource( 16 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, -16.1208, 0, 0.0397186 )
 
-[node name="herse2" parent="Herse" index="2" instance=ExtResource( 15 )]
+[node name="herse2" parent="Herse" index="2" instance=ExtResource( 16 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.4459, 0, 0 )
 
-[node name="herse3" parent="Herse" index="3" instance=ExtResource( 15 )]
+[node name="herse3" parent="Herse" index="3" instance=ExtResource( 16 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, -25.4122, 7.00914, 0.0325165 )
 
-[node name="herse4" parent="Herse" index="4" instance=ExtResource( 15 )]
+[node name="herse4" parent="Herse" index="4" instance=ExtResource( 16 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, -16.0815, 7.00955, -0.0379181 )
+
+[node name="Door" type="StaticBody" parent="." index="11"]
+
+transform = Transform( 1.43051e-06, 0, 2.82484, 0, 1.886, 0, -2.82484, 0, 1.43051e-06, 25.3364, -0.128666, -30.1816 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+script = ExtResource( 17 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="Door" index="0"]
+
+transform = Transform( 1, 0, 5.68434e-14, 0, 1, 0, -5.68434e-14, 0, 1, 0.0386489, 1.62446, -0.756939 )
+shape = SubResource( 9 )
+disabled = false
+
+[node name="DoorModele" parent="Door" index="1" instance=ExtResource( 18 )]
+
+transform = Transform( 1, 0, 9.67122e-07, 0, 0.947226, 0, -9.66788e-07, 0, 1.00034, -0.105144, 0.136246, 0.0408831 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="Door/DoorModele" index="2"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/default = ExtResource( 19 )
+blend_times = [  ]
+
+[node name="Forêt" type="Spatial" parent="." index="12"]
+
+transform = Transform( 1, 0, 0, 0, 0.791013, 0, 0, 0, 1, -1.65656, -0.0097279, 107.437 )
+
+[node name="House" type="StaticBody" parent="Forêt" index="0"]
+
+transform = Transform( 1, 0, 0, 0, 0.71485, 0, 0, 0, 1, 123.026, 0, -59.6207 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="HouseModel" parent="Forêt/House" index="0" instance=ExtResource( 20 )]
+
+transform = Transform( 2.07616, 0, 2.27374e-13, 0, 2.69722, 0, -1.09626e-13, 0, 3.19574, -98.1514, 0.0856586, -59.0465 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Forêt/House" index="1"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -109.927, 4.69545, -58.8682 )
+shape = SubResource( 6 )
+disabled = false
+
+[node name="CollisionShape2" type="CollisionShape" parent="Forêt/House" index="2"]
+
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -86.1517, 4.69545, -58.8682 )
+shape = SubResource( 6 )
+disabled = false
+
+[node name="CollisionShape3" type="CollisionShape" parent="Forêt/House" index="3"]
+
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -97.9698, 4.69545, -40.3083 )
+shape = SubResource( 7 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape4" type="CollisionShape" parent="Forêt/House" index="4"]
+
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -90.6562, 4.69545, -77.2756 )
+shape = SubResource( 8 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape5" type="CollisionShape" parent="Forêt/House" index="5"]
+
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -105.358, 4.69545, -77.2756 )
+shape = SubResource( 8 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
 
 [connection signal="timeout" from="player/Torch/Cooldown" to="player/Torch" method="_on_Cooldown_timeout"]
 

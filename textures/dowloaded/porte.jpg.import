@@ -2,31 +2,32 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/porte.jpg-2db92608f78e77ece3894ff9acf90190.stex"
+path.s3tc="res://.import/porte.jpg-2db92608f78e77ece3894ff9acf90190.s3tc.stex"
+path.etc2="res://.import/porte.jpg-2db92608f78e77ece3894ff9acf90190.etc2.stex"
 
 [deps]
 
 source_file="res://textures/dowloaded/porte.jpg"
 source_md5="6e013b2c200595ac66ceda0b42eefc15"
 
-dest_files=[ "res://.import/porte.jpg-2db92608f78e77ece3894ff9acf90190.stex" ]
-dest_md5="d1679d080d8a63a2ce39467df71dd35c"
+dest_files=[ "res://.import/porte.jpg-2db92608f78e77ece3894ff9acf90190.s3tc.stex", "res://.import/porte.jpg-2db92608f78e77ece3894ff9acf90190.etc2.stex" ]
+dest_md5="48a0924dc91e6e353a85af380fb53426"
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
-flags/repeat=0
+flags/repeat=true
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
-flags/srgb=2
+flags/srgb=1
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

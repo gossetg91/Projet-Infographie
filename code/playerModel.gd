@@ -88,5 +88,6 @@ func get_mvt():
 
 func jump():
 	if(Input.is_key_pressed(KEY_SPACE)):
-		print(get_colliding_bodies())
-		apply_impulse(Vector3(0,0,0),Vector3(0,300,0))
+		for i in range(0, get_colliding_bodies().size()):
+			if (get_colliding_bodies()[i].get_name() == "Environement"): 
+				apply_impulse(Vector3(0,0,0),Vector3(0,300,0))

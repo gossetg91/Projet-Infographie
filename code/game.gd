@@ -8,6 +8,7 @@ var woodStickTaken = false
 var stripTaken = false
 var silexTaken = false
 var tokenTaken = []
+var keyTaken = false
 var fin = false
 
 func _ready():
@@ -44,6 +45,10 @@ func _process(delta):
 		checktoken2()
 	if !tokenTaken[2]:
 		checktoken3()
+	if(!keyTaken):
+		checkkey()
+	elif get_node("Door").get("toggled") == true:
+		openDoor();
 	
 	if !fin:
 		cEndGame()
@@ -77,6 +82,10 @@ func cTSilex():
 func cEnableTorch():
 	if woodStickTaken and stripTaken and silexTaken:
 		get_node("player/Torch").set("toggled",true)
+
+func cEnableDoor():
+	if keyTaken:
+		get_node("House/Door").set("toggled",true)
 	
 func checktoken1():
 	if(get_node("player").get_translation().x < get_node("token1").get_translation().x+3 and get_node("player").get_translation().x > get_node("token1").get_translation().x-3):
@@ -99,6 +108,22 @@ func checktoken3():
 				get_node("token3/Token").translate(Vector3(0,-200,0))
 				get_node("token3/unanimated").translate(Vector3(0,200,0))
 				tokenTaken[2] = true
+				
+func checkkey():
+	if(get_node("player").get_translation().x < get_node("Key").get_translation().x+1 and get_node("player").get_translation().x > get_node("Key").get_translation().x-1):
+		if (get_node("player").get_translation().z < get_node("Key").get_translation().z+1 and get_node("player").get_translation().z > get_node("Key").get_translation().z-1):
+			if(Input.is_key_pressed(KEY_E)):
+				get_node("Key").translate(Vector3(0,-200,0))
+				keyTaken = true
+
+func openDoor():
+	print(get_node("Door").get_translation().x+1)
+	print(get_node("player").get_translation().x)
+	if(get_node("player").get_translation().x < get_node("Door").get_translation().x+21 and get_node("player").get_translation().x > get_node("Door").get_translation().x-21):
+		if (get_node("player").get_translation().z < get_node("Door").get_translation().z+1 and get_node("player").get_translation().z > get_node("Door").get_translation().z-1):
+			print("test")
+			if(Input.is_key_pressed(KEY_E)):
+				get_node("Door").toggle()
 				
 func cEndGame():
 	if tokenTaken[0] and tokenTaken[1] and tokenTaken[2]:
