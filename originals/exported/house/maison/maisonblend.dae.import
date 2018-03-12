@@ -7,10 +7,10 @@ path="res://.import/maisonblend.dae-1fef8501c4cb11272fe54bb06f1c83f1.scn"
 [deps]
 
 source_file="res://originals/exported/house/maison/maisonblend.dae"
-source_md5="708cf09441d9e508a414c65eed13c46e"
+source_md5="bdf2ab70beaa4e95c304d67a52f0e34b"
 
 dest_files=[ "res://.import/maisonblend.dae-1fef8501c4cb11272fe54bb06f1c83f1.scn" ]
-dest_md5="d68ff67acbae7837032352fcb55b1bd4"
+dest_md5="317a0846babacd51d59c1a2a0756f306"
 
 [params]
 

@@ -7,10 +7,10 @@ path="res://.import/clef.dae-e16a3a58a41b23f6568c649d4224ab67.scn"
 [deps]
 
 source_file="res://originals/exported/items/clef/clef.dae"
-source_md5="8975ac57dbe24aefd85fc4f4dc6370cc"
+source_md5="8abbb5ff2f17927e1f743a55bdbb10e3"
 
 dest_files=[ "res://.import/clef.dae-e16a3a58a41b23f6568c649d4224ab67.scn" ]
-dest_md5="34f41654bf3d63f6333839a0aa055f9f"
+dest_md5="d134c57af44407b4ef7d27369ce3f599"
 
 [params]
 
@@ -21,7 +21,7 @@ nodes/custom_script=""
 nodes/storage=0
 materials/location=1
 materials/storage=1
-materials/keep_on_reimport=false
+materials/keep_on_reimport=true
 meshes/compress=true
 meshes/ensure_tangents=true
 meshes/storage=0
