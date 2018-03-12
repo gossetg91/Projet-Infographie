@@ -2,15 +2,15 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/maisonblend.dae-1fef8501c4cb11272fe54bb06f1c83f1.scn"
+path="res://.import/manteau.dae-9714ca7218ae83f57a2c6a55257a8adb.scn"
 
 [deps]
 
-source_file="res://originals/exported/house/maison/maisonblend.dae"
-source_md5="d0996aa2dfe33ae42b434699b79486ce"
+source_file="res://originals/exported/items/manteau/manteau.dae"
+source_md5="81ec0c26c927dad14807c583b94dfd89"
 
-dest_files=[ "res://.import/maisonblend.dae-1fef8501c4cb11272fe54bb06f1c83f1.scn" ]
-dest_md5="e708bebfe4581fdc1b09f371b4124c5f"
+dest_files=[ "res://.import/manteau.dae-9714ca7218ae83f57a2c6a55257a8adb.scn" ]
+dest_md5="1ac5ad313132018c5695f8d4ab9fe691"
 
 [params]
 

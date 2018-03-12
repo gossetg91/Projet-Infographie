@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="ProjetInfographie"
-run/main_scene="res://assets/CoreScene.tscn"
+run/main_scene="res://assets/menu/MainMenu.tscn"
 config/icon="res://icon.png"
 
 [physics]
