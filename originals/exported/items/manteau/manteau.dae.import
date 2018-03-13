@@ -7,10 +7,10 @@ path="res://.import/manteau.dae-9714ca7218ae83f57a2c6a55257a8adb.scn"
 [deps]
 
 source_file="res://originals/exported/items/manteau/manteau.dae"
-source_md5="81ec0c26c927dad14807c583b94dfd89"
+source_md5="991993c878729a5d0ec034c78891d4a1"
 
 dest_files=[ "res://.import/manteau.dae-9714ca7218ae83f57a2c6a55257a8adb.scn" ]
-dest_md5="1ac5ad313132018c5695f8d4ab9fe691"
+dest_md5="83bd6ed7e3539b88924cddc891cd7367"
 
 [params]
 

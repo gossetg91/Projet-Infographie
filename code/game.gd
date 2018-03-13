@@ -10,6 +10,8 @@ var silexTaken = false
 var tokenTaken = []
 var keyTaken = false
 var fin = false
+var coatTaken = false
+var ladderTaken = false
 
 func _ready():
 	print(get_node("Herse").translation.y)
@@ -49,7 +51,10 @@ func _process(delta):
 		checkkey()
 	elif get_node("Door").get("toggled") == true:
 		openDoor();
-	
+	if(!coatTaken):
+		cTCoat()
+	if(!ladderTaken):
+		cTLadder()
 	if !fin:
 		cEndGame()
 	pass
@@ -60,6 +65,14 @@ func cTWoodStick():
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("branch").translate(Vector3(0,-200,0))
 				woodStickTaken = true
+				
+	pass
+func cTCoat():
+	if(get_node("player").get_translation().x < get_node("coat").get_translation().x+1 and get_node("player").get_translation().x > get_node("coat").get_translation().x-1):
+		if (get_node("player").get_translation().z < get_node("coat").get_translation().z+1 and get_node("player").get_translation().z > get_node("coat").get_translation().z-1):
+			if(Input.is_key_pressed(KEY_E)):
+				get_node("coat").translate(Vector3(0,-200,0))
+				coatTaken = true
 				
 	pass
 	
@@ -76,6 +89,14 @@ func cTSilex():
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("silex").translate(Vector3(0,-200,0))
 				silexTaken = true
+				
+	pass
+func cTLadder():
+	if(get_node("player").get_translation().x < get_node("ladder").get_translation().x+1 and get_node("player").get_translation().x > get_node("ladder").get_translation().x-1):
+		if (get_node("player").get_translation().z < get_node("ladder").get_translation().z+8 and get_node("player").get_translation().z > get_node("ladder").get_translation().z):
+			if(Input.is_key_pressed(KEY_E)):
+				get_node("ladder").translate(Vector3(0,-200,0))
+				ladderTaken = true
 				
 	pass
 

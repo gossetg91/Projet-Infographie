@@ -7,10 +7,10 @@ path="res://.import/arbre.dae-c47e98bdd0acc8065020e3e3d00dbf6d.scn"
 [deps]
 
 source_file="res://originals/exported/forest/arbre/arbre.dae"
-source_md5="a1388dc7e7dcb501efc07126af19c834"
+source_md5="60a018c1e92685d1692eacf5fa61b30e"
 
 dest_files=[ "res://.import/arbre.dae-c47e98bdd0acc8065020e3e3d00dbf6d.scn" ]
-dest_md5="97f77a62fbbf0babbe74142e3d1da1a6"
+dest_md5="c9ff69cca7a222dc0bc3955bcac4d437"
 
 [params]
 
@@ -19,9 +19,9 @@ nodes/root_name="Scene Root"
 nodes/root_scale=1.0
 nodes/custom_script=""
 nodes/storage=0
-materials/location=1
-materials/storage=1
-materials/keep_on_reimport=true
+materials/location=0
+materials/storage=0
+materials/keep_on_reimport=false
 meshes/compress=true
 meshes/ensure_tangents=true
 meshes/storage=0
@@ -31,8 +31,8 @@ external_files/store_in_subdir=false
 animation/import=true
 animation/fps=15
 animation/filter_script=""
-animation/storage=false
-animation/keep_custom_tracks=false
+animation/storage=true
+animation/keep_custom_tracks=true
 animation/optimizer/enabled=true
 animation/optimizer/max_linear_error=0.05
 animation/optimizer/max_angular_error=0.01
