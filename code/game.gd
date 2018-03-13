@@ -12,8 +12,11 @@ var keyTaken = false
 var fin = false
 var coatTaken = false
 var ladderTaken = false
+var ladderBlocs = []
 
 func _ready():
+	ladderBlocs.push_back(get_node("ladderBloc"))
+	
 	print(get_node("Herse").translation.y)
 	#desactivation de la torche par défaut
 	get_node("player/Torch").set("toggled",false)
@@ -35,28 +38,32 @@ func _process(delta):
 	# Update game logic here.
 	if !woodStickTaken:
 		cTWoodStick()
-	if !stripTaken:
-		cTStrip()
 	if !silexTaken:
 		cTSilex()
-	cEnableTorch()
-	
-	if !tokenTaken[0]:
-		checktoken1()
+
 	if !tokenTaken[1]:
 		checktoken2()
 	if !tokenTaken[2]:
 		checktoken3()
+	
+	if(!ladderTaken):
+		cTLadder()
+	
 	if(!keyTaken):
 		checkkey()
 	elif get_node("Door").get("toggled") == true:
-		openDoor();
-	if(!coatTaken):
-		cTCoat()
-	if(!ladderTaken):
-		cTLadder()
-	if !fin:
-		cEndGame()
+		openDoor()
+		
+	else:	
+		if(!coatTaken):
+			cTCoat()
+		if !tokenTaken[0]:
+			checktoken1()
+		if !fin:
+			cEndGame()
+		if !stripTaken:
+			cTStrip()
+		cEnableTorch()
 	pass
 	
 func cTWoodStick():
@@ -96,6 +103,7 @@ func cTLadder():
 		if (get_node("player").get_translation().z < get_node("ladder").get_translation().z+8 and get_node("player").get_translation().z > get_node("ladder").get_translation().z):
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("ladder").translate(Vector3(0,-200,0))
+				get_node("ladderPlay").set("toggled",true)
 				ladderTaken = true
 				
 	pass
@@ -138,8 +146,6 @@ func checkkey():
 				keyTaken = true
 
 func openDoor():
-	print(get_node("Door").get_translation().x+1)
-	print(get_node("player").get_translation().x)
 	if(get_node("player").get_translation().x < get_node("Door").get_translation().x+21 and get_node("player").get_translation().x > get_node("Door").get_translation().x-21):
 		if (get_node("player").get_translation().z < get_node("Door").get_translation().z+1 and get_node("player").get_translation().z > get_node("Door").get_translation().z-1):
 			print("test")
@@ -151,3 +157,11 @@ func cEndGame():
 		get_node("Herse").set("wait",false)
 		print("fin")
 		fin = true
+
+func checkLadder():
+	for i in range(0,ladderBlocs.size()):
+		if(get_node("player").get_translation().x < ladderBlocs[i].get_translation().x+3 and get_node("player").get_translation().x > ladderBlocs[i].get_translation().x-3):
+			if (get_node("player").get_translation().z < ladderBlocs[i].get_translation().z+3 and get_node("player").get_translation().z > ladderBlocs[i].get_translation().z-3):
+				return ladderBlocs[i]
+	return null
+			

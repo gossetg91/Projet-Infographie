@@ -2,15 +2,15 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/maisonblend.dae-1fef8501c4cb11272fe54bb06f1c83f1.scn"
+path="res://.import/ladderPoint.dae-a447c7dee0573573cc1c4d8d7fa664e5.scn"
 
 [deps]
 
-source_file="res://originals/exported/house/maison/maisonblend.dae"
-source_md5="ed519de715c2e4b554a2589d205d0a42"
+source_file="res://originals/exported/stub/ladderPoint.dae"
+source_md5="bc28ecbd4d235d4ae22a4dae7535da83"
 
-dest_files=[ "res://.import/maisonblend.dae-1fef8501c4cb11272fe54bb06f1c83f1.scn" ]
-dest_md5="c2ff942a1011cda283411df0094c256c"
+dest_files=[ "res://.import/ladderPoint.dae-a447c7dee0573573cc1c4d8d7fa664e5.scn" ]
+dest_md5="13bde393f91e702e7b023fbbb2f21c32"
 
 [params]
 
