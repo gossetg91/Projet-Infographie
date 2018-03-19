@@ -1,5 +1,5 @@
 	- Grotte : NA
-	- Montagne : NA
+	- Montagne : Guillaume
 	x Mur : Guigui
 	- Manteau : Eric
 	x Torche : Guigui
@@ -16,4 +16,4 @@
 	x Token + piedestal : GuiGui
 	x Bout de bois / torche : GuiGui
 	x Bandage : Guillaume
-	- Hub : NA
+	- Hub : Guillaume
