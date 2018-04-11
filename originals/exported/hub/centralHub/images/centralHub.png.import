@@ -8,10 +8,10 @@ path.etc2="res://.import/centralHub.png-06e84e1794f3218f4ec394f418458911.etc2.st
 [deps]
 
 source_file="res://originals/exported/hub/centralHub/images/centralHub.png"
-source_md5="c6ba9ccc898ee4ef4d5b7489614afb30"
+source_md5="2a22299f89987971cf5973cc963cd3c1"
 
 dest_files=[ "res://.import/centralHub.png-06e84e1794f3218f4ec394f418458911.s3tc.stex", "res://.import/centralHub.png-06e84e1794f3218f4ec394f418458911.etc2.stex" ]
-dest_md5="4d95bc215b34cecc3d38a41c778c84c2"
+dest_md5="ff9b76498bca29f501b3f4968aa53fd7"
 
 [params]
 

@@ -7,10 +7,10 @@ path="res://.import/centralHub.dae-89eed61d1cb1bacfccf2668cf74ad848.scn"
 [deps]
 
 source_file="res://originals/exported/hub/centralHub/centralHub.dae"
-source_md5="23e7fb5dec64836f1ec83bebaf77dac2"
+source_md5="d15cbaab92a00cd8cdf5adbf1f984aad"
 
 dest_files=[ "res://.import/centralHub.dae-89eed61d1cb1bacfccf2668cf74ad848.scn" ]
-dest_md5="610ac6f65066c9130eb649c6fa8f6842"
+dest_md5="bb712b3a79484521bd75f2eb5adbfd16"
 
 [params]
 

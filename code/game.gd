@@ -67,16 +67,16 @@ func _process(delta):
 	pass
 	
 func cTWoodStick():
-	if(get_node("player").get_translation().x < get_node("branch").get_translation().x+1 and get_node("player").get_translation().x > get_node("branch").get_translation().x-1):
-		if (get_node("player").get_translation().z < get_node("branch").get_translation().z+1 and get_node("player").get_translation().z > get_node("branch").get_translation().z-1):
+	if(get_node("player").get_translation().x < get_node("branch").get_translation().x+3 and get_node("player").get_translation().x > get_node("branch").get_translation().x-3):
+		if (get_node("player").get_translation().z < get_node("branch").get_translation().z+3 and get_node("player").get_translation().z > get_node("branch").get_translation().z-3):
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("branch").translate(Vector3(0,-200,0))
 				woodStickTaken = true
 				
 	pass
 func cTCoat():
-	if(get_node("player").get_translation().x < get_node("coat").get_translation().x+1 and get_node("player").get_translation().x > get_node("coat").get_translation().x-1):
-		if (get_node("player").get_translation().z < get_node("coat").get_translation().z+1 and get_node("player").get_translation().z > get_node("coat").get_translation().z-1):
+	if(get_node("player").get_translation().x < get_node("coat").get_translation().x+3 and get_node("player").get_translation().x > get_node("coat").get_translation().x-3):
+		if (get_node("player").get_translation().z < get_node("coat").get_translation().z+3 and get_node("player").get_translation().z > get_node("coat").get_translation().z-3):
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("coat").translate(Vector3(0,-200,0))
 				coatTaken = true
@@ -84,15 +84,15 @@ func cTCoat():
 	pass
 	
 func cTStrip():
-	if(get_node("player").get_translation().x < get_node("strip").get_translation().x+1 and get_node("player").get_translation().x > get_node("strip").get_translation().x-1):
-		if (get_node("player").get_translation().z < get_node("strip").get_translation().z+1 and get_node("player").get_translation().z > get_node("strip").get_translation().z-1):
+	if(get_node("player").get_translation().x < get_node("strip").get_translation().x+3 and get_node("player").get_translation().x > get_node("strip").get_translation().x-3):
+		if (get_node("player").get_translation().z < get_node("strip").get_translation().z+3 and get_node("player").get_translation().z > get_node("strip").get_translation().z-3):
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("strip").translate(Vector3(0,-200,0))
 				stripTaken = true
 
 func cTSilex():
-	if(get_node("player").get_translation().x < get_node("silex").get_translation().x+1 and get_node("player").get_translation().x > get_node("silex").get_translation().x-1):
-		if (get_node("player").get_translation().z < get_node("silex").get_translation().z+1 and get_node("player").get_translation().z > get_node("silex").get_translation().z-1):
+	if(get_node("player").get_translation().x < get_node("silex").get_translation().x+3 and get_node("player").get_translation().x > get_node("silex").get_translation().x-3):
+		if (get_node("player").get_translation().z < get_node("silex").get_translation().z+3 and get_node("player").get_translation().z > get_node("silex").get_translation().z-3):
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("silex").translate(Vector3(0,-200,0))
 				silexTaken = true
@@ -139,15 +139,15 @@ func checktoken3():
 				tokenTaken[2] = true
 				
 func checkkey():
-	if(get_node("player").get_translation().x < get_node("Key").get_translation().x+1 and get_node("player").get_translation().x > get_node("Key").get_translation().x-1):
-		if (get_node("player").get_translation().z < get_node("Key").get_translation().z+1 and get_node("player").get_translation().z > get_node("Key").get_translation().z-1):
+	if(get_node("player").get_translation().x < get_node("Key").get_translation().x+3 and get_node("player").get_translation().x > get_node("Key").get_translation().x-3):
+		if (get_node("player").get_translation().z < get_node("Key").get_translation().z+3 and get_node("player").get_translation().z > get_node("Key").get_translation().z-3):
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("Key").translate(Vector3(0,-200,0))
 				keyTaken = true
 
 func openDoor():
 	if(get_node("player").get_translation().x < get_node("Door").get_translation().x+21 and get_node("player").get_translation().x > get_node("Door").get_translation().x-21):
-		if (get_node("player").get_translation().z < get_node("Door").get_translation().z+1 and get_node("player").get_translation().z > get_node("Door").get_translation().z-1):
+		if (get_node("player").get_translation().z < get_node("Door").get_translation().z+3 and get_node("player").get_translation().z > get_node("Door").get_translation().z-3):
 			print("test")
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("Door").toggle()
