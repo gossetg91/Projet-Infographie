@@ -14,6 +14,8 @@ var coatTaken = false
 var ladderTaken = false
 var ladderBlocs = []
 
+var tokenSet = 3
+
 func _ready():
 	ladderBlocs.push_back(get_node("ladderBloc"))
 	
@@ -36,34 +38,42 @@ func _ready():
 func _process(delta):
 	# Called every frame. Delta is time since last frame.
 	# Update game logic here.
-	if !woodStickTaken:
-		cTWoodStick()
-	if !silexTaken:
-		cTSilex()
-
-	if !tokenTaken[1]:
-		checktoken2()
-	if !tokenTaken[2]:
-		checktoken3()
 	
-	if(!ladderTaken):
-		cTLadder()
+	#game logic when in forest world
+	for i in range(0, get_node("player").get_colliding_bodies().size()):
+		if (get_node("player").get_colliding_bodies()[i].get_name() == "Environement"): 
+			if !woodStickTaken:
+				cTWoodStick()
+			if !silexTaken:
+				cTSilex()
 	
-	if(!keyTaken):
-		checkkey()
-	elif get_node("Door").get("toggled") == true:
-		openDoor()
+			if(!ladderTaken):
+				cTLadder()
+	
+			if(!keyTaken):
+				checkkey()
+			elif get_node("Door").get("toggled") == true:
+				openDoor()
 		
-	else:	
-		if(!coatTaken):
-			cTCoat()
-		if !tokenTaken[0]:
-			checktoken1()
-		if !fin:
-			cEndGame()
-		if !stripTaken:
-			cTStrip()
-		cEnableTorch()
+			else:	
+				if(!coatTaken):
+					cTCoat()
+				if !tokenTaken[0]:
+					checktoken1()
+				if !stripTaken:
+					cTStrip()
+		
+		if !tokenTaken[1]:
+			checktoken2()
+		if !tokenTaken[2]:
+			checktoken3()
+
+	
+	cEnableTorch()
+
+	if tokenSet == 3:
+		checkEnd();
+	
 	pass
 	
 func cTWoodStick():
@@ -123,6 +133,8 @@ func checktoken1():
 				get_node("token1/Token").translate(Vector3(0,-200,0))
 				get_node("token1/unanimated").translate(Vector3(0,200,0))
 				tokenTaken[0] = true
+				get_node("Herse").set("wait",false)
+				
 func checktoken2():
 	if(get_node("player").get_translation().x < get_node("token2").get_translation().x+3 and get_node("player").get_translation().x > get_node("token2").get_translation().x-3):
 		if (get_node("player").get_translation().z < get_node("token2").get_translation().z+3 and get_node("player").get_translation().z > get_node("token2").get_translation().z-3):
@@ -152,10 +164,9 @@ func openDoor():
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("Door").toggle()
 				
-func cEndGame():
-	if tokenTaken[0] and tokenTaken[1] and tokenTaken[2]:
+func cOpenDoor1():
+	if tokenTaken[0]:
 		get_node("Herse").set("wait",false)
-		print("fin")
 		fin = true
 
 func checkLadder():
@@ -164,4 +175,20 @@ func checkLadder():
 			if (get_node("player").get_translation().z < ladderBlocs[i].get_translation().z+3 and get_node("player").get_translation().z > ladderBlocs[i].get_translation().z-3):
 				return ladderBlocs[i]
 	return null
+			
+			
+func tokenCount():
+	var count = 0;
+	
+	for i in range(0,tokenTaken.size()):
+		if(tokenTaken[i]):
+			count += 1;
+	
+	return count - tokenSet;
+	
+func checkEnd():
+	for i in range(0, get_node("player").get_colliding_bodies().size()):
+		if (get_node("player").get_colliding_bodies()[i].get_name() == "endZone"):
+			print("test")
+			get_tree().change_scene("res://assets/menu/MenuFin.tscn")
 			

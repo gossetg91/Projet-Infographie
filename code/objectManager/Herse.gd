@@ -10,8 +10,12 @@ func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here
 	pass
+	
+	
 func _process(delta):
 	print()
 	if !wait and translation.y<21.46:
 		move_and_slide((Vector3(0,10,0)))
 	pass
+
+
