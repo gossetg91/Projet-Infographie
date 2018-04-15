@@ -14,7 +14,10 @@ var coatTaken = false
 var ladderTaken = false
 var ladderBlocs = []
 
-var tokenSet = 3
+var tokenSetLst = []
+var tokenCount = 0
+var tokenSet = 0
+
 
 func _ready():
 	ladderBlocs.push_back(get_node("ladderBloc"))
@@ -31,6 +34,10 @@ func _ready():
 	tokenTaken.push_back(false)
 	tokenTaken.push_back(false)
 	
+	
+	tokenSetLst.push_back(false)
+	tokenSetLst.push_back(false)
+	tokenSetLst.push_back(false)
 	# Called every time the node is added to the scene.
 	# Initialization here
 	pass
@@ -62,18 +69,26 @@ func _process(delta):
 					checktoken1()
 				if !stripTaken:
 					cTStrip()
-		
-		if !tokenTaken[1]:
-			checktoken2()
-		if !tokenTaken[2]:
-			checktoken3()
+			
+		elif( get_node("player").get_colliding_bodies()[i].get_name() == "finalHub"):
+			if !tokenSetLst[0]:
+				checkSet1();
+			if !tokenSetLst[1]:
+				checkSet2();
+			if !tokenSetLst[2]:
+				checkSet3();
 
-	
+		elif(get_node("player").get_colliding_bodies()[i].get_name() == "EnvironementHub"):
+			if !tokenTaken[1]:
+				checktoken2()
+			if !tokenTaken[2]:
+				checktoken3()
 	cEnableTorch()
 
 	if tokenSet == 3:
+		if(get_node("HerseEnd").get("wait") == true):
+			get_node("HerseEnd").set("wait",false)
 		checkEnd();
-	
 	pass
 	
 func cTWoodStick():
@@ -134,6 +149,7 @@ func checktoken1():
 				get_node("token1/unanimated").translate(Vector3(0,200,0))
 				tokenTaken[0] = true
 				get_node("Herse").set("wait",false)
+				tokenCount += 1;
 				
 func checktoken2():
 	if(get_node("player").get_translation().x < get_node("token2").get_translation().x+3 and get_node("player").get_translation().x > get_node("token2").get_translation().x-3):
@@ -142,6 +158,7 @@ func checktoken2():
 				get_node("token2/Token").translate(Vector3(0,-200,0))
 				get_node("token2/unanimated").translate(Vector3(0,200,0))
 				tokenTaken[1] = true
+				tokenCount += 1;
 func checktoken3():
 	if(get_node("player").get_translation().x < get_node("token3").get_translation().x+3 and get_node("player").get_translation().x > get_node("token3").get_translation().x-3):
 		if (get_node("player").get_translation().z < get_node("token3").get_translation().z+3 and get_node("player").get_translation().z > get_node("token3").get_translation().z-3):
@@ -149,6 +166,7 @@ func checktoken3():
 				get_node("token3/Token").translate(Vector3(0,-200,0))
 				get_node("token3/unanimated").translate(Vector3(0,200,0))
 				tokenTaken[2] = true
+				tokenCount += 1;
 				
 func checkkey():
 	if(get_node("player").get_translation().x < get_node("Key").get_translation().x+3 and get_node("player").get_translation().x > get_node("Key").get_translation().x-3):
@@ -189,6 +207,30 @@ func tokenCount():
 func checkEnd():
 	for i in range(0, get_node("player").get_colliding_bodies().size()):
 		if (get_node("player").get_colliding_bodies()[i].get_name() == "endZone"):
-			print("test")
 			get_tree().change_scene("res://assets/menu/MenuFin.tscn")
 			
+
+func checkSet1():
+	if(get_node("player").get_translation().x < get_node("setDetector1").get_translation().x+3 and get_node("player").get_translation().x > get_node("setDetector1").get_translation().x-3):
+		if (get_node("player").get_translation().z < get_node("setDetector1").get_translation().z+3 and get_node("player").get_translation().z > get_node("setDetector1").get_translation().z-3):
+			if tokenCount > 0 && tokenSetLst[0] == false && Input.is_key_pressed(KEY_E):
+				tokenSetLst[0] = true
+				tokenCount = tokenCount - 1 
+				print("1ok")
+				tokenSet += 1
+func checkSet2():
+	if(get_node("player").get_translation().x < get_node("setDetector2").get_translation().x+3 and get_node("player").get_translation().x > get_node("setDetector2").get_translation().x-3):
+		if (get_node("player").get_translation().z < get_node("setDetector2").get_translation().z+3 and get_node("player").get_translation().z > get_node("setDetector2").get_translation().z-3):
+			if tokenCount > 0 && tokenSetLst[1] == false && Input.is_key_pressed(KEY_E):
+				tokenSetLst[1] = true
+				tokenCount = tokenCount - 1 
+				print("2ok")
+				tokenSet += 1
+func checkSet3():
+	if(get_node("player").get_translation().x < get_node("setDetector3").get_translation().x+3 and get_node("player").get_translation().x > get_node("setDetector3").get_translation().x-3):
+		if (get_node("player").get_translation().z < get_node("setDetector3").get_translation().z+3 and get_node("player").get_translation().z > get_node("setDetector3").get_translation().z-3):
+			if tokenSet > 0 && tokenSetLst[2] == false && Input.is_key_pressed(KEY_E):
+				tokenSetLst[2] = true
+				tokenCount = tokenCount - 1 
+				print("3ok")
+				tokenSet += 1
