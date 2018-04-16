@@ -7,10 +7,10 @@ path="res://.import/maison.png-82f43635095959fee8473a9862878db3.stex"
 [deps]
 
 source_file="res://textures/original_canvas/maison.png"
-source_md5="c492ce5db5796fe40b72029e4e2c0fdb"
+source_md5="dc71410a2b8d56de3824a60a977c6782"
 
 dest_files=[ "res://.import/maison.png-82f43635095959fee8473a9862878db3.stex" ]
-dest_md5="81a0df3397ec3bcda8a9eb756ba3f096"
+dest_md5="a46d41c2e32169004af4588d1b12e6af"
 
 [params]
 

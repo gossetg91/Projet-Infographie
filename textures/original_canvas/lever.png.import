@@ -7,7 +7,7 @@ path="res://.import/lever.png-67a55264da359f185c75dd1b661df3bd.stex"
 [deps]
 
 source_file="res://textures/original_canvas/lever.png"
-source_md5="51c30c4a7cee9a5e3664336e114c7ba0"
+source_md5="12ac3cfa617096dff6c04407978d346a"
 
 dest_files=[ "res://.import/lever.png-67a55264da359f185c75dd1b661df3bd.stex" ]
 dest_md5="3cc64aada07d2c83e0c78f8fc3be11fe"

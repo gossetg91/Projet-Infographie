@@ -97,7 +97,7 @@ func get_mvt(ladder):
 func jump():
 	if(Input.is_key_pressed(KEY_SPACE)):
 		for i in range(0, get_colliding_bodies().size()):
-			if (get_colliding_bodies()[i].get_name() == "Environement" || get_colliding_bodies()[i].get_name() == "EnvironementHub" || get_colliding_bodies()[i].get_name() == "finalHub"): 
+			if (get_colliding_bodies()[i].get_name() == "Environement" || get_colliding_bodies()[i].get_name() == "EnvironementHub" || get_colliding_bodies()[i].get_name() == "finalHub" || get_colliding_bodies()[i].get_name() == "mountainLevel"): 
 				apply_impulse(Vector3(0,0,0),Vector3(0,300,0))
 
 func toggleLadder():
