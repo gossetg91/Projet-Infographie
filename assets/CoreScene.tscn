@@ -59909,7 +59909,8 @@ autostart = false
 
 [node name="bridge" type="StaticBody" parent="." index="2"]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -638.799, 200.626, 0 )
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -632.693, 200.626, -3.2439 )
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -59959,7 +59960,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" type="Spatial" parent="bridge/pillar1" index="0" instance=ExtResource( 8 )]
+[node name="Scene Root" parent="bridge/pillar1" index="0" instance=ExtResource( 8 )]
 
 transform = Transform( 1.94989, 0, 0, 0, 4.11314, 0, 0, 0, 1.80905, -8.02551, -73.1728, 56.8599 )
 
@@ -60034,7 +60035,8 @@ disabled = false
 
 [node name="mountainLevel" type="StaticBody" parent="." index="3"]
 
-transform = Transform( 0.998713, 0, 0.0507202, 0, 1, 0, -0.0507202, 0, 0.998713, -571.326, -7.62939e-06, 29.722 )
+editor/display_folded = true
+transform = Transform( 0.998713, 0, 0.0507202, 0, 1, 0, -0.0507202, 0, 0.998713, -565.22, -7.62939e-06, 26.4781 )
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -60133,6 +60135,7 @@ disabled = false
 
 [node name="Environement" type="StaticBody" parent="." index="4"]
 
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 0.791013, 0, 0, 0, 1, 0.00197601, -0.0097279, -0.00477958 )
 input_ray_pickable = true
 input_capture_on_drag = false
@@ -60298,7 +60301,6 @@ disabled = false
 
 [node name="EnvironementHub" type="StaticBody" parent="." index="5"]
 
-editor/display_folded = true
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -60850,7 +60852,6 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="hub" type="StaticBody" parent="." index="6"]
 
-editor/display_folded = true
 transform = Transform( 3.02317, 0, -2.79601, 0, 3.7019, 0, 3.2548, 0, 3.63654, -150.167, 0.0549438, -124.289 )
 input_ray_pickable = true
 input_capture_on_drag = false
@@ -60865,15 +60866,31 @@ constant_angular_velocity = Vector3( 0, 0, 0 )
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0 )
 
-[node name="wall1" type="CollisionShape" parent="hub" index="1"]
+[node name="tunnel_lvl2" parent="hub" index="1" instance=ExtResource( 14 )]
+
+transform = Transform( 0.174228, 0, 1.04715, 0, 1, 0, -0.982016, 0, -0.162519, -48.5141, 0, 48.7119 )
+
+[node name="wall1" type="CollisionShape" parent="hub" index="2"]
 
 transform = Transform( 1.0113, 0, 0.0969818, 0, 0.999995, 0, -0.0909496, 0, 0.980108, 0.311777, 3.04649, -4.42399 )
 shape = SubResource( 27 )
 disabled = false
 
-[node name="wall2" type="CollisionShape" parent="hub" index="2"]
+[node name="wall2-1" type="CollisionShape" parent="hub" index="3"]
+
+transform = Transform( 0.0809587, 0, 1.04322, 0, 0.999995, 0, -0.978332, 0, -0.254523, -53.0923, 3.04649, 49.1248 )
+shape = SubResource( 27 )
+disabled = false
+
+[node name="wall2" type="CollisionShape" parent="hub" index="4"]
 
 transform = Transform( 1.0113, 0, 0.0969818, 0, 0.999992, 0, -0.0909496, 0, 0.980108, -0.0646973, 3.04649, 4.44918 )
+shape = SubResource( 27 )
+disabled = false
+
+[node name="wall2-2" type="CollisionShape" parent="hub" index="5"]
+
+transform = Transform( 0.0809587, 0, 1.04322, 0, 0.999992, 0, -0.978332, 0, -0.254523, -43.8664, 3.04649, 48.0524 )
 shape = SubResource( 27 )
 disabled = false
 

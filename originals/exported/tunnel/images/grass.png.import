@@ -2,31 +2,32 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/grass.png-b89b33fa057011f8fd300ec6f2d5293c.stex"
+path.s3tc="res://.import/grass.png-b89b33fa057011f8fd300ec6f2d5293c.s3tc.stex"
+path.etc2="res://.import/grass.png-b89b33fa057011f8fd300ec6f2d5293c.etc2.stex"
 
 [deps]
 
 source_file="res://originals/exported/tunnel/images/grass.png"
 source_md5="7b51aea11b38a16c3206cde70203c284"
 
-dest_files=[ "res://.import/grass.png-b89b33fa057011f8fd300ec6f2d5293c.stex" ]
-dest_md5="64672f96bbfc66ccfb30caae4a0c5767"
+dest_files=[ "res://.import/grass.png-b89b33fa057011f8fd300ec6f2d5293c.s3tc.stex", "res://.import/grass.png-b89b33fa057011f8fd300ec6f2d5293c.etc2.stex" ]
+dest_md5="65e29388e7288d64718ff86ae59f79fd"
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
-flags/repeat=0
+flags/repeat=true
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
-flags/srgb=2
+flags/srgb=1
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
