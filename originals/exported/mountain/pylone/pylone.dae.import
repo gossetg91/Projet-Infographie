@@ -2,15 +2,15 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/cave.dae-2abfbbc2329d56becdccf97a4aad1bbb.scn"
+path="res://.import/pylone.dae-e285fd52749df39eac8763a4dab24384.scn"
 
 [deps]
 
-source_file="res://originals/exported/tunnel/cave.dae"
-source_md5="dc77efda275726db7cffbffbadab8389"
+source_file="res://originals/exported/mountain/pylone/pylone.dae"
+source_md5="c77bc5cba191b1bc0a8f71589cf17be3"
 
-dest_files=[ "res://.import/cave.dae-2abfbbc2329d56becdccf97a4aad1bbb.scn" ]
-dest_md5="ee10f802b07b745f1a5d406fea504aeb"
+dest_files=[ "res://.import/pylone.dae-e285fd52749df39eac8763a4dab24384.scn" ]
+dest_md5="19b546292d83d5287fa976619a200d9b"
 
 [params]
 

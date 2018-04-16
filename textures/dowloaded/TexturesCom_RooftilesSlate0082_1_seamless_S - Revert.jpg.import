@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/TexturesCom_RooftilesSlate0082_1_seamless_S - Revert.jpg-2f79d62628f35621e592134f6e9ad994.stex"
+
+[deps]
+
+source_file="res://textures/dowloaded/TexturesCom_RooftilesSlate0082_1_seamless_S - Revert.jpg"
+source_md5="9cd7144f1554394d20cc82282e7d0d6b"
+
+dest_files=[ "res://.import/TexturesCom_RooftilesSlate0082_1_seamless_S - Revert.jpg-2f79d62628f35621e592134f6e9ad994.stex" ]
+dest_md5="0842a2a88bc017cd89f3a1bdf6279615"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
