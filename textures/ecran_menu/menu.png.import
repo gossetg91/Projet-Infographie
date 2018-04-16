@@ -7,10 +7,10 @@ path="res://.import/menu.png-5356f761b2590ab8b3827605542231a3.stex"
 [deps]
 
 source_file="res://textures/ecran_menu/menu.png"
-source_md5="b3081ce28af666794009e5cdc58158b9"
+source_md5="d86ae2ff910e96837d1665feb3d232b6"
 
 dest_files=[ "res://.import/menu.png-5356f761b2590ab8b3827605542231a3.stex" ]
-dest_md5="28aac69658c9101549fa05d615b428fe"
+dest_md5="28b711de03f8e51c0c9a47e8edd84260"
 
 [params]
 
