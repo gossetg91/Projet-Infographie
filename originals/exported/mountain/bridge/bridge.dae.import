@@ -7,10 +7,10 @@ path="res://.import/bridge.dae-31dddc599a187b76369cfdf2ed03f5d4.scn"
 [deps]
 
 source_file="res://originals/exported/mountain/bridge/bridge.dae"
-source_md5="5f9613e54c4492e35809a8981db6e1ed"
+source_md5="4ffc28f1faa0249510ef829473cc0b43"
 
 dest_files=[ "res://.import/bridge.dae-31dddc599a187b76369cfdf2ed03f5d4.scn" ]
-dest_md5="dd169560e7614cb2dabb0c3821c8e70e"
+dest_md5="70a42bbd8b68edb48a7c590ab8c54fc2"
 
 [params]
 
