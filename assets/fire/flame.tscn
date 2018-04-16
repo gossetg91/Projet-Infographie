@@ -17,7 +17,7 @@ width = 2048
 min_value = 0.0
 max_value = 1.0
 bake_resolution = 100
-_data = [ Vector2( 0.00203111, 0.457031 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), -1.13962, 0.0, 0, 0 ]
+_data = [ Vector2( 0.00859293, 0.209961 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), -0.558289, 0.0, 0, 0 ]
 
 [sub_resource type="CurveTexture" id=4]
 
@@ -146,7 +146,7 @@ _sections_unfolded = [ "Resource" ]
 
 [node name="Particles" type="Particles" index="0"]
 
-transform = Transform( 1, 0, 0, 0, -0.337065, 0.941482, 0, -0.941482, -0.337065, 0, 0, 0 )
+transform = Transform( 1, 0, 0, 0, 0.010422, 0.999946, 0, -0.999946, 0.010422, 0, 0, 0 )
 layers = 1
 material_override = null
 cast_shadow = 1
