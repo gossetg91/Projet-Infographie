@@ -60135,7 +60135,6 @@ disabled = false
 
 [node name="Environement" type="StaticBody" parent="." index="4"]
 
-editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 0.791013, 0, 0, 0, 1, 0.00197601, -0.0097279, -0.00477958 )
 input_ray_pickable = true
 input_capture_on_drag = false
@@ -61169,6 +61168,7 @@ blend_times = [  ]
 
 [node name="Forêt" type="Spatial" parent="." index="23"]
 
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 0.791013, 0, 0, 0, 1, -1.65656, -0.0097279, 107.437 )
 
 [node name="House" type="StaticBody" parent="Forêt" index="0"]
@@ -61916,6 +61916,7 @@ disabled = false
 
 [node name="arbre5" type="StaticBody" parent="Forêt" index="16"]
 
+editor/display_folded = true
 transform = Transform( -1.63487, 0, 5.69425, 0, 6.40234, 0, -4.65932, 0, -1.998, -113.576, -0.67372, -70.3432 )
 visible = false
 input_ray_pickable = true
@@ -61929,6 +61930,7 @@ constant_angular_velocity = Vector3( 0, 0, 0 )
 
 [node name="arbreModele" parent="Forêt/arbre5" index="0" instance=ExtResource( 38 )]
 
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.9422, 0.0189627, 8.04739 )
 
 [node name="animArbre" type="AnimationPlayer" parent="Forêt/arbre5/arbreModele" index="2"]
