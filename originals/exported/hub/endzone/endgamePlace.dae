@@ -5,8 +5,8 @@
 		<author>Anonymous</author>
 		<authoring_tool>Collada Exporter for Blender 2.6+, by Juan Linietsky (juan@codenix.com)</authoring_tool>
 	</contributor>
-	<created>2018-03-27T21:51:15Z</created>
-	<modified>2018-03-27T21:51:15Z</modified>
+	<created>2018-04-13T08:57:51Z</created>
+	<modified>2018-04-13T08:57:51Z</modified>
 	<unit meter="1.0" name="meter"/>
 	<up_axis>Z_UP</up_axis>
 </asset>
@@ -22,10 +22,10 @@
 						<color>  0.0 0.0 0.0 1.0 </color>
 					</ambient>
 					<diffuse>
-						<color>  0.6400000190734865 0.6400000190734865 0.6400000190734865 1.0 </color>
+						<color>  0.0 0.0 0.0 1.0 </color>
 					</diffuse>
 					<specular>
-						<color>  0.5 0.5 0.5 1.0 </color>
+						<color>  0.0 0.0 0.0 1.0 </color>
 					</specular>
 					<shininess>
 						<float>50</float>
@@ -91,16 +91,6 @@
 		</mesh>
 	</geometry>
 </library_geometries>
-<library_lights>
-	<light id="id-light-6" name="Point">
-			<technique_common>
-				<point>
-					<color>  1.0 1.0 1.0 </color>
-					<linear_attenuation>0.05859947077084713</linear_attenuation>
-				</point>
-			</technique_common>
-	</light>
-</library_lights>
 <library_visual_scenes>
 	<visual_scene id="id-scene-1" name="scene">
 		<node id="Cube" name="Cube" type="NODE">
@@ -112,10 +102,6 @@
 					</technique_common>
 				</bind_material>
 			</instance_geometry>
-		</node>
-		<node id="Point" name="Point" type="NODE">
-			<matrix sid="transform"> 1.0 0.0 0.0 0.10186867415904999 0.0 1.0 0.0 2.221306085586548 0.0 0.0 1.0 2.8146660327911377 0.0 0.0 0.0 1.0  </matrix>
-			<instance_light url="#id-light-6"/>
 		</node>
 	</visual_scene>
 </library_visual_scenes>
