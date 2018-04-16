@@ -5,23 +5,23 @@
 		<author>Anonymous</author>
 		<authoring_tool>Collada Exporter for Blender 2.6+, by Juan Linietsky (juan@codenix.com)</authoring_tool>
 	</contributor>
-	<created>2018-04-11T12:23:52Z</created>
-	<modified>2018-04-11T12:23:52Z</modified>
+	<created>2018-04-16T16:09:07Z</created>
+	<modified>2018-04-16T16:09:07Z</modified>
 	<unit meter="1.0" name="meter"/>
 	<up_axis>Z_UP</up_axis>
 </asset>
 <library_images>
 	<image id="id-image-6" name="environement_door_tex.png.001">
-		<init_from>images/environement_door_tex.png</init_from>
+		<init_from>../../../../textures/completed/environement_door_tex.png</init_from>
 	</image>
 	<image id="id-image-13" name="door_hub.png">
-		<init_from>images/door_hub.png</init_from>
+		<init_from>../../../../textures/completed/door_hub.png</init_from>
 	</image>
 	<image id="id-image-24" name="grass.png">
-		<init_from>images/grass.png</init_from>
+		<init_from>../../../../textures/drawed/grass.png</init_from>
 	</image>
 	<image id="id-image-31" name="environement_wall_tex.png.001">
-		<init_from>images/environement_wall_tex.png</init_from>
+		<init_from>../../../../textures/completed/environement_low.png</init_from>
 	</image>
 </library_images>
 <library_effects>
@@ -2102,8 +2102,6 @@
 		</node>
 	</visual_scene>
 </library_visual_scenes>
-<library_animations>
-</library_animations>
 <scene>
 	<instance_visual_scene url="#id-scene-1" />
 </scene>

@@ -5,8 +5,8 @@
 		<author>Anonymous</author>
 		<authoring_tool>Collada Exporter for Blender 2.6+, by Juan Linietsky (juan@codenix.com)</authoring_tool>
 	</contributor>
-	<created>2018-04-11T12:50:08Z</created>
-	<modified>2018-04-11T12:50:08Z</modified>
+	<created>2018-04-16T16:08:02Z</created>
+	<modified>2018-04-16T16:08:02Z</modified>
 	<unit meter="1.0" name="meter"/>
 	<up_axis>Z_UP</up_axis>
 </asset>
@@ -17,8 +17,8 @@
 	<image id="id-image-12" name="grass.png">
 		<init_from>../../../textures/drawed/grass.png</init_from>
 	</image>
-	<image id="id-image-19" name="environement_wall_tex.png">
-		<init_from>../../../textures/completed/environement_wall_tex.png</init_from>
+	<image id="id-image-19" name="environement_low.png">
+		<init_from>../../../textures/completed/environement_low.png</init_from>
 	</image>
 </library_images>
 <library_effects>
