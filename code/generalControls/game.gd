@@ -97,6 +97,7 @@ func _process(delta):
 			
 			if !leverPressed:
 				checkLever()
+	cContactManteau()
 	cEnableTorch()
 
 	if tokenSet == 3:
@@ -119,6 +120,7 @@ func cTCoat():
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("coat").translate(Vector3(0,-200,0))
 				coatTaken = true
+				get_node("blocManteau").set("toggled",false);
 				
 	pass
 	
@@ -255,7 +257,7 @@ func checkSet2():
 func checkSet3():
 	if(get_node("player").get_translation().x < get_node("setDetector3").get_translation().x+3 and get_node("player").get_translation().x > get_node("setDetector3").get_translation().x-3):
 		if (get_node("player").get_translation().z < get_node("setDetector3").get_translation().z+3 and get_node("player").get_translation().z > get_node("setDetector3").get_translation().z-3):
-			if tokenSet > 0 && tokenSetLst[2] == false && Input.is_key_pressed(KEY_E):
+			if tokenCount > 0 && tokenSetLst[2] == false && Input.is_key_pressed(KEY_E):
 				tokenSetLst[2] = true
 				tokenCount = tokenCount - 1 
 				print("3ok")
@@ -270,4 +272,8 @@ func checkKeypad():
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("keypad").toggle()
 				keypadUsed = true
-			
+
+func cContactManteau():
+	for i in range(0, get_node("player").get_colliding_bodies().size()):
+		if(get_node("player").get_colliding_bodies()[i].get_name() == "blocManteau"):
+			get_node("Cold").toggle()
