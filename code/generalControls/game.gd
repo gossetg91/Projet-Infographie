@@ -55,8 +55,6 @@ func _process(delta):
 		if (get_node("player").get_colliding_bodies()[i].get_name() == "Environement"): 
 			if !woodStickTaken:
 				cTWoodStick()
-			if !silexTaken:
-				cTSilex()
 	
 			if(!ladderTaken):
 				cTLadder()
@@ -84,19 +82,24 @@ func _process(delta):
 			if !tokenSetLst[2]:
 				checkSet3();
 
-		elif(get_node("player").get_colliding_bodies()[i].get_name() == "EnvironementHub"):
+		elif(get_node("player").get_colliding_bodies()[i].get_name() == "cave"):
 			if !tokenTaken[2]:
 				checktoken3()
 				
 		elif(get_node("player").get_colliding_bodies()[i].get_name() == "mountainLevel"):
-			if !tokenTaken[1]:
-				checktoken2()
 				
 			if !keypadUsed and mKeyTaken:
 				checkKeypad()
 			
 			if !leverPressed:
 				checkLever()
+				
+			if !silexTaken:
+				cTSilex()
+				
+		elif(get_node("player").get_colliding_bodies()[i].get_name() == "bunker"):
+			if !tokenTaken[1]:
+				checktoken2()
 	cContactManteau()
 	cEnableTorch()
 
@@ -194,7 +197,7 @@ func cMKey():
 	if(get_node("player").get_translation().x < get_node("mountainKey").get_translation().x+3 and get_node("player").get_translation().x > get_node("mountainKey").get_translation().x-3):
 		if (get_node("player").get_translation().z < get_node("mountainKey").get_translation().z+3 and get_node("player").get_translation().z > get_node("mountainKey").get_translation().z-3):
 			if(Input.is_key_pressed(KEY_E)):
-				get_node("mountainKey").translate(Vector3(0,-200,0))
+				get_node("mountainKey").translate(Vector3(0,0,-800))
 				mKeyTaken = true
 
 func openDoor():
@@ -209,6 +212,7 @@ func checkLever():
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("lever").toggle()
 				get_node("Door").toggle()
+				get_node("stubDoor2").translate(Vector3(0,-800,0))
 				
 func cOpenDoor1():
 	if tokenTaken[0]:
@@ -272,6 +276,7 @@ func checkKeypad():
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("keypad").toggle()
 				keypadUsed = true
+				get_node("stubDoor").translate(Vector3(0,-800,0))
 
 func cContactManteau():
 	for i in range(0, get_node("player").get_colliding_bodies().size()):

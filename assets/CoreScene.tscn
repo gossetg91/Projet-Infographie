@@ -1,59 +1,60 @@
-[gd_scene load_steps=128 format=2]
+[gd_scene load_steps=129 format=2]
 
 [ext_resource path="res://code/generalControls/game.gd" type="Script" id=1]
-[ext_resource path="res://default_env.tres" type="Environment" id=2]
-[ext_resource path="res://originals/exported/stub/ladderPoint.dae" type="PackedScene" id=3]
-[ext_resource path="res://code/generalControls/playerModel.gd" type="Script" id=4]
-[ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/torch.tscn" type="PackedScene" id=6]
-[ext_resource path="res://code/objectManager/torch.gd" type="Script" id=7]
-[ext_resource path="res://originals/exported/mountain/swinging_plank.dae" type="PackedScene" id=8]
-[ext_resource path="res://code/objectManager/swinging_plank.gd" type="Script" id=9]
-[ext_resource path="res://originals/exported/mountain/ArmatureAction.anim" type="Animation" id=10]
-[ext_resource path="res://originals/exported/mountain/key/key.dae" type="PackedScene" id=11]
-[ext_resource path="res://originals/exported/mountain/keypad/keypad.dae" type="PackedScene" id=12]
-[ext_resource path="res://originals/exported/mountain/keypad/keypad.gd" type="Script" id=13]
-[ext_resource path="res://originals/exported/mountain/keypad/default.anim" type="Animation" id=14]
-[ext_resource path="res://originals/exported/house/hallstand/hallstand.dae" type="PackedScene" id=15]
-[ext_resource path="res://originals/exported/house/chair/Chair.dae" type="PackedScene" id=16]
-[ext_resource path="res://originals/exported/house/table/table.dae" type="PackedScene" id=17]
-[ext_resource path="res://originals/exported/house/maison/maisonblend.dae" type="PackedScene" id=18]
-[ext_resource path="res://originals/exported/house/bed/bed.dae" type="PackedScene" id=19]
-[ext_resource path="res://originals/exported/mountain/lever/lever.dae" type="PackedScene" id=20]
-[ext_resource path="res://originals/exported/mountain/lever/lever.gd" type="Script" id=21]
-[ext_resource path="res://originals/exported/mountain/lever/default.anim" type="Animation" id=22]
-[ext_resource path="res://assets/cave.tscn" type="PackedScene" id=23]
-[ext_resource path="res://originals/exported/mountain/bridge/bridge.dae" type="PackedScene" id=24]
-[ext_resource path="res://originals/exported/mountain/pylone/pylone.dae" type="PackedScene" id=25]
-[ext_resource path="res://code/objectManager/blocManteau.gd" type="Script" id=26]
-[ext_resource path="res://assets/mountain.tscn" type="PackedScene" id=27]
-[ext_resource path="res://originals/exported/mountain/bunker/tokenHouse.dae" type="PackedScene" id=28]
-[ext_resource path="res://assets/environement.tscn" type="PackedScene" id=29]
-[ext_resource path="res://originals/exported/hub/endzone/endgamePlace.dae" type="PackedScene" id=30]
-[ext_resource path="res://assets/wallNormalMap.tscn" type="PackedScene" id=31]
-[ext_resource path="res://originals/exported/hub/centralHub/centralHub.dae" type="PackedScene" id=32]
-[ext_resource path="res://originals/exported/tunnel/tunnel.dae" type="PackedScene" id=33]
-[ext_resource path="res://assets/token.tscn" type="PackedScene" id=34]
-[ext_resource path="res://code/objectManager/token.gd" type="Script" id=35]
-[ext_resource path="res://originals/exported/items/token_taken/token_taken.dae" type="PackedScene" id=36]
-[ext_resource path="res://originals/exported/items/manteau/manteau.dae" type="PackedScene" id=37]
-[ext_resource path="res://originals/exported/forest/branch/branch.dae" type="PackedScene" id=38]
-[ext_resource path="res://originals/exported/items/strip/strip.dae" type="PackedScene" id=39]
-[ext_resource path="res://originals/exported/mountain/silex/silex.dae" type="PackedScene" id=40]
-[ext_resource path="res://originals/exported/items/clef/clef.dae" type="PackedScene" id=41]
-[ext_resource path="res://originals/exported/house/ladder/ladder.dae" type="PackedScene" id=42]
-[ext_resource path="res://originals/exported/mountain/plateform/plateform.dae" type="PackedScene" id=43]
-[ext_resource path="res://code/objectManager/ladder.gd" type="Script" id=44]
-[ext_resource path="res://code/objectManager/Herse.gd" type="Script" id=45]
-[ext_resource path="res://originals/exported/outside/herse/herse.dae" type="PackedScene" id=46]
-[ext_resource path="res://code/objectManager/porte.gd" type="Script" id=47]
-[ext_resource path="res://originals/exported/house/porte/porte.dae" type="PackedScene" id=48]
-[ext_resource path="res://originals/exported/house/porte/default.anim" type="Animation" id=49]
-[ext_resource path="res://originals/exported/forest/arbre/arbre2.dae" type="PackedScene" id=50]
-[ext_resource path="res://originals/exported/forest/arbre/windAction_002.anim" type="Animation" id=51]
-[ext_resource path="res://originals/exported/forest/arbre/arbre.dae" type="PackedScene" id=52]
-[ext_resource path="res://textures/ecran_osd/Cold.png" type="Texture" id=53]
-[ext_resource path="res://assets/Cold.gd" type="Script" id=54]
+[ext_resource path="res://assets/fire/feuDeCampToutPipou.tscn" type="PackedScene" id=2]
+[ext_resource path="res://default_env.tres" type="Environment" id=3]
+[ext_resource path="res://originals/exported/stub/ladderPoint.dae" type="PackedScene" id=4]
+[ext_resource path="res://code/generalControls/playerModel.gd" type="Script" id=5]
+[ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/torch.tscn" type="PackedScene" id=7]
+[ext_resource path="res://code/objectManager/torch.gd" type="Script" id=8]
+[ext_resource path="res://originals/exported/mountain/swinging_plank.dae" type="PackedScene" id=9]
+[ext_resource path="res://code/objectManager/swinging_plank.gd" type="Script" id=10]
+[ext_resource path="res://originals/exported/mountain/ArmatureAction.anim" type="Animation" id=11]
+[ext_resource path="res://originals/exported/mountain/key/key.dae" type="PackedScene" id=12]
+[ext_resource path="res://originals/exported/mountain/keypad/keypad.dae" type="PackedScene" id=13]
+[ext_resource path="res://originals/exported/mountain/keypad/keypad.gd" type="Script" id=14]
+[ext_resource path="res://originals/exported/mountain/keypad/default.anim" type="Animation" id=15]
+[ext_resource path="res://originals/exported/house/hallstand/hallstand.dae" type="PackedScene" id=16]
+[ext_resource path="res://originals/exported/house/chair/Chair.dae" type="PackedScene" id=17]
+[ext_resource path="res://originals/exported/house/table/table.dae" type="PackedScene" id=18]
+[ext_resource path="res://originals/exported/house/maison/maisonblend.dae" type="PackedScene" id=19]
+[ext_resource path="res://originals/exported/house/bed/bed.dae" type="PackedScene" id=20]
+[ext_resource path="res://originals/exported/mountain/lever/lever.dae" type="PackedScene" id=21]
+[ext_resource path="res://originals/exported/mountain/lever/lever.gd" type="Script" id=22]
+[ext_resource path="res://originals/exported/mountain/lever/default.anim" type="Animation" id=23]
+[ext_resource path="res://assets/cave.tscn" type="PackedScene" id=24]
+[ext_resource path="res://originals/exported/mountain/bridge/bridge.dae" type="PackedScene" id=25]
+[ext_resource path="res://originals/exported/mountain/pylone/pylone.dae" type="PackedScene" id=26]
+[ext_resource path="res://code/objectManager/blocManteau.gd" type="Script" id=27]
+[ext_resource path="res://assets/mountain.tscn" type="PackedScene" id=28]
+[ext_resource path="res://originals/exported/mountain/bunker/tokenHouse.dae" type="PackedScene" id=29]
+[ext_resource path="res://assets/environement.tscn" type="PackedScene" id=30]
+[ext_resource path="res://originals/exported/hub/endzone/endgamePlace.dae" type="PackedScene" id=31]
+[ext_resource path="res://assets/wallNormalMap.tscn" type="PackedScene" id=32]
+[ext_resource path="res://originals/exported/hub/centralHub/centralHub.dae" type="PackedScene" id=33]
+[ext_resource path="res://originals/exported/tunnel/tunnel.dae" type="PackedScene" id=34]
+[ext_resource path="res://assets/token.tscn" type="PackedScene" id=35]
+[ext_resource path="res://code/objectManager/token.gd" type="Script" id=36]
+[ext_resource path="res://originals/exported/items/token_taken/token_taken.dae" type="PackedScene" id=37]
+[ext_resource path="res://originals/exported/items/manteau/manteau.dae" type="PackedScene" id=38]
+[ext_resource path="res://originals/exported/forest/branch/branch.dae" type="PackedScene" id=39]
+[ext_resource path="res://originals/exported/items/strip/strip.dae" type="PackedScene" id=40]
+[ext_resource path="res://originals/exported/mountain/silex/silex.dae" type="PackedScene" id=41]
+[ext_resource path="res://originals/exported/items/clef/clef.dae" type="PackedScene" id=42]
+[ext_resource path="res://originals/exported/house/ladder/ladder.dae" type="PackedScene" id=43]
+[ext_resource path="res://originals/exported/mountain/plateform/plateform.dae" type="PackedScene" id=44]
+[ext_resource path="res://code/objectManager/ladder.gd" type="Script" id=45]
+[ext_resource path="res://code/objectManager/Herse.gd" type="Script" id=46]
+[ext_resource path="res://originals/exported/outside/herse/herse.dae" type="PackedScene" id=47]
+[ext_resource path="res://code/objectManager/porte.gd" type="Script" id=48]
+[ext_resource path="res://originals/exported/house/porte/porte.dae" type="PackedScene" id=49]
+[ext_resource path="res://originals/exported/house/porte/default.anim" type="Animation" id=50]
+[ext_resource path="res://originals/exported/forest/arbre/arbre2.dae" type="PackedScene" id=51]
+[ext_resource path="res://originals/exported/forest/arbre/windAction_002.anim" type="Animation" id=52]
+[ext_resource path="res://originals/exported/forest/arbre/arbre.dae" type="PackedScene" id=53]
+[ext_resource path="res://textures/ecran_osd/Cold.png" type="Texture" id=54]
+[ext_resource path="res://assets/Cold.gd" type="Script" id=55]
 
 [sub_resource type="CapsuleShape" id=1]
 
@@ -59958,16 +59959,20 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.417542, 0.924114, -1.07033 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Pause", "Transform" ]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="0"]
+[node name="CampFire" parent="." index="0" instance=ExtResource( 2 )]
 
-environment = ExtResource( 2 )
+transform = Transform( 4.17959, 0, -0.977923, 0, 4.19082, -1.24896e-07, 0.893365, 0, 3.81819, -540.077, 0.175943, -538.555 )
 
-[node name="ladderBloc" parent="." index="1" instance=ExtResource( 3 )]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="1"]
+
+environment = ExtResource( 3 )
+
+[node name="ladderBloc" parent="." index="2" instance=ExtResource( 4 )]
 
 transform = Transform( 0.682346, 0.012067, -0.730929, 0.000114619, 0.999862, 0.0166138, 0.731029, -0.0114202, 0.682251, -649.939, -0.413726, 123.412 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="player" type="RigidBody" parent="." index="2"]
+[node name="player" type="RigidBody" parent="." index="3"]
 
 editor/display_folded = true
 transform = Transform( -0.549897, 0, -0.835232, 0, 1, 0, 0.835232, 0, -0.549897, -112.74, 0.511673, -94.9872 )
@@ -59996,10 +60001,10 @@ linear_velocity = Vector3( 0, 0, 0 )
 linear_damp = -1.0
 angular_velocity = Vector3( 0, 0, 0 )
 angular_damp = -1.0
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 _sections_unfolded = [ "Axis Lock", "Collision", "Linear" ]
 
-[node name="model" parent="player" index="0" instance=ExtResource( 5 )]
+[node name="model" parent="player" index="0" instance=ExtResource( 6 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.370699, 1.52588e-05, 0.440626 )
 _sections_unfolded = [ "Pause" ]
@@ -60011,10 +60016,10 @@ shape = SubResource( 1 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="Torch" parent="player" index="2" instance=ExtResource( 6 )]
+[node name="Torch" parent="player" index="2" instance=ExtResource( 7 )]
 
 transform = Transform( 1.50697, 0, 0, 0, 1.26871, 0.586819, 0, -0.679649, 1.46941, 0.620707, 1.43776, -0.153211 )
-script = ExtResource( 7 )
+script = ExtResource( 8 )
 
 [node name="Cooldown" type="Timer" parent="player/Torch" index="7"]
 
@@ -60023,11 +60028,11 @@ wait_time = 0.25
 one_shot = false
 autostart = false
 
-[node name="swingingPlank" parent="." index="3" instance=ExtResource( 8 )]
+[node name="swingingPlank" parent="." index="4" instance=ExtResource( 9 )]
 
 editor/display_folded = true
 transform = Transform( 0.732195, 0, -0.681095, 0, 1, 0, 0.681095, 0, 0.732195, -597.418, 109.965, 75.8592 )
-script = ExtResource( 9 )
+script = ExtResource( 10 )
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="swingingPlank" index="4"]
 
@@ -60036,14 +60041,14 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/ArmatureAction = ExtResource( 10 )
+anims/ArmatureAction = ExtResource( 11 )
 blend_times = [  ]
 
-[node name="swingingPlank2" parent="." index="4" instance=ExtResource( 8 )]
+[node name="swingingPlank2" parent="." index="5" instance=ExtResource( 9 )]
 
 editor/display_folded = true
 transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, -626.437, 110.757, 67.6743 )
-script = ExtResource( 9 )
+script = ExtResource( 10 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="swingingPlank2" index="4"]
@@ -60056,16 +60061,16 @@ playback_speed = 1.0
 anims/ArmatureAction = SubResource( 2 )
 blend_times = [  ]
 
-[node name="mountainKey" parent="." index="5" instance=ExtResource( 11 )]
+[node name="mountainKey" parent="." index="6" instance=ExtResource( 12 )]
 
 transform = Transform( 0.281768, 0, 0, 0, -6.56168e-08, -0.408338, 0, 0.32626, -5.38916e-08, 2.54372, 2.15036, -5.20236 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="keypad" parent="." index="6" instance=ExtResource( 12 )]
+[node name="keypad" parent="." index="7" instance=ExtResource( 13 )]
 
 editor/display_folded = true
 transform = Transform( 0.602748, 0, -0.608018, 0, 0.855457, 0, 0.582445, 0, 0.553503, -668.138, 0.0991957, 101.221 )
-script = ExtResource( 13 )
+script = ExtResource( 14 )
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="keypad" index="3"]
 
@@ -60074,10 +60079,10 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/default = ExtResource( 14 )
+anims/default = ExtResource( 15 )
 blend_times = [  ]
 
-[node name="House" type="StaticBody" parent="." index="7"]
+[node name="House" type="StaticBody" parent="." index="8"]
 
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 0.565456, 0, 0, 0, 1, 98.6244, -0.0097279, 60.4589 )
@@ -60104,7 +60109,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Body" parent="House/Hallstand" index="0" instance=ExtResource( 15 )]
+[node name="Body" parent="House/Hallstand" index="0" instance=ExtResource( 16 )]
 
 transform = Transform( 0.594756, 0, -0.00175638, 0, 0.610839, 0, -0.00176803, 0, 0.621808, 2.30557, -0.0255011, 8.21609 )
 
@@ -60128,9 +60133,9 @@ constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="chairBody" parent="House/Chair4" index="0" instance=ExtResource( 16 )]
+[node name="chairBody" parent="House/Chair4" index="0" instance=ExtResource( 17 )]
 
-[node name="chairBody2" parent="House/Chair4" index="1" instance=ExtResource( 16 )]
+[node name="chairBody2" parent="House/Chair4" index="1" instance=ExtResource( 17 )]
 
 [node name="CollisionShape" type="CollisionShape" parent="House/Chair4" index="2"]
 
@@ -60151,9 +60156,9 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chairBody" parent="House/Chair2" index="0" instance=ExtResource( 16 )]
+[node name="chairBody" parent="House/Chair2" index="0" instance=ExtResource( 17 )]
 
-[node name="chairBody2" parent="House/Chair2" index="1" instance=ExtResource( 16 )]
+[node name="chairBody2" parent="House/Chair2" index="1" instance=ExtResource( 17 )]
 
 [node name="CollisionShape" type="CollisionShape" parent="House/Chair2" index="2"]
 
@@ -60175,9 +60180,9 @@ constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="chairBody" parent="House/Chair3" index="0" instance=ExtResource( 16 )]
+[node name="chairBody" parent="House/Chair3" index="0" instance=ExtResource( 17 )]
 
-[node name="chairBody2" parent="House/Chair3" index="1" instance=ExtResource( 16 )]
+[node name="chairBody2" parent="House/Chair3" index="1" instance=ExtResource( 17 )]
 
 [node name="CollisionShape" type="CollisionShape" parent="House/Chair3" index="2"]
 
@@ -60198,9 +60203,9 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chairBody" parent="House/Chair1" index="0" instance=ExtResource( 16 )]
+[node name="chairBody" parent="House/Chair1" index="0" instance=ExtResource( 17 )]
 
-[node name="chairBody2" parent="House/Chair1" index="1" instance=ExtResource( 16 )]
+[node name="chairBody2" parent="House/Chair1" index="1" instance=ExtResource( 17 )]
 
 [node name="CollisionShape" type="CollisionShape" parent="House/Chair1" index="2"]
 
@@ -60220,7 +60225,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="TableModel" parent="House/Table" index="0" instance=ExtResource( 17 )]
+[node name="TableModel" parent="House/Table" index="0" instance=ExtResource( 18 )]
 
 transform = Transform( -0.000367145, 0, 1.99641, 0, 1.03323, 0, -1.75241, 0, 0.000394679, -97.7427, 0.581138, -66.0457 )
 _sections_unfolded = [ "Transform" ]
@@ -60245,7 +60250,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="TableModel" parent="House/Table2" index="0" instance=ExtResource( 17 )]
+[node name="TableModel" parent="House/Table2" index="0" instance=ExtResource( 18 )]
 
 transform = Transform( -0.000669565, 0, 0.507748, 0, 0.888623, 0, -0.285865, 0, 0.0007208, -97.7427, 0.581138, -66.0457 )
 _sections_unfolded = [ "Transform" ]
@@ -60257,7 +60262,7 @@ shape = SubResource( 6 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="HouseModel" parent="House" index="7" instance=ExtResource( 18 )]
+[node name="HouseModel" parent="House" index="7" instance=ExtResource( 19 )]
 
 transform = Transform( 2.07616, 0, 2.27374e-13, 0, 2.69722, 0, -1.09626e-13, 0, 3.19574, -98.1514, 0.0856586, -59.0465 )
 
@@ -60313,7 +60318,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="bedmodel" parent="House/Bed" index="0" instance=ExtResource( 19 )]
+[node name="bedmodel" parent="House/Bed" index="0" instance=ExtResource( 20 )]
 
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 14.08, -0.36375, 2.87097 )
 _sections_unfolded = [ "Transform" ]
@@ -60324,11 +60329,11 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.2124, 0, 2.71543 )
 shape = SubResource( 11 )
 disabled = false
 
-[node name="lever" parent="." index="8" instance=ExtResource( 20 )]
+[node name="lever" parent="." index="9" instance=ExtResource( 21 )]
 
 editor/display_folded = true
 transform = Transform( 3.50178, 0, -3.63114, 0, 5.32441, 0, 3.73108, 0, 3.60172, -672.71, 57.5015, -76.4522 )
-script = ExtResource( 21 )
+script = ExtResource( 22 )
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="lever" index="6"]
 
@@ -60337,11 +60342,12 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/default = ExtResource( 22 )
+anims/default = ExtResource( 23 )
 blend_times = [  ]
 
-[node name="cave" type="StaticBody" parent="." index="9"]
+[node name="cave" type="StaticBody" parent="." index="10"]
 
+editor/display_folded = true
 transform = Transform( 3.07057, 0, -2.74239, 0, 3.7019, 0, 3.21012, 0, 3.67715, -581.559, 1.62263, -519.181 )
 input_ray_pickable = true
 input_capture_on_drag = false
@@ -60352,7 +60358,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="cave" index="0" instance=ExtResource( 23 )]
+[node name="Scene Root" parent="cave" index="0" instance=ExtResource( 24 )]
 
 transform = Transform( -0.198342, 0, -0.113019, 0, 0.270132, 0, 0.139819, 0, -0.171236, -0.0083847, -0.361849, 0.0173264 )
 _sections_unfolded = [ "Transform" ]
@@ -60576,7 +60582,7 @@ transform = Transform( 0.394933, 0, 0.937954, 0, 1.11793, 0, -0.882727, 0, 0.032
 shape = SubResource( 20 )
 disabled = false
 
-[node name="bridge" type="StaticBody" parent="." index="10"]
+[node name="bridge" type="StaticBody" parent="." index="11"]
 
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -632.693, 200.626, -3.2439 )
@@ -60589,7 +60595,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="bridge" parent="bridge" index="0" instance=ExtResource( 24 )]
+[node name="bridge" parent="bridge" index="0" instance=ExtResource( 25 )]
 
 transform = Transform( -0.623537, 0.027018, -0.459405, -0.000544757, 0.999305, 0.023815, 0.677373, 0.0256743, -0.443488, 24.4543, -74.1842, 78.7944 )
 _sections_unfolded = [ "Transform" ]
@@ -60630,7 +60636,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="bridge/pillar1" index="0" instance=ExtResource( 25 )]
+[node name="Scene Root" parent="bridge/pillar1" index="0" instance=ExtResource( 26 )]
 
 transform = Transform( 1.94989, 0, 0, 0, 4.11314, 0, 0, 0, 1.80905, -8.02551, -73.1728, 56.8599 )
 
@@ -60652,7 +60658,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="bridge/pillar2" index="0" instance=ExtResource( 25 )]
+[node name="Scene Root" parent="bridge/pillar2" index="0" instance=ExtResource( 26 )]
 
 transform = Transform( 1.94989, 0, 0, 0, 4.11314, 0, 0, 0, 1.80905, 1.93524, -73.1728, 46.9878 )
 
@@ -60674,7 +60680,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="bridge/pillar3" index="0" instance=ExtResource( 25 )]
+[node name="Scene Root" parent="bridge/pillar3" index="0" instance=ExtResource( 26 )]
 
 transform = Transform( 1.94989, 0, 0, 0, 4.11314, 0, 0, 0, 1.80905, 59.5596, -76.6404, 102.475 )
 
@@ -60696,7 +60702,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="bridge/pillar4" index="0" instance=ExtResource( 25 )]
+[node name="Scene Root" parent="bridge/pillar4" index="0" instance=ExtResource( 26 )]
 
 transform = Transform( 1.94989, 0, 0, 0, 4.11314, 0, 0, 0, 1.80905, 50.1246, -76.6404, 113.231 )
 
@@ -60706,7 +60712,7 @@ transform = Transform( 0.707978, 0, 0.706235, 0, 1, 0, -0.706235, 0, 0.707978, 5
 shape = SubResource( 24 )
 disabled = false
 
-[node name="blocManteau" type="StaticBody" parent="." index="11"]
+[node name="blocManteau" type="StaticBody" parent="." index="12"]
 
 editor/display_folded = true
 transform = Transform( 0.724861, 0, 0.688896, 0, 1.36411, 0, -0.688896, 0, 0.724861, -484.962, 89.0102, 18.5652 )
@@ -60718,7 +60724,7 @@ friction = 1.0
 bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
-script = ExtResource( 26 )
+script = ExtResource( 27 )
 
 [node name="blocage manteau" type="CollisionShape" parent="blocManteau" index="0"]
 
@@ -60726,7 +60732,7 @@ transform = Transform( 1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0 )
 shape = SubResource( 25 )
 disabled = false
 
-[node name="mountainLevel" type="StaticBody" parent="." index="12"]
+[node name="mountainLevel" type="StaticBody" parent="." index="13"]
 
 editor/display_folded = true
 transform = Transform( 0.998713, 0, 0.0507202, 0, 1, 0, -0.0507202, 0, 0.998713, -565.22, -7.62939e-06, 26.4781 )
@@ -60740,7 +60746,7 @@ constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="environement" parent="mountainLevel" index="0" instance=ExtResource( 27 )]
+[node name="environement" parent="mountainLevel" index="0" instance=ExtResource( 28 )]
 
 transform = Transform( -0.152695, 0, -0.988273, 0, 1, 0, 0.988273, 0, -0.152695, -0.142273, -0.219921, 0.384111 )
 
@@ -60838,7 +60844,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="model" parent="mountainLevel/bunker" index="0" instance=ExtResource( 28 )]
+[node name="model" parent="mountainLevel/bunker" index="0" instance=ExtResource( 29 )]
 
 transform = Transform( 0.998713, 0, 0.0507202, 0, 1, 0, -0.0507202, 0, 0.998713, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -61044,7 +61050,7 @@ transform = Transform( -2.01758, 0, 3.20814, 0, 9.60102, 0, -3.88961, 0, -3.0921
 shape = SubResource( 20 )
 disabled = false
 
-[node name="Environement" type="StaticBody" parent="." index="13"]
+[node name="Environement" type="StaticBody" parent="." index="14"]
 
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 0.791013, 0, 0, 0, 1, 0.00197601, -0.0097279, -0.00477958 )
@@ -61057,7 +61063,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="environementModel" parent="Environement" index="0" instance=ExtResource( 29 )]
+[node name="environementModel" parent="Environement" index="0" instance=ExtResource( 30 )]
 
 transform = Transform( 1.06247, 0, 0, 0, 0.975872, 0, 0, 0, 1.07656, -0.00197601, 0.012298, 0.00478005 )
 _sections_unfolded = [ "Transform" ]
@@ -61210,7 +61216,7 @@ transform = Transform( -3.41239, 0, -3.48122, 0, 4.67995, 0, 2.84409, 0, -2.9872
 shape = SubResource( 20 )
 disabled = false
 
-[node name="EnvironementHub" type="StaticBody" parent="." index="14"]
+[node name="EnvironementHub" type="StaticBody" parent="." index="15"]
 
 editor/display_folded = true
 input_ray_pickable = true
@@ -61235,7 +61241,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="endZone" parent="EnvironementHub/endZone" index="0" instance=ExtResource( 30 )]
+[node name="endZone" parent="EnvironementHub/endZone" index="0" instance=ExtResource( 31 )]
 
 transform = Transform( 5.96537, 0, -4.52523, 0, 6.08953, 0, 4.93106, 0, 6.44084, -180.026, 0.115419, -390.207 )
 _sections_unfolded = [ "Transform" ]
@@ -61280,7 +61286,7 @@ shape = SubResource( 41 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="hubArena" parent="EnvironementHub" index="2" instance=ExtResource( 31 )]
+[node name="hubArena" parent="EnvironementHub" index="2" instance=ExtResource( 32 )]
 
 transform = Transform( -0.0326434, 0, -1.07605, 0, 0.747588, 0, 1.06197, 0, -0.0330763, -300.631, 0.172132, -253.615 )
 _sections_unfolded = [ "Transform" ]
@@ -61297,7 +61303,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="finalHubModel" parent="EnvironementHub/finalHub" index="0" instance=ExtResource( 32 )]
+[node name="finalHubModel" parent="EnvironementHub/finalHub" index="0" instance=ExtResource( 33 )]
 
 transform = Transform( 1.05406, 0, 0.00256109, 0, 1.62268, 0, 0.0187623, 0, 1.05629, -0.073082, 0.236727, -0.267998 )
 _sections_unfolded = [ "Transform" ]
@@ -61773,7 +61779,7 @@ shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="hub" type="StaticBody" parent="." index="15"]
+[node name="hub" type="StaticBody" parent="." index="16"]
 
 editor/display_folded = true
 transform = Transform( 3.02317, 0, -2.79601, 0, 3.7019, 0, 3.2548, 0, 3.63654, -150.167, 0.0549438, -124.289 )
@@ -61786,15 +61792,15 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="tunnel_lvl1_" parent="hub" index="0" instance=ExtResource( 33 )]
+[node name="tunnel_lvl1_" parent="hub" index="0" instance=ExtResource( 34 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0 )
 
-[node name="tunnel_lvl2" parent="hub" index="1" instance=ExtResource( 33 )]
+[node name="tunnel_lvl2" parent="hub" index="1" instance=ExtResource( 34 )]
 
 transform = Transform( 0.174228, 0, 1.04715, 0, 1, 0, -0.982016, 0, -0.162519, -48.5141, 0, 48.7119 )
 
-[node name="tunnel_lvl3" parent="hub" index="2" instance=ExtResource( 33 )]
+[node name="tunnel_lvl3" parent="hub" index="2" instance=ExtResource( 34 )]
 
 transform = Transform( 0.993922, 0, -0.0344512, 0, 1, 0, 0.0323092, 0, 1.005, -90.5817, 0, 9.44386 )
 
@@ -61834,19 +61840,19 @@ transform = Transform( 1.00829, 0, 0.0626253, 0, 0.999992, 0, -0.0587306, 0, 0.9
 shape = SubResource( 50 )
 disabled = false
 
-[node name="setDetector1" parent="." index="16" instance=ExtResource( 3 )]
+[node name="setDetector1" parent="." index="17" instance=ExtResource( 4 )]
 
 transform = Transform( -0.512703, 0, -0.550132, 0, 0.827047, 0, 0.504459, 0, -0.463078, -328.035, 3.60519, -222.503 )
 
-[node name="setDetector2" parent="." index="17" instance=ExtResource( 3 )]
+[node name="setDetector2" parent="." index="18" instance=ExtResource( 4 )]
 
 transform = Transform( -0.512703, 0, -0.550132, 0, 0.827048, 0, 0.504459, 0, -0.463078, -263.533, 3.6526, -222.658 )
 
-[node name="setDetector3" parent="." index="18" instance=ExtResource( 3 )]
+[node name="setDetector3" parent="." index="19" instance=ExtResource( 4 )]
 
 transform = Transform( -0.512703, 0, -0.550132, 0, 0.827049, 0, 0.504459, 0, -0.463078, -336.647, 3.6526, -285.835 )
 
-[node name="token1" type="StaticBody" parent="." index="19"]
+[node name="token1" type="StaticBody" parent="." index="20"]
 
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, -2.98023e-08, 0, 0, 1, 0.609024, -0.0296073, 17.2144 )
@@ -61860,12 +61866,12 @@ constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 _sections_unfolded = [ "Collision" ]
 
-[node name="Token" parent="token1" index="0" instance=ExtResource( 34 )]
+[node name="Token" parent="token1" index="0" instance=ExtResource( 35 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.04777e-07, 0 )
-script = ExtResource( 35 )
+script = ExtResource( 36 )
 
-[node name="unanimated" parent="token1" index="1" instance=ExtResource( 36 )]
+[node name="unanimated" parent="token1" index="1" instance=ExtResource( 37 )]
 
 _sections_unfolded = [ "Transform" ]
 
@@ -61875,7 +61881,7 @@ transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.0477
 shape = SubResource( 51 )
 disabled = false
 
-[node name="token2" type="StaticBody" parent="." index="20"]
+[node name="token2" type="StaticBody" parent="." index="21"]
 
 editor/display_folded = true
 transform = Transform( 0.746388, 0, 0.665511, 0, 1, -2.98023e-08, -0.665511, 0, 0.746388, -647.757, 10.138, 141.074 )
@@ -61888,13 +61894,13 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Token" parent="token2" index="0" instance=ExtResource( 34 )]
+[node name="Token" parent="token2" index="0" instance=ExtResource( 35 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.04777e-07, 0 )
-script = ExtResource( 35 )
+script = ExtResource( 36 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="unanimated" parent="token2" index="1" instance=ExtResource( 36 )]
+[node name="unanimated" parent="token2" index="1" instance=ExtResource( 37 )]
 
 _sections_unfolded = [ "Transform" ]
 
@@ -61904,10 +61910,10 @@ transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.0477
 shape = SubResource( 51 )
 disabled = false
 
-[node name="token3" type="StaticBody" parent="." index="21"]
+[node name="token3" type="StaticBody" parent="." index="22"]
 
 editor/display_folded = true
-transform = Transform( 1, 0, 0, 0, 1, -2.98023e-08, 0, 0, 1, -393.999, -0.0296073, -148.673 )
+transform = Transform( 0.973703, 0, -0.227823, 0, 1, -2.98023e-08, 0.227823, 0, 0.973703, -558.103, 0.23937, -532.023 )
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -61917,12 +61923,12 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Token" parent="token3" index="0" instance=ExtResource( 34 )]
+[node name="Token" parent="token3" index="0" instance=ExtResource( 35 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.04777e-07, 0 )
-script = ExtResource( 35 )
+script = ExtResource( 36 )
 
-[node name="unanimated" parent="token3" index="1" instance=ExtResource( 36 )]
+[node name="unanimated" parent="token3" index="1" instance=ExtResource( 37 )]
 
 _sections_unfolded = [ "Transform" ]
 
@@ -61932,32 +61938,32 @@ transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.0477
 shape = SubResource( 51 )
 disabled = false
 
-[node name="coat" parent="." index="22" instance=ExtResource( 37 )]
+[node name="coat" parent="." index="23" instance=ExtResource( 38 )]
 
 transform = Transform( -0.622913, 0, -0.782291, 0, 1, 0, 0.782291, 0, -0.622913, -8.86763, 1.67884, -13.9748 )
 
-[node name="branch" parent="." index="23" instance=ExtResource( 38 )]
+[node name="branch" parent="." index="24" instance=ExtResource( 39 )]
 
 transform = Transform( 5.86072, 0, 0, 0, 6.62071, 0, 0, 0, 6.36917, 68.0538, 0.0841786, 55.3278 )
 
-[node name="strip" parent="." index="24" instance=ExtResource( 39 )]
+[node name="strip" parent="." index="25" instance=ExtResource( 40 )]
 
 transform = Transform( 0.288615, 0, 0, 0, 0.316314, 0, 0, 0, 0.3019, -5.81371, 1.91582, 17.5063 )
 
-[node name="silex" parent="." index="25" instance=ExtResource( 40 )]
+[node name="silex" parent="." index="26" instance=ExtResource( 41 )]
 
-transform = Transform( 0.135858, 0, 0, 0, 0.125908, 0, 0, 0, 0.118296, -5.76005, 0.0336365, -23.9279 )
+transform = Transform( 0.59615, 0, 0, 0, 0.958889, 0, 0, 0, 0.429543, -695.796, 126.207, 3.79741 )
 
-[node name="Key" parent="." index="26" instance=ExtResource( 41 )]
+[node name="Key" parent="." index="27" instance=ExtResource( 42 )]
 
 transform = Transform( 0.18591, 0, 0, 0, 0.166563, 0, 0, 0, 0.16994, -10.8044, 0.0323732, -25.8828 )
 
-[node name="ladder" parent="." index="27" instance=ExtResource( 42 )]
+[node name="ladder" parent="." index="28" instance=ExtResource( 43 )]
 
 transform = Transform( 0.56639, -1.22955e-07, -0.753143, -0.663013, -1.05036e-07, -0.643385, 0, 0.992576, -1.61379e-07, 13.1239, 0.466032, -16.0627 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="plateform2" type="StaticBody" parent="." index="28"]
+[node name="plateform2" type="StaticBody" parent="." index="29"]
 
 editor/display_folded = true
 transform = Transform( -0.118816, 0, -5.44045, 0, 6.86313, 0, 5.51187, 0, -0.0978266, -612.104, 121.533, -19.243 )
@@ -61970,7 +61976,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="plateform2" index="0" instance=ExtResource( 43 )]
+[node name="Scene Root" parent="plateform2" index="0" instance=ExtResource( 44 )]
 
 transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -61993,7 +61999,7 @@ transform = Transform( 0.0806673, 0, -0.268085, 0, 0.675171, 0, 0.29653, 0, 0.07
 shape = SubResource( 53 )
 disabled = false
 
-[node name="ladderPlay2" type="StaticBody" parent="." index="29"]
+[node name="ladderPlay2" type="StaticBody" parent="." index="30"]
 
 editor/display_folded = true
 transform = Transform( 0.949327, 0, 0, 0, 0.915359, 0, 0, 0, 0.72979, -200, -200, -200 )
@@ -62005,10 +62011,10 @@ friction = 1.0
 bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
-script = ExtResource( 44 )
+script = ExtResource( 45 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="ladder" parent="ladderPlay2" index="0" instance=ExtResource( 42 )]
+[node name="ladder" parent="ladderPlay2" index="0" instance=ExtResource( 43 )]
 
 transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -62026,7 +62032,7 @@ wait_time = 0.25
 one_shot = false
 autostart = false
 
-[node name="plateform" type="StaticBody" parent="." index="30"]
+[node name="plateform" type="StaticBody" parent="." index="31"]
 
 editor/display_folded = true
 transform = Transform( -0.169659, 0, -7.76851, 0, 6.86313, 0, 9.7116, 0, -0.172365, -608.993, 100.488, -33.3144 )
@@ -62039,7 +62045,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="plateform" index="0" instance=ExtResource( 43 )]
+[node name="Scene Root" parent="plateform" index="0" instance=ExtResource( 44 )]
 
 transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -62062,7 +62068,7 @@ transform = Transform( 0.0806673, 0, -0.268085, 0, 0.675171, 0, 0.29653, 0, 0.07
 shape = SubResource( 53 )
 disabled = false
 
-[node name="ladderPlay" type="StaticBody" parent="." index="31"]
+[node name="ladderPlay" type="StaticBody" parent="." index="32"]
 
 editor/display_folded = true
 transform = Transform( 5.94087, -0.0118931, 0.849929, 0.0171696, 3.97952, 0.00435508, -1.52004, -0.00153168, 4.71562, -638.424, 105.865, -24.7397 )
@@ -62074,10 +62080,10 @@ friction = 1.0
 bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
-script = ExtResource( 44 )
+script = ExtResource( 45 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="ladder" parent="ladderPlay" index="0" instance=ExtResource( 42 )]
+[node name="ladder" parent="ladderPlay" index="0" instance=ExtResource( 43 )]
 
 transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -62095,7 +62101,7 @@ wait_time = 0.25
 one_shot = false
 autostart = false
 
-[node name="plateform3" type="StaticBody" parent="." index="32"]
+[node name="plateform3" type="StaticBody" parent="." index="33"]
 
 editor/display_folded = true
 transform = Transform( -0.118816, 0, -5.44045, 0, 6.86313, 0, 5.51187, 0, -0.0978266, -649.543, 76.3693, -50.7971 )
@@ -62108,7 +62114,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="plateform3" index="0" instance=ExtResource( 43 )]
+[node name="Scene Root" parent="plateform3" index="0" instance=ExtResource( 44 )]
 
 transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -62131,7 +62137,7 @@ transform = Transform( 0.0806673, 0, -0.268085, 0, 0.675171, 0, 0.29653, 0, 0.07
 shape = SubResource( 53 )
 disabled = false
 
-[node name="ladderPlay3" type="StaticBody" parent="." index="33"]
+[node name="ladderPlay3" type="StaticBody" parent="." index="34"]
 
 editor/display_folded = true
 transform = Transform( 5.94501, 0, 0.837085, 0, 4.83327, 0, -1.50384, 0, 4.71792, -654.487, 81.4575, -40.2843 )
@@ -62143,10 +62149,10 @@ friction = 1.0
 bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
-script = ExtResource( 44 )
+script = ExtResource( 45 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="ladder" parent="ladderPlay3" index="0" instance=ExtResource( 42 )]
+[node name="ladder" parent="ladderPlay3" index="0" instance=ExtResource( 43 )]
 
 transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -62164,7 +62170,7 @@ wait_time = 0.25
 one_shot = false
 autostart = false
 
-[node name="ladderPlay7" type="StaticBody" parent="." index="34"]
+[node name="ladderPlay7" type="StaticBody" parent="." index="35"]
 
 editor/display_folded = true
 transform = Transform( 5.94501, 0, 0.837085, 0, 4.83327, 0, -1.50384, 0, 4.71792, -519.888, 79.6925, 92.9468 )
@@ -62176,10 +62182,10 @@ friction = 1.0
 bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
-script = ExtResource( 44 )
+script = ExtResource( 45 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="ladder" parent="ladderPlay7" index="0" instance=ExtResource( 42 )]
+[node name="ladder" parent="ladderPlay7" index="0" instance=ExtResource( 43 )]
 
 transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -62197,7 +62203,7 @@ wait_time = 0.25
 one_shot = false
 autostart = false
 
-[node name="plateform4" type="StaticBody" parent="." index="35"]
+[node name="plateform4" type="StaticBody" parent="." index="36"]
 
 editor/display_folded = true
 transform = Transform( -0.118816, 0, -5.44045, 0, 6.86313, 0, 5.51187, 0, -0.0978266, -477.505, 119.768, 113.988 )
@@ -62210,7 +62216,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="plateform4" index="0" instance=ExtResource( 43 )]
+[node name="Scene Root" parent="plateform4" index="0" instance=ExtResource( 44 )]
 
 transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -62233,7 +62239,7 @@ transform = Transform( 0.0806673, 0, -0.268085, 0, 0.675171, 0, 0.29653, 0, 0.07
 shape = SubResource( 53 )
 disabled = false
 
-[node name="ladderPlay4" type="StaticBody" parent="." index="36"]
+[node name="ladderPlay4" type="StaticBody" parent="." index="37"]
 
 editor/display_folded = true
 transform = Transform( -4.69215, 0, 3.34136, 0, 4.21244, 0, -3.94822, 0, -3.43436, -660.324, 60.947, -54.8676 )
@@ -62245,10 +62251,10 @@ friction = 1.0
 bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
-script = ExtResource( 44 )
+script = ExtResource( 45 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="ladder" parent="ladderPlay4" index="0" instance=ExtResource( 42 )]
+[node name="ladder" parent="ladderPlay4" index="0" instance=ExtResource( 43 )]
 
 transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -62266,7 +62272,7 @@ wait_time = 0.25
 one_shot = false
 autostart = false
 
-[node name="plateform6" type="StaticBody" parent="." index="37"]
+[node name="plateform6" type="StaticBody" parent="." index="38"]
 
 editor/display_folded = true
 transform = Transform( -0.169659, 0, -7.76851, 0, 6.86313, 0, 9.7116, 0, -0.172365, -474.394, 98.723, 99.9167 )
@@ -62279,7 +62285,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="plateform6" index="0" instance=ExtResource( 43 )]
+[node name="Scene Root" parent="plateform6" index="0" instance=ExtResource( 44 )]
 
 transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -62302,7 +62308,7 @@ transform = Transform( 0.0806673, 0, -0.268085, 0, 0.675171, 0, 0.29653, 0, 0.07
 shape = SubResource( 53 )
 disabled = false
 
-[node name="ladderPlay6" type="StaticBody" parent="." index="38"]
+[node name="ladderPlay6" type="StaticBody" parent="." index="39"]
 
 editor/display_folded = true
 transform = Transform( -4.69215, 0, 3.34136, 0, 4.21244, 0, -3.94822, 0, -3.43436, -525.724, 59.182, 78.3635 )
@@ -62314,10 +62320,10 @@ friction = 1.0
 bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
-script = ExtResource( 44 )
+script = ExtResource( 45 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="ladder" parent="ladderPlay6" index="0" instance=ExtResource( 42 )]
+[node name="ladder" parent="ladderPlay6" index="0" instance=ExtResource( 43 )]
 
 transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -62335,7 +62341,7 @@ wait_time = 0.25
 one_shot = false
 autostart = false
 
-[node name="ladderPlay5" type="StaticBody" parent="." index="39"]
+[node name="ladderPlay5" type="StaticBody" parent="." index="40"]
 
 editor/display_folded = true
 transform = Transform( 5.94087, -0.0118931, 0.849929, 0.0171696, 3.97952, 0.00435508, -1.52004, -0.00153168, 4.71562, -503.825, 104.1, 108.491 )
@@ -62347,10 +62353,10 @@ friction = 1.0
 bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
-script = ExtResource( 44 )
+script = ExtResource( 45 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="ladder" parent="ladderPlay5" index="0" instance=ExtResource( 42 )]
+[node name="ladder" parent="ladderPlay5" index="0" instance=ExtResource( 43 )]
 
 transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -62368,7 +62374,7 @@ wait_time = 0.25
 one_shot = false
 autostart = false
 
-[node name="plateform5" type="StaticBody" parent="." index="40"]
+[node name="plateform5" type="StaticBody" parent="." index="41"]
 
 editor/display_folded = true
 transform = Transform( -0.118816, 0, -5.44045, 0, 6.86313, 0, 5.51187, 0, -0.0978266, -514.944, 74.6043, 82.434 )
@@ -62381,7 +62387,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="plateform5" index="0" instance=ExtResource( 43 )]
+[node name="Scene Root" parent="plateform5" index="0" instance=ExtResource( 44 )]
 
 transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -62404,7 +62410,7 @@ transform = Transform( 0.0806673, 0, -0.268085, 0, 0.675171, 0, 0.29653, 0, 0.07
 shape = SubResource( 53 )
 disabled = false
 
-[node name="plateform7" type="StaticBody" parent="." index="41"]
+[node name="plateform7" type="StaticBody" parent="." index="42"]
 
 editor/display_folded = true
 transform = Transform( 5.50761, 0, 0.263204, 0, 6.86313, 0, -0.246997, 0, 5.43496, -556.263, 14.5303, 24.2712 )
@@ -62417,7 +62423,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="plateform7" index="0" instance=ExtResource( 43 )]
+[node name="Scene Root" parent="plateform7" index="0" instance=ExtResource( 44 )]
 
 transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -62440,7 +62446,7 @@ transform = Transform( 0.0806673, 0, -0.268085, 0, 0.675171, 0, 0.29653, 0, 0.07
 shape = SubResource( 53 )
 disabled = false
 
-[node name="plateform8" type="StaticBody" parent="." index="42"]
+[node name="plateform8" type="StaticBody" parent="." index="43"]
 
 editor/display_folded = true
 transform = Transform( 5.51244, 0, -0.0679967, 0, 6.86313, 0, 0.088594, 0, 5.4409, -532.799, 37.7216, -0.0140949 )
@@ -62453,7 +62459,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="plateform8" index="0" instance=ExtResource( 43 )]
+[node name="Scene Root" parent="plateform8" index="0" instance=ExtResource( 44 )]
 
 transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -62476,7 +62482,7 @@ transform = Transform( 0.0806673, 0, -0.268085, 0, 0.675171, 0, 0.29653, 0, 0.07
 shape = SubResource( 53 )
 disabled = false
 
-[node name="ladderPlay8" type="StaticBody" parent="." index="43"]
+[node name="ladderPlay8" type="StaticBody" parent="." index="44"]
 
 editor/display_folded = true
 transform = Transform( -3.62834, 0, -3.6484, 0, 4.21244, 0, 4.94367, 0, -3.10623, -559.61, -0.892029, 35.2974 )
@@ -62488,10 +62494,10 @@ friction = 1.0
 bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
-script = ExtResource( 44 )
+script = ExtResource( 45 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="ladder" parent="ladderPlay8" index="0" instance=ExtResource( 42 )]
+[node name="ladder" parent="ladderPlay8" index="0" instance=ExtResource( 43 )]
 
 transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -62509,7 +62515,7 @@ wait_time = 0.25
 one_shot = false
 autostart = false
 
-[node name="ladderPlay9" type="StaticBody" parent="." index="44"]
+[node name="ladderPlay9" type="StaticBody" parent="." index="45"]
 
 editor/display_folded = true
 transform = Transform( 1.53517, 0, -4.71344, 0, 4.21244, 0, 5.937, 0, 0.861952, -538.269, 19.868, 28.7615 )
@@ -62521,10 +62527,10 @@ friction = 1.0
 bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
-script = ExtResource( 44 )
+script = ExtResource( 45 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="ladder" parent="ladderPlay9" index="0" instance=ExtResource( 42 )]
+[node name="ladder" parent="ladderPlay9" index="0" instance=ExtResource( 43 )]
 
 transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -62542,7 +62548,7 @@ wait_time = 0.25
 one_shot = false
 autostart = false
 
-[node name="ladderPlay10" type="StaticBody" parent="." index="45"]
+[node name="ladderPlay10" type="StaticBody" parent="." index="46"]
 
 editor/display_folded = true
 transform = Transform( -4.08157, 0, -3.33681, 0, 3.66688, 0, 4.57662, 0, -3.43878, -503.885, 43.2486, 7.58006 )
@@ -62554,10 +62560,10 @@ friction = 1.0
 bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
-script = ExtResource( 44 )
+script = ExtResource( 45 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="ladder" parent="ladderPlay10" index="0" instance=ExtResource( 42 )]
+[node name="ladder" parent="ladderPlay10" index="0" instance=ExtResource( 43 )]
 
 transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
@@ -62575,7 +62581,7 @@ wait_time = 0.25
 one_shot = false
 autostart = false
 
-[node name="Herse" type="KinematicBody" parent="." index="46"]
+[node name="Herse" type="KinematicBody" parent="." index="47"]
 
 editor/display_folded = true
 transform = Transform( 1.19172, 0, 0.753323, 0, 1.64735, 0, -1.36509, 0, 0.657651, -106.164, -1.51386, -133.614 )
@@ -62590,7 +62596,7 @@ axis_lock_angular_x = false
 axis_lock_angular_y = false
 axis_lock_angular_z = false
 collision/safe_margin = 0.001
-script = ExtResource( 45 )
+script = ExtResource( 46 )
 _sections_unfolded = [ "Collision" ]
 
 [node name="CollisionShape" type="CollisionShape" parent="Herse" index="0"]
@@ -62599,23 +62605,23 @@ transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, -20.8099, 8.51087, 
 shape = SubResource( 55 )
 disabled = false
 
-[node name="herse" parent="Herse" index="1" instance=ExtResource( 46 )]
+[node name="herse" parent="Herse" index="1" instance=ExtResource( 47 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, -16.1208, 0, 0.0397186 )
 
-[node name="herse2" parent="Herse" index="2" instance=ExtResource( 46 )]
+[node name="herse2" parent="Herse" index="2" instance=ExtResource( 47 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.4459, 0, 0 )
 
-[node name="herse3" parent="Herse" index="3" instance=ExtResource( 46 )]
+[node name="herse3" parent="Herse" index="3" instance=ExtResource( 47 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, -25.4122, 7.00914, 0.0325165 )
 
-[node name="herse4" parent="Herse" index="4" instance=ExtResource( 46 )]
+[node name="herse4" parent="Herse" index="4" instance=ExtResource( 47 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, -16.0815, 7.00955, -0.0379181 )
 
-[node name="HerseEnd" type="KinematicBody" parent="." index="47"]
+[node name="HerseEnd" type="KinematicBody" parent="." index="48"]
 
 editor/display_folded = true
 transform = Transform( -1.38419, 0, 0.64538, 0, 1.64735, 0, -1.16949, 0, -0.763862, -190.343, -2.70355, -380.53 )
@@ -62630,7 +62636,7 @@ axis_lock_angular_x = false
 axis_lock_angular_y = false
 axis_lock_angular_z = false
 collision/safe_margin = 0.001
-script = ExtResource( 45 )
+script = ExtResource( 46 )
 _sections_unfolded = [ "Collision", "Transform" ]
 
 [node name="CollisionShape" type="CollisionShape" parent="HerseEnd" index="0"]
@@ -62640,27 +62646,27 @@ shape = SubResource( 55 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="herse" parent="HerseEnd" index="1" instance=ExtResource( 46 )]
+[node name="herse" parent="HerseEnd" index="1" instance=ExtResource( 47 )]
 
 transform = Transform( 1, 0, 0, 0, 0.999996, 0, -1.66893e-06, 0, 1, 4.73922, 0, -0.0174408 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="herse2" parent="HerseEnd" index="2" instance=ExtResource( 46 )]
+[node name="herse2" parent="HerseEnd" index="2" instance=ExtResource( 47 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0, 0 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="herse3" parent="HerseEnd" index="3" instance=ExtResource( 46 )]
+[node name="herse3" parent="HerseEnd" index="3" instance=ExtResource( 47 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, 4.73922, 7.00914, 0.032517 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="herse4" parent="HerseEnd" index="4" instance=ExtResource( 46 )]
+[node name="herse4" parent="HerseEnd" index="4" instance=ExtResource( 47 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, -4.5, 7.00955, -0.037918 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Door" type="StaticBody" parent="." index="48"]
+[node name="Door" type="StaticBody" parent="." index="49"]
 
 editor/display_folded = true
 transform = Transform( 1.43051e-06, 0, 2.82484, 0, 1.886, 0, -2.82484, 0, 1.43051e-06, 2.62166, -0.128666, -17.6562 )
@@ -62672,7 +62678,7 @@ friction = 1.0
 bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
-script = ExtResource( 47 )
+script = ExtResource( 48 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape" type="CollisionShape" parent="Door" index="0"]
@@ -62681,7 +62687,7 @@ transform = Transform( 1, 0, 5.68434e-14, 0, 1, 0, -5.68434e-14, 0, 1, 0.0386489
 shape = SubResource( 56 )
 disabled = false
 
-[node name="DoorModele" parent="Door" index="1" instance=ExtResource( 48 )]
+[node name="DoorModele" parent="Door" index="1" instance=ExtResource( 49 )]
 
 transform = Transform( 1, 0, 9.67122e-07, 0, 0.947226, 0, -9.66788e-07, 0, 1.00034, -0.105144, 0.136246, 0.0408831 )
 _sections_unfolded = [ "Transform" ]
@@ -62693,13 +62699,12 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/default = ExtResource( 49 )
+anims/default = ExtResource( 50 )
 blend_times = [  ]
 
-[node name="Forêt" type="Spatial" parent="." index="49"]
+[node name="Forêt" type="Spatial" parent="." index="50"]
 
-editor/display_folded = true
-transform = Transform( 1, 0, 0, 0, 0.791013, 0, 0, 0, 1, -1.65656, -0.0097279, 107.437 )
+transform = Transform( 0.999993, -0.00202276, -0.00278259, 0.00256096, 0.79101, 0.00135304, 0.00277911, -0.00107592, 0.999995, -1.65656, -0.0097279, 107.437 )
 
 [node name="arbre2" type="StaticBody" parent="Forêt" index="0"]
 
@@ -62715,7 +62720,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre2" index="0" instance=ExtResource( 50 )]
+[node name="arbreModele" parent="Forêt/arbre2" index="0" instance=ExtResource( 51 )]
 
 [node name="animArbre" type="AnimationPlayer" parent="Forêt/arbre2/arbreModele" index="2"]
 
@@ -62725,7 +62730,7 @@ playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
 anims/windAction = SubResource( 57 )
-anims/windAction_002 = ExtResource( 51 )
+anims/windAction_002 = ExtResource( 52 )
 blend_times = [  ]
 
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre2" index="1"]
@@ -62748,7 +62753,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre13" index="0" instance=ExtResource( 50 )]
+[node name="arbreModele" parent="Forêt/arbre13" index="0" instance=ExtResource( 51 )]
 
 [node name="animArbre" type="AnimationPlayer" parent="Forêt/arbre13/arbreModele" index="2"]
 
@@ -62771,7 +62776,6 @@ disabled = false
 
 editor/display_folded = true
 transform = Transform( -2.50463, 0, -1.35939, 0, 4.76088, 0, 1.63758, 0, -2.07915, -71.8162, -9.20562, -191.329 )
-visible = false
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -62781,7 +62785,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre8" index="0" instance=ExtResource( 50 )]
+[node name="arbreModele" parent="Forêt/arbre8" index="0" instance=ExtResource( 51 )]
 
 [node name="animArbre" type="AnimationPlayer" parent="Forêt/arbre8/arbreModele" index="2"]
 
@@ -62814,7 +62818,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre16" index="0" instance=ExtResource( 50 )]
+[node name="arbreModele" parent="Forêt/arbre16" index="0" instance=ExtResource( 51 )]
 
 [node name="animArbre" type="AnimationPlayer" parent="Forêt/arbre16/arbreModele" index="2"]
 
@@ -62837,7 +62841,6 @@ disabled = false
 
 editor/display_folded = true
 transform = Transform( -0.715958, 0, -2.41197, 0, 4.76088, 0, 2.90555, 0, -0.594333, -84.8002, -9.20562, -121.97 )
-visible = false
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -62847,7 +62850,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre4" index="0" instance=ExtResource( 50 )]
+[node name="arbreModele" parent="Forêt/arbre4" index="0" instance=ExtResource( 51 )]
 
 [node name="animArbre" type="AnimationPlayer" parent="Forêt/arbre4/arbreModele" index="2"]
 
@@ -62880,7 +62883,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre11" index="0" instance=ExtResource( 50 )]
+[node name="arbreModele" parent="Forêt/arbre11" index="0" instance=ExtResource( 51 )]
 
 [node name="animArbre" type="AnimationPlayer" parent="Forêt/arbre11/arbreModele" index="2"]
 
@@ -62903,7 +62906,6 @@ disabled = false
 
 editor/display_folded = true
 transform = Transform( -0.990778, 0, 2.34401, 0, 4.76088, 0, -2.82369, 0, -0.822467, 45.7745, -9.20562, -150.525 )
-visible = false
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -62913,7 +62915,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre6" index="0" instance=ExtResource( 50 )]
+[node name="arbreModele" parent="Forêt/arbre6" index="0" instance=ExtResource( 51 )]
 
 [node name="animArbre" type="AnimationPlayer" parent="Forêt/arbre6/arbreModele" index="2"]
 
@@ -62936,7 +62938,6 @@ disabled = false
 
 editor/display_folded = true
 transform = Transform( -2.84106, 0, 0.780158, 0, 4.76088, 0, -0.939811, 0, -2.35842, -4.01604, -9.20562, -180.109 )
-visible = false
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -62946,7 +62947,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre14" index="0" instance=ExtResource( 50 )]
+[node name="arbreModele" parent="Forêt/arbre14" index="0" instance=ExtResource( 51 )]
 
 [node name="animArbre" type="AnimationPlayer" parent="Forêt/arbre14/arbreModele" index="2"]
 
@@ -62979,7 +62980,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre1" index="0" instance=ExtResource( 52 )]
+[node name="arbreModele" parent="Forêt/arbre1" index="0" instance=ExtResource( 53 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0356712, 0.0189627, -0.11512 )
 
@@ -63002,7 +63003,6 @@ disabled = false
 
 editor/display_folded = true
 transform = Transform( 9.08003, 0, 0, 0, 10.9426, 0, 0, 0, 11.4222, 64.6342, -0.67372, -51.4204 )
-visible = false
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -63012,7 +63012,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre17" index="0" instance=ExtResource( 52 )]
+[node name="arbreModele" parent="Forêt/arbre17" index="0" instance=ExtResource( 53 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0356712, 0.0189627, -0.11512 )
 
@@ -63045,7 +63045,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre12" index="0" instance=ExtResource( 52 )]
+[node name="arbreModele" parent="Forêt/arbre12" index="0" instance=ExtResource( 53 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0356712, 0.0189627, -0.11512 )
 
@@ -63078,7 +63078,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre7" index="0" instance=ExtResource( 52 )]
+[node name="arbreModele" parent="Forêt/arbre7" index="0" instance=ExtResource( 53 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0356712, 0.0189627, -0.11512 )
 
@@ -63111,7 +63111,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre10" index="0" instance=ExtResource( 52 )]
+[node name="arbreModele" parent="Forêt/arbre10" index="0" instance=ExtResource( 53 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0356712, 0.0189627, -0.11512 )
 
@@ -63134,7 +63134,6 @@ disabled = false
 
 editor/display_folded = true
 transform = Transform( -1.18139, 0, -5.85934, 0, 6.40234, 0, 4.79441, 0, -1.4438, 92.4518, -0.67372, -101.878 )
-visible = false
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -63144,7 +63143,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre3" index="0" instance=ExtResource( 52 )]
+[node name="arbreModele" parent="Forêt/arbre3" index="0" instance=ExtResource( 53 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0356712, 0.0189627, -0.11512 )
 
@@ -63167,7 +63166,6 @@ disabled = false
 
 editor/display_folded = true
 transform = Transform( 3.07511, 0, -4.72152, 0, 6.40234, 0, 3.86338, 0, 3.75815, 63.0118, -0.67372, -187.363 )
-visible = false
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -63177,7 +63175,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre9" index="0" instance=ExtResource( 52 )]
+[node name="arbreModele" parent="Forêt/arbre9" index="0" instance=ExtResource( 53 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0356712, 0.0189627, -0.11512 )
 
@@ -63210,7 +63208,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre5" index="0" instance=ExtResource( 52 )]
+[node name="arbreModele" parent="Forêt/arbre5" index="0" instance=ExtResource( 53 )]
 
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.9422, 0.0189627, 8.04739 )
@@ -63234,7 +63232,6 @@ disabled = false
 
 editor/display_folded = true
 transform = Transform( -4.68798, 0, 1.89522, 0, 6.40234, 0, -1.55077, 0, -5.72927, -37.8354, -0.67372, -4.95699 )
-visible = false
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -63244,7 +63241,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre15" index="0" instance=ExtResource( 52 )]
+[node name="arbreModele" parent="Forêt/arbre15" index="0" instance=ExtResource( 53 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0356712, 0.0189627, -0.11512 )
 
@@ -63263,17 +63260,59 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.6694, 0 )
 shape = SubResource( 73 )
 disabled = false
 
-[node name="Cold" type="Sprite" parent="." index="50"]
+[node name="Cold" type="Sprite" parent="." index="51"]
 
+editor/display_folded = true
 position = Vector2( 520.255, 1083.21 )
-texture = ExtResource( 53 )
-script = ExtResource( 54 )
+texture = ExtResource( 54 )
+script = ExtResource( 55 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Timer" type="Timer" parent="Cold" index="0"]
 
 process_mode = 1
 wait_time = 6.0
+one_shot = false
+autostart = false
+
+[node name="stubDoor" parent="." index="52" instance=ExtResource( 4 )]
+
+transform = Transform( -7.02749, 0, 4.9304, 0, 0.577, 0, -7.42887, 0, -6.21464, -650.828, 9.59047, 125.083 )
+
+[node name="stubDoor2" parent="." index="53" instance=ExtResource( 4 )]
+
+transform = Transform( -6.43221, 0.423859, -0.0943624, -0.398196, 0.0181035, -7.33069, -6.98975, -0.391081, -0.441615, -638.633, 5.53021, 112.245 )
+
+[node name="ladderPlay11" type="StaticBody" parent="." index="54"]
+
+editor/display_folded = true
+transform = Transform( -2.11528, 0, 1.70543, 0, 2.21541, 0, -2.36489, 0, -1.78217, -653.788, 0.386656, 124.913 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+script = ExtResource( 45 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="ladder" parent="ladderPlay11" index="0" instance=ExtResource( 43 )]
+
+transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="ladderPlay11" index="1"]
+
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0.0160542, 2.66688, 0 )
+shape = SubResource( 54 )
+disabled = false
+
+[node name="Cooldown" type="Timer" parent="ladderPlay11" index="2"]
+
+process_mode = 1
+wait_time = 0.25
 one_shot = false
 autostart = false
 
@@ -63300,5 +63339,7 @@ autostart = false
 [connection signal="timeout" from="ladderPlay10/Cooldown" to="ladderPlay10" method="_on_Cooldown_timeout"]
 
 [connection signal="timeout" from="Cold/Timer" to="Cold" method="_on_Timer_timeout"]
+
+[connection signal="timeout" from="ladderPlay11/Cooldown" to="ladderPlay11" method="_on_Cooldown_timeout"]
 
 

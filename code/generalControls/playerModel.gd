@@ -149,4 +149,8 @@ func checkLadder():
 		if (get_translation().z < get_node("../ladderPlay10").get_translation().z+5 and get_translation().z > get_node("../ladderPlay10").get_translation().z-5):
 			if (get_translation().y < get_node("../ladderPlay10").get_translation().y+20):
 				return true
+	if(get_translation().x < get_node("../ladderPlay11").get_translation().x+5 and get_translation().x > get_node("../ladderPlay11").get_translation().x-5):
+		if (get_translation().z < get_node("../ladderPlay11").get_translation().z+5 and get_translation().z > get_node("../ladderPlay11").get_translation().z-5):
+			if (get_translation().y < get_node("../ladderPlay11").get_translation().y+10):
+				return true
 	return false
