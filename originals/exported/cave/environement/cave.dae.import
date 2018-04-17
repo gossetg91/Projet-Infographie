@@ -7,10 +7,10 @@ path="res://.import/cave.dae-fef0cf7d187f39d965a967980b7e6ee3.scn"
 [deps]
 
 source_file="res://originals/exported/cave/environement/cave.dae"
-source_md5="0607ec5294527aa1bc89b3a3f10b07ea"
+source_md5="4814d5bbdc98e1ede2eaf984e343463a"
 
 dest_files=[ "res://.import/cave.dae-fef0cf7d187f39d965a967980b7e6ee3.scn" ]
-dest_md5="07420938c49b3894f6f6c15141f98d3f"
+dest_md5="256947110bde2b5bbf8ae8696c5d6f54"
 
 [params]
 
