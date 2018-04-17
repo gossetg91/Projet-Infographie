@@ -2,25 +2,26 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TexturesCom_2.5x2.5_A_CaveRock_512_normal.png-77cd2d64ff6e34117f9184639359c9a7.stex"
+path.s3tc="res://.import/TexturesCom_2.5x2.5_A_CaveRock_512_normal.png-77cd2d64ff6e34117f9184639359c9a7.s3tc.stex"
+path.etc2="res://.import/TexturesCom_2.5x2.5_A_CaveRock_512_normal.png-77cd2d64ff6e34117f9184639359c9a7.etc2.stex"
 
 [deps]
 
 source_file="res://normalMaps/TexturesCom_2.5x2.5_A_CaveRock_512_normal.png"
 source_md5="58f909f86414829492ff675986031cb6"
 
-dest_files=[ "res://.import/TexturesCom_2.5x2.5_A_CaveRock_512_normal.png-77cd2d64ff6e34117f9184639359c9a7.stex" ]
-dest_md5="c9e5c011e5dbfd7a3cd4dabad260cb57"
+dest_files=[ "res://.import/TexturesCom_2.5x2.5_A_CaveRock_512_normal.png-77cd2d64ff6e34117f9184639359c9a7.s3tc.stex", "res://.import/TexturesCom_2.5x2.5_A_CaveRock_512_normal.png-77cd2d64ff6e34117f9184639359c9a7.etc2.stex" ]
+dest_md5="114d36946be910f09824bc44eec50335"
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
-compress/normal_map=0
-flags/repeat=0
+compress/normal_map=1
+flags/repeat=true
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
 flags/srgb=2
 process/fix_alpha_border=true
@@ -28,5 +29,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
