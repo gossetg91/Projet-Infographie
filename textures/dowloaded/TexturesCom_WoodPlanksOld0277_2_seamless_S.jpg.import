@@ -2,31 +2,32 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TexturesCom_WoodPlanksOld0277_2_seamless_S.jpg-ecba9cc77163cf53178b505839b7a41d.stex"
+path.s3tc="res://.import/TexturesCom_WoodPlanksOld0277_2_seamless_S.jpg-ecba9cc77163cf53178b505839b7a41d.s3tc.stex"
+path.etc2="res://.import/TexturesCom_WoodPlanksOld0277_2_seamless_S.jpg-ecba9cc77163cf53178b505839b7a41d.etc2.stex"
 
 [deps]
 
 source_file="res://textures/dowloaded/TexturesCom_WoodPlanksOld0277_2_seamless_S.jpg"
 source_md5="4280ba287a5da5a7e795ef6e4afec9f9"
 
-dest_files=[ "res://.import/TexturesCom_WoodPlanksOld0277_2_seamless_S.jpg-ecba9cc77163cf53178b505839b7a41d.stex" ]
-dest_md5="3a2c11eec9e0489e6973d7b199c27dcd"
+dest_files=[ "res://.import/TexturesCom_WoodPlanksOld0277_2_seamless_S.jpg-ecba9cc77163cf53178b505839b7a41d.s3tc.stex", "res://.import/TexturesCom_WoodPlanksOld0277_2_seamless_S.jpg-ecba9cc77163cf53178b505839b7a41d.etc2.stex" ]
+dest_md5="24d9dfcb169d4482ebb89ceac1106e4b"
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
-flags/repeat=0
+flags/repeat=true
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
-flags/srgb=2
+flags/srgb=1
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

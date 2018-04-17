@@ -2,15 +2,15 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/maisonblend.dae-1fef8501c4cb11272fe54bb06f1c83f1.scn"
+path="res://.import/swinging_plank.dae-f8cb35c8f924665fb6539aec304fce0f.scn"
 
 [deps]
 
-source_file="res://originals/exported/house/maison/maisonblend.dae"
-source_md5="d8291395003f78b49dfca05fba28449c"
+source_file="res://originals/exported/mountain/swinging_plank.dae"
+source_md5="772e7cc97e2f95473190d96efc5a05da"
 
-dest_files=[ "res://.import/maisonblend.dae-1fef8501c4cb11272fe54bb06f1c83f1.scn" ]
-dest_md5="8d7cce9c1c12177bf598a8625bd16a1c"
+dest_files=[ "res://.import/swinging_plank.dae-f8cb35c8f924665fb6539aec304fce0f.scn" ]
+dest_md5="7e8c2c6661e5283c4d53b4ae2caafbfd"
 
 [params]
 
@@ -19,9 +19,9 @@ nodes/root_name="Scene Root"
 nodes/root_scale=1.0
 nodes/custom_script=""
 nodes/storage=0
-materials/location=1
-materials/storage=1
-materials/keep_on_reimport=true
+materials/location=0
+materials/storage=0
+materials/keep_on_reimport=false
 meshes/compress=true
 meshes/ensure_tangents=true
 meshes/storage=0
@@ -31,8 +31,8 @@ external_files/store_in_subdir=false
 animation/import=true
 animation/fps=15
 animation/filter_script=""
-animation/storage=false
-animation/keep_custom_tracks=false
+animation/storage=true
+animation/keep_custom_tracks=true
 animation/optimizer/enabled=true
 animation/optimizer/max_linear_error=0.05
 animation/optimizer/max_angular_error=0.01

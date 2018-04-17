@@ -2,31 +2,32 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/toitInterneMaison.png-86a9ccd73c6c95300aedbb82c695ed88.stex"
+path.s3tc="res://.import/toitInterneMaison.png-86a9ccd73c6c95300aedbb82c695ed88.s3tc.stex"
+path.etc2="res://.import/toitInterneMaison.png-86a9ccd73c6c95300aedbb82c695ed88.etc2.stex"
 
 [deps]
 
 source_file="res://textures/completed/toitInterneMaison.png"
 source_md5="e4a5051dd105641830afae3edb626acb"
 
-dest_files=[ "res://.import/toitInterneMaison.png-86a9ccd73c6c95300aedbb82c695ed88.stex" ]
-dest_md5="9bbb76250212345f995beaeafdb4e904"
+dest_files=[ "res://.import/toitInterneMaison.png-86a9ccd73c6c95300aedbb82c695ed88.s3tc.stex", "res://.import/toitInterneMaison.png-86a9ccd73c6c95300aedbb82c695ed88.etc2.stex" ]
+dest_md5="3ba274f60c4c81786ecf2b1bbb08e094"
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
-flags/repeat=0
+flags/repeat=true
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
-flags/srgb=2
+flags/srgb=1
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
