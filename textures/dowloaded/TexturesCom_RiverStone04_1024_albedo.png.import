@@ -11,7 +11,7 @@ source_file="res://textures/dowloaded/TexturesCom_RiverStone04_1024_albedo.png"
 source_md5="64aaa4b723afff89c0495cdaf8b4a40a"
 
 dest_files=[ "res://.import/TexturesCom_RiverStone04_1024_albedo.png-ef0adabad83144ad759f52d93f945b63.s3tc.stex", "res://.import/TexturesCom_RiverStone04_1024_albedo.png-ef0adabad83144ad759f52d93f945b63.etc2.stex" ]
-dest_md5="d88258085c781c6a249c78e0b5ec565a"
+dest_md5="4231efd351f5c71ad7a45a0c8e5a7621"
 
 [params]
 
