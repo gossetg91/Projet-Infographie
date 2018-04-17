@@ -7,10 +7,10 @@ path="res://.import/tokenHouse.dae-9eebadb119d0c5c2b5e82c656419a918.scn"
 [deps]
 
 source_file="res://originals/exported/mountain/bunker/tokenHouse.dae"
-source_md5="889bf2135e4e597d3f3be6391728fbdd"
+source_md5="962cd8b5e4efc7227aad0c262c99b86e"
 
 dest_files=[ "res://.import/tokenHouse.dae-9eebadb119d0c5c2b5e82c656419a918.scn" ]
-dest_md5="54bc9cea4b27fc3709c7ab24d2648005"
+dest_md5="3eef546ed97aa3b948ea6f810856ed0e"
 
 [params]
 
