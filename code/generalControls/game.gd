@@ -14,6 +14,8 @@ var coatTaken = false
 var ladderTaken = false
 var ladderBlocs = []
 
+var leverPressed = false
+
 var tokenSetLst = []
 var tokenCount = 0
 var tokenSet = 0
@@ -79,10 +81,15 @@ func _process(delta):
 				checkSet3();
 
 		elif(get_node("player").get_colliding_bodies()[i].get_name() == "EnvironementHub"):
-			if !tokenTaken[1]:
-				checktoken2()
 			if !tokenTaken[2]:
 				checktoken3()
+				
+		elif(get_node("player").get_colliding_bodies()[i].get_name() == "mountainLevel"):
+			if !tokenTaken[1]:
+				checktoken2()
+			
+			if !leverPressed:
+				checkLever()
 	cEnableTorch()
 
 	if tokenSet == 3:
@@ -178,8 +185,14 @@ func checkkey():
 func openDoor():
 	if(get_node("player").get_translation().x < get_node("Door").get_translation().x+21 and get_node("player").get_translation().x > get_node("Door").get_translation().x-21):
 		if (get_node("player").get_translation().z < get_node("Door").get_translation().z+3 and get_node("player").get_translation().z > get_node("Door").get_translation().z-3):
-			print("test")
 			if(Input.is_key_pressed(KEY_E)):
+				get_node("Door").toggle()
+				
+func checkLever():
+	if(get_node("player").get_translation().x < get_node("lever").get_translation().x+10 and get_node("player").get_translation().x > get_node("lever").get_translation().x-10):
+		if (get_node("player").get_translation().z < get_node("lever").get_translation().z+10 and get_node("player").get_translation().z > get_node("lever").get_translation().z-10):
+			if(Input.is_key_pressed(KEY_E)):
+				get_node("lever").toggle()
 				get_node("Door").toggle()
 				
 func cOpenDoor1():
