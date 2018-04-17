@@ -2,31 +2,32 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/door_mountain.png-64985f173486a83397fe99acb543d50f.stex"
+path.s3tc="res://.import/door_mountain.png-64985f173486a83397fe99acb543d50f.s3tc.stex"
+path.etc2="res://.import/door_mountain.png-64985f173486a83397fe99acb543d50f.etc2.stex"
 
 [deps]
 
 source_file="res://textures/completed/door_mountain.png"
 source_md5="e4a747f3c52c59bf46cd7f50eca52fd2"
 
-dest_files=[ "res://.import/door_mountain.png-64985f173486a83397fe99acb543d50f.stex" ]
-dest_md5="c24578d5922d3bac9f3ff59c6d756f9d"
+dest_files=[ "res://.import/door_mountain.png-64985f173486a83397fe99acb543d50f.s3tc.stex", "res://.import/door_mountain.png-64985f173486a83397fe99acb543d50f.etc2.stex" ]
+dest_md5="1c4d0514e5b022494c70937a71459996"
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
-flags/repeat=0
+flags/repeat=true
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
-flags/srgb=2
+flags/srgb=1
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

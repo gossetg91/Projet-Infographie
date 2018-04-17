@@ -46,7 +46,6 @@
 [ext_resource path="res://originals/exported/forest/arbre/windAction_002.anim" type="Animation" id=44]
 [ext_resource path="res://originals/exported/forest/arbre/arbre.dae" type="PackedScene" id=45]
 
-
 [sub_resource type="CapsuleShape" id=1]
 
 radius = 0.672781
@@ -59939,8 +59938,9 @@ wait_time = 0.25
 one_shot = false
 autostart = false
 
-[node name="swingingPlank" type="Spatial" parent="." index="2" instance=ExtResource( 7 )]
+[node name="swingingPlank" parent="." index="2" instance=ExtResource( 7 )]
 
+editor/display_folded = true
 transform = Transform( 0.732195, 0, -0.681095, 0, 1, 0, 0.681095, 0, 0.732195, -597.418, 109.965, 75.8592 )
 script = ExtResource( 8 )
 
@@ -60363,7 +60363,7 @@ disabled = false
 [node name="bunker" type="StaticBody" parent="." index="7"]
 
 editor/display_folded = true
-transform = Transform( 1.55286, 0, -1.0585, 0, 1.72066, 0, 1.47047, 0, 1.1178, -660.862, 5.24265, 129.967 )
+transform = Transform( 2.71903, 0, -2.00421, 0, 2.37892, 0, 2.76779, 0, 1.90478, -653.257, 7.09212, 125.275 )
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -61377,7 +61377,7 @@ disabled = false
 [node name="token2" type="StaticBody" parent="." index="16"]
 
 editor/display_folded = true
-transform = Transform( 1, 0, 0, 0, 1, -2.98023e-08, 0, 0, 1, -646.542, -0.0296073, 118.746 )
+transform = Transform( 1, 0, 0, 0, 1, -2.98023e-08, 0, 0, 1, -646.542, 10.1253, 142.265 )
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1

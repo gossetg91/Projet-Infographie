@@ -7,10 +7,10 @@ path="res://.import/swinging_plank.dae-f8cb35c8f924665fb6539aec304fce0f.scn"
 [deps]
 
 source_file="res://originals/exported/mountain/swinging_plank.dae"
-source_md5="772e7cc97e2f95473190d96efc5a05da"
+source_md5="3621450e03a2dd2195e497d245161a71"
 
 dest_files=[ "res://.import/swinging_plank.dae-f8cb35c8f924665fb6539aec304fce0f.scn" ]
-dest_md5="7e8c2c6661e5283c4d53b4ae2caafbfd"
+dest_md5="f53a7edc17c6a713c76cec537ea738af"
 
 [params]
 

@@ -7,10 +7,10 @@ path="res://.import/door.dae-fde37a2cf152b2b577a8097a31310338.scn"
 [deps]
 
 source_file="res://originals/exported/mountain/door/door.dae"
-source_md5="7f8c82b46cdc783770769f00725c0397"
+source_md5="16b1abdeca7966981f2178c75e210cbe"
 
 dest_files=[ "res://.import/door.dae-fde37a2cf152b2b577a8097a31310338.scn" ]
-dest_md5="5c49460843e6410fd1112f42b8f7b8d7"
+dest_md5="e144a5a5d20663b0c30ae455ee93b66c"
 
 [params]
 
@@ -19,9 +19,9 @@ nodes/root_name="Scene Root"
 nodes/root_scale=1.0
 nodes/custom_script=""
 nodes/storage=0
-materials/location=1
-materials/storage=1
-materials/keep_on_reimport=true
+materials/location=0
+materials/storage=0
+materials/keep_on_reimport=false
 meshes/compress=true
 meshes/ensure_tangents=true
 meshes/storage=0
@@ -31,8 +31,8 @@ external_files/store_in_subdir=false
 animation/import=true
 animation/fps=15
 animation/filter_script=""
-animation/storage=false
-animation/keep_custom_tracks=false
+animation/storage=true
+animation/keep_custom_tracks=true
 animation/optimizer/enabled=true
 animation/optimizer/max_linear_error=0.05
 animation/optimizer/max_angular_error=0.01
