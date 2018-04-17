@@ -2,25 +2,26 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TexturesCom_RiverStone04_1024_normal.png-43f7d6f8f39b9cebb356929ac4518f65.stex"
+path.s3tc="res://.import/TexturesCom_RiverStone04_1024_normal.png-43f7d6f8f39b9cebb356929ac4518f65.s3tc.stex"
+path.etc2="res://.import/TexturesCom_RiverStone04_1024_normal.png-43f7d6f8f39b9cebb356929ac4518f65.etc2.stex"
 
 [deps]
 
 source_file="res://normalMaps/TexturesCom_RiverStone04_1024_normal.png"
 source_md5="a1d7422b67728d0a3513f9f03a88e33b"
 
-dest_files=[ "res://.import/TexturesCom_RiverStone04_1024_normal.png-43f7d6f8f39b9cebb356929ac4518f65.stex" ]
-dest_md5="a1885a362f8fe2772a1aa29ae1bda979"
+dest_files=[ "res://.import/TexturesCom_RiverStone04_1024_normal.png-43f7d6f8f39b9cebb356929ac4518f65.s3tc.stex", "res://.import/TexturesCom_RiverStone04_1024_normal.png-43f7d6f8f39b9cebb356929ac4518f65.etc2.stex" ]
+dest_md5="64857e2a7ab95f90567d30e5a0690707"
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
-compress/normal_map=0
-flags/repeat=0
+compress/normal_map=1
+flags/repeat=true
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
 flags/srgb=2
 process/fix_alpha_border=true
@@ -28,5 +29,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

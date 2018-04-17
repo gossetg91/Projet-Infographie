@@ -6,10 +6,10 @@
 [ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/torch.tscn" type="PackedScene" id=5]
 [ext_resource path="res://code/objectManager/torch.gd" type="Script" id=6]
-[ext_resource path="res://originals/exported/cave/cave.dae" type="PackedScene" id=7]
+[ext_resource path="res://originals/exported/cave/environement/cave.dae" type="PackedScene" id=7]
 [ext_resource path="res://originals/exported/mountain/bridge/bridge.dae" type="PackedScene" id=8]
 [ext_resource path="res://originals/exported/mountain/pylone/pylone.dae" type="PackedScene" id=9]
-[ext_resource path="res://originals/exported/mountain/environement/environement.dae" type="PackedScene" id=10]
+[ext_resource path="res://assets/mountain.tscn" type="PackedScene" id=10]
 [ext_resource path="res://assets/environement.tscn" type="PackedScene" id=11]
 [ext_resource path="res://originals/exported/hub/endzone/endgamePlace.dae" type="PackedScene" id=12]
 [ext_resource path="res://assets/wallNormalMap.tscn" type="PackedScene" id=13]
@@ -60052,7 +60052,6 @@ disabled = false
 
 [node name="mountainLevel" type="StaticBody" parent="." index="4"]
 
-editor/display_folded = true
 transform = Transform( 0.998713, 0, 0.0507202, 0, 1, 0, -0.0507202, 0, 0.998713, -565.22, -7.62939e-06, 26.4781 )
 input_ray_pickable = true
 input_capture_on_drag = false
@@ -60066,8 +60065,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="environement" parent="mountainLevel" index="0" instance=ExtResource( 10 )]
 
-transform = Transform( -0.1572, 0, -0.987567, 0, 1, 0, 0.987567, 0, -0.1572, 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
+transform = Transform( -0.152695, 0, -0.988273, 0, 1, 0, 0.988273, 0, -0.152695, 0.311523, 0.289768, 0.667908 )
 
 [node name="Floor" type="CollisionShape" parent="mountainLevel" index="1"]
 
