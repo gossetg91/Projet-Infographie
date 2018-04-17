@@ -1,259 +1,318 @@
-[gd_scene load_steps=115 format=2]
+[gd_scene load_steps=128 format=2]
 
 [ext_resource path="res://code/generalControls/game.gd" type="Script" id=1]
 [ext_resource path="res://default_env.tres" type="Environment" id=2]
-[ext_resource path="res://code/generalControls/playerModel.gd" type="Script" id=3]
-[ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=4]
-[ext_resource path="res://assets/torch.tscn" type="PackedScene" id=5]
-[ext_resource path="res://code/objectManager/torch.gd" type="Script" id=6]
-[ext_resource path="res://originals/exported/mountain/swinging_plank.dae" type="PackedScene" id=7]
-[ext_resource path="res://code/swinging_plank.gd" type="Script" id=8]
-[ext_resource path="res://originals/exported/mountain/ArmatureAction.anim" type="Animation" id=9]
-[ext_resource path="res://originals/exported/house/hallstand/hallstand.dae" type="PackedScene" id=10]
-[ext_resource path="res://originals/exported/house/chair/Chair.dae" type="PackedScene" id=11]
-[ext_resource path="res://originals/exported/house/table/table.dae" type="PackedScene" id=12]
-[ext_resource path="res://originals/exported/house/maison/maisonblend.dae" type="PackedScene" id=13]
-[ext_resource path="res://originals/exported/house/bed/bed.dae" type="PackedScene" id=14]
-[ext_resource path="res://originals/exported/mountain/lever/lever.dae" type="PackedScene" id=15]
-[ext_resource path="res://originals/exported/mountain/lever/lever.gd" type="Script" id=16]
-[ext_resource path="res://originals/exported/mountain/lever/default.anim" type="Animation" id=17]
-[ext_resource path="res://assets/cave.tscn" type="PackedScene" id=18]
-[ext_resource path="res://originals/exported/mountain/bridge/bridge.dae" type="PackedScene" id=19]
-[ext_resource path="res://originals/exported/mountain/pylone/pylone.dae" type="PackedScene" id=20]
-[ext_resource path="res://originals/exported/mountain/bunker/tokenHouse.dae" type="PackedScene" id=21]
-[ext_resource path="res://assets/mountain.tscn" type="PackedScene" id=22]
-[ext_resource path="res://assets/environement.tscn" type="PackedScene" id=23]
-[ext_resource path="res://originals/exported/hub/endzone/endgamePlace.dae" type="PackedScene" id=24]
-[ext_resource path="res://assets/wallNormalMap.tscn" type="PackedScene" id=25]
-[ext_resource path="res://originals/exported/hub/centralHub/centralHub.dae" type="PackedScene" id=26]
-[ext_resource path="res://originals/exported/tunnel/tunnel.dae" type="PackedScene" id=27]
-[ext_resource path="res://originals/exported/stub/ladderPoint.dae" type="PackedScene" id=28]
-[ext_resource path="res://assets/token.tscn" type="PackedScene" id=29]
-[ext_resource path="res://code/objectManager/token.gd" type="Script" id=30]
-[ext_resource path="res://originals/exported/items/token_taken/token_taken.dae" type="PackedScene" id=31]
-[ext_resource path="res://originals/exported/items/manteau/manteau.dae" type="PackedScene" id=32]
-[ext_resource path="res://originals/exported/forest/branch/branch.dae" type="PackedScene" id=33]
-[ext_resource path="res://originals/exported/items/strip/strip.dae" type="PackedScene" id=34]
-[ext_resource path="res://originals/exported/mountain/silex/silex.dae" type="PackedScene" id=35]
-[ext_resource path="res://originals/exported/items/clef/clef.dae" type="PackedScene" id=36]
-[ext_resource path="res://originals/exported/house/ladder/ladder.dae" type="PackedScene" id=37]
-[ext_resource path="res://code/objectManager/ladder.gd" type="Script" id=38]
-[ext_resource path="res://code/objectManager/Herse.gd" type="Script" id=39]
-[ext_resource path="res://originals/exported/outside/herse/herse.dae" type="PackedScene" id=40]
-[ext_resource path="res://code/objectManager/porte.gd" type="Script" id=41]
-[ext_resource path="res://originals/exported/house/porte/porte.dae" type="PackedScene" id=42]
-[ext_resource path="res://originals/exported/house/porte/default.anim" type="Animation" id=43]
-[ext_resource path="res://originals/exported/forest/arbre/arbre2.dae" type="PackedScene" id=44]
-[ext_resource path="res://originals/exported/forest/arbre/windAction_002.anim" type="Animation" id=45]
-[ext_resource path="res://originals/exported/forest/arbre/arbre.dae" type="PackedScene" id=46]
+[ext_resource path="res://originals/exported/stub/ladderPoint.dae" type="PackedScene" id=3]
+[ext_resource path="res://code/generalControls/playerModel.gd" type="Script" id=4]
+[ext_resource path="res://assets/player/player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/torch.tscn" type="PackedScene" id=6]
+[ext_resource path="res://code/objectManager/torch.gd" type="Script" id=7]
+[ext_resource path="res://originals/exported/mountain/swinging_plank.dae" type="PackedScene" id=8]
+[ext_resource path="res://code/objectManager/swinging_plank.gd" type="Script" id=9]
+[ext_resource path="res://originals/exported/mountain/ArmatureAction.anim" type="Animation" id=10]
+[ext_resource path="res://originals/exported/mountain/key/key.dae" type="PackedScene" id=11]
+[ext_resource path="res://originals/exported/mountain/keypad/keypad.dae" type="PackedScene" id=12]
+[ext_resource path="res://originals/exported/mountain/keypad/keypad.gd" type="Script" id=13]
+[ext_resource path="res://originals/exported/mountain/keypad/default.anim" type="Animation" id=14]
+[ext_resource path="res://originals/exported/house/hallstand/hallstand.dae" type="PackedScene" id=15]
+[ext_resource path="res://originals/exported/house/chair/Chair.dae" type="PackedScene" id=16]
+[ext_resource path="res://originals/exported/house/table/table.dae" type="PackedScene" id=17]
+[ext_resource path="res://originals/exported/house/maison/maisonblend.dae" type="PackedScene" id=18]
+[ext_resource path="res://originals/exported/house/bed/bed.dae" type="PackedScene" id=19]
+[ext_resource path="res://originals/exported/mountain/lever/lever.dae" type="PackedScene" id=20]
+[ext_resource path="res://originals/exported/mountain/lever/lever.gd" type="Script" id=21]
+[ext_resource path="res://originals/exported/mountain/lever/default.anim" type="Animation" id=22]
+[ext_resource path="res://assets/cave.tscn" type="PackedScene" id=23]
+[ext_resource path="res://originals/exported/mountain/bridge/bridge.dae" type="PackedScene" id=24]
+[ext_resource path="res://originals/exported/mountain/pylone/pylone.dae" type="PackedScene" id=25]
+[ext_resource path="res://code/objectManager/blocManteau.gd" type="Script" id=26]
+[ext_resource path="res://assets/mountain.tscn" type="PackedScene" id=27]
+[ext_resource path="res://originals/exported/mountain/bunker/tokenHouse.dae" type="PackedScene" id=28]
+[ext_resource path="res://assets/environement.tscn" type="PackedScene" id=29]
+[ext_resource path="res://originals/exported/hub/endzone/endgamePlace.dae" type="PackedScene" id=30]
+[ext_resource path="res://assets/wallNormalMap.tscn" type="PackedScene" id=31]
+[ext_resource path="res://originals/exported/hub/centralHub/centralHub.dae" type="PackedScene" id=32]
+[ext_resource path="res://originals/exported/tunnel/tunnel.dae" type="PackedScene" id=33]
+[ext_resource path="res://assets/token.tscn" type="PackedScene" id=34]
+[ext_resource path="res://code/objectManager/token.gd" type="Script" id=35]
+[ext_resource path="res://originals/exported/items/token_taken/token_taken.dae" type="PackedScene" id=36]
+[ext_resource path="res://originals/exported/items/manteau/manteau.dae" type="PackedScene" id=37]
+[ext_resource path="res://originals/exported/forest/branch/branch.dae" type="PackedScene" id=38]
+[ext_resource path="res://originals/exported/items/strip/strip.dae" type="PackedScene" id=39]
+[ext_resource path="res://originals/exported/mountain/silex/silex.dae" type="PackedScene" id=40]
+[ext_resource path="res://originals/exported/items/clef/clef.dae" type="PackedScene" id=41]
+[ext_resource path="res://originals/exported/house/ladder/ladder.dae" type="PackedScene" id=42]
+[ext_resource path="res://originals/exported/mountain/plateform/plateform.dae" type="PackedScene" id=43]
+[ext_resource path="res://code/objectManager/ladder.gd" type="Script" id=44]
+[ext_resource path="res://code/objectManager/Herse.gd" type="Script" id=45]
+[ext_resource path="res://originals/exported/outside/herse/herse.dae" type="PackedScene" id=46]
+[ext_resource path="res://code/objectManager/porte.gd" type="Script" id=47]
+[ext_resource path="res://originals/exported/house/porte/porte.dae" type="PackedScene" id=48]
+[ext_resource path="res://originals/exported/house/porte/default.anim" type="Animation" id=49]
+[ext_resource path="res://originals/exported/forest/arbre/arbre2.dae" type="PackedScene" id=50]
+[ext_resource path="res://originals/exported/forest/arbre/windAction_002.anim" type="Animation" id=51]
+[ext_resource path="res://originals/exported/forest/arbre/arbre.dae" type="PackedScene" id=52]
+[ext_resource path="res://textures/ecran_osd/Cold.png" type="Texture" id=53]
+[ext_resource path="res://assets/Cold.gd" type="Script" id=54]
 
-[sub_resource type="CapsuleShape" id=67]
+[sub_resource type="CapsuleShape" id=1]
 
 radius = 0.672781
 height = 2.40185
 
-[sub_resource type="BoxShape" id=68]
+[sub_resource type="Animation" id=2]
+
+resource_name = "ArmatureAction"
+length = 3.29167
+loop = false
+step = 0.1
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, -0.0031487, 23.3288, -0.012941, 0, 0, 1, 7.54979e-08, 1, 1, 1, 3.25, 1, -0.0031487, 23.3288, -0.012941, 0, 0, 1, 7.54979e-08, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:Bone")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, 0, -1.13181e-22, 0, 1, 1, 1, 1, 0.0416667, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, 0.000712831, 8.79505e-16, 0, 1, 1, 1, 1, 0.0833333, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, 0.00286806, -8.74304e-16, 0, 0.999996, 1, 1, 1, 0.125, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, 0.00647106, -4.99611e-16, 0, 0.999979, 1, 1, 1, 0.166667, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, 0.0114932, -6.66178e-16, 0, 0.999934, 1, 1, 1, 0.25, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, 0.0254509, 6.6635e-16, 0, 0.999676, 1, 1, 1, 0.666667, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, 0.110258, 4.46813e-16, 0, 0.993903, 1, 1, 1, 0.708333, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, 0.113839, -4.46995e-16, 0, 0.993499, 1, 1, 1, 0.75, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, 0.11598, -1.1395e-22, 0, 0.993252, 1, 1, 1, 0.791667, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, 0.116688, 8.95989e-09, -1.24128e-09, 0.993169, 1, 1, 1, 0.833333, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, 0.116293, 8.95997e-09, -1.24129e-09, 0.993215, 1, 1, 1, 0.875, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, 0.115084, 8.96021e-09, -1.24132e-09, 0.993356, 1, 1, 1, 0.916667, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, 0.113028, 8.96062e-09, -1.24138e-09, 0.993592, 1, 1, 1, 0.958333, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, 0.110102, 8.96119e-09, -1.24146e-09, 0.99392, 1, 1, 1, 1.04167, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, 0.101633, 8.96264e-09, -1.24166e-09, 0.994822, 1, 1, 1, 2.125, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, -0.0900426, -6.68851e-16, 0, 0.995938, 1, 1, 1, 2.25, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, -0.106505, -4.4663e-16, 0, 0.994312, 1, 1, 1, 2.29167, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, -0.110319, -4.46817e-16, 0, 0.993896, 1, 1, 1, 2.33333, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, -0.113254, 4.46965e-16, 0, 0.993566, 1, 1, 1, 2.375, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, -0.115317, 8.94143e-16, 0, 0.993329, 1, 1, 1, 2.41667, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, -0.11653, -1.13957e-22, 0, 0.993187, 1, 1, 1, 2.45833, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, -0.116926, -8.97817e-09, 1.24381e-09, 0.993141, 1, 1, 1, 2.5, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, -0.11622, -8.97854e-09, 1.24386e-09, 0.993223, 1, 1, 1, 2.54167, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, -0.114087, -8.97963e-09, 1.24401e-09, 0.993471, 1, 1, 1, 2.58333, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, -0.110519, -8.98138e-09, 1.24425e-09, 0.993874, 1, 1, 1, 2.625, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, -0.105544, -8.98361e-09, 1.24456e-09, 0.994415, 1, 1, 1, 2.70833, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, -0.0916999, -8.98864e-09, 1.24526e-09, 0.995787, 1, 1, 1, 3.125, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, -0.0070934, -8.98167e-09, 1.24429e-09, 0.999975, 1, 1, 1, 3.16667, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, -0.0035027, -8.97996e-09, 1.24406e-09, 0.999994, 1, 1, 1, 3.20833, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, -0.00135482, -8.97887e-09, 1.24391e-09, 0.999999, 1, 1, 1, 3.25, 1, -2.11365e-17, -1.62297e-24, 2.75268e-10, -0.000644425, -8.97851e-09, 1.24386e-09, 1, 1, 1, 1 )
+tracks/2/type = "transform"
+tracks/2/path = NodePath("Armature/Skeleton:Bone.002")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/keys = PoolRealArray( 0, 1, -7.08837e-11, 1.07048e-17, 0, -5.29396e-23, 0, 7.10543e-15, 1, 1, 1, 1, 0.166667, 1, -7.08108e-11, -1.49012e-08, -9.53674e-07, -4.67641e-15, 0, 3.55271e-15, 1, 1, 1, 1, 0.208333, 1, -7.08876e-11, 2.98023e-08, -8.90342e-23, 0.000913646, -1.55431e-15, 2.94079e-15, 1, 1, 1, 1, 0.25, 1, -7.07839e-11, -2.98024e-08, 1.10943e-21, 0.00367604, -6.88343e-15, -2.14413e-15, 0.999993, 1, 1, 1, 0.291667, 1, -7.09157e-11, -4.79509e-14, 9.53674e-07, 0.00829745, -1.33231e-15, -8.56983e-16, 0.999966, 1, 1, 1, 0.333333, 1, -7.09051e-11, -4.77289e-14, 9.53674e-07, 0.0147504, -3.10896e-15, -1.73491e-15, 0.999891, 1, 1, 1, 0.416667, 1, -7.08553e-11, -4.68407e-14, 3.02339e-22, 0.0327836, -3.55462e-15, 4.38774e-15, 0.999462, 1, 1, 1, 0.916667, 1, -7.09134e-11, 1.19209e-07, 9.53674e-07, 0.162102, -4.95046e-15, 2.1377e-15, 0.986774, 1, 1, 1, 0.958333, 1, -7.08837e-11, -5.97193e-14, -4.87881e-29, 0.164847, -2.25125e-16, 5.0653e-16, 0.986319, 1, 1, 1, 1, 1, -7.09419e-11, 1.19209e-07, 9.53674e-07, 0.165773, -2.49663e-08, 2.59717e-10, 0.986164, 1, 1, 1, 1.04167, 1, -7.08553e-11, -6.03854e-14, 3.02339e-22, 0.165349, -2.49722e-08, 2.59785e-10, 0.986235, 1, 1, 1, 1.08333, 1, -7.08553e-11, -6.06075e-14, 3.02339e-22, 0.164018, -2.49817e-08, 2.59877e-10, 0.986457, 1, 1, 1, 1.125, 1, -7.08327e-11, -1.19209e-07, 7.3406e-22, 0.161769, -2.4995e-08, 2.60014e-10, 0.986829, 1, 1, 1, 1.16667, 1, -7.09051e-11, -6.12736e-14, -2.26754e-22, 0.158594, -2.50117e-08, 2.60195e-10, 0.987344, 1, 1, 1, 1.20833, 1, -7.08127e-11, -6.14957e-14, 7.55847e-22, 0.154489, -2.50319e-08, 2.604e-10, 0.987995, 1, 1, 1, 1.29167, 1, -7.09761e-11, -6.20507e-14, 9.53674e-07, 0.143489, -2.50807e-08, 2.60903e-10, 0.989652, 1, 1, 1, 1.95833, 1, -7.08553e-11, -4.70628e-14, 9.53674e-07, -0.0442799, -2.53519e-08, 2.63732e-10, 0.999019, 1, 1, 1, 2.58333, 1, -7.08553e-11, -3.48503e-14, 3.02339e-22, -0.169518, -2.50142e-08, 2.60215e-10, 0.985527, 1, 1, 1, 2.625, 1, -7.08553e-11, -3.50723e-14, 3.02339e-22, -0.170874, -2.50083e-08, 2.60162e-10, 0.985293, 1, 1, 1, 2.66667, 1, -7.08637e-11, 1.19209e-07, 2.17867e-23, -0.171324, 4.69225e-09, 4.97031e-09, 0.985215, 1, 1, 1, 2.70833, 1, -7.08695e-11, -3.55164e-14, 1.51169e-22, -0.16911, 4.69304e-09, 4.97116e-09, 0.985597, 1, 1, 1, 2.75, 1, -7.09548e-11, -3.57385e-14, 9.53674e-07, -0.162414, 4.69532e-09, 4.97357e-09, 0.986723, 1, 1, 1, 2.79167, 1, -7.08482e-11, -3.59605e-14, -9.53674e-07, -0.151298, 4.69861e-09, 4.97704e-09, 0.988488, 1, 1, 1, 2.875, 1, -7.08908e-11, -3.64046e-14, -7.55847e-23, -0.117541, 4.70494e-09, 4.98375e-09, 0.993068, 1, 1, 1, 3.08333, 1, -7.07871e-11, 1.49011e-08, -9.53674e-07, -0.0202334, 4.69285e-09, 4.97095e-09, 0.999795, 1, 1, 1, 3.125, 1, -7.08225e-11, -3.60716e-14, 6.51918e-22, -0.00900906, 4.68859e-09, 4.96644e-09, 0.999959, 1, 1, 1, 3.16667, 1, -7.09113e-11, -3.59952e-14, -2.92891e-22, -0.00223913, 4.68574e-09, 4.96341e-09, 0.999997, 1, 1, 1, 3.20833, 1, -7.0852e-11, -1.86268e-09, 3.40972e-22, -3.75603e-15, -3.77476e-15, -2.83958e-23, 1, 1, 1, 1, 3.25, 1, -7.08649e-11, -3.59258e-14, 2.00181e-22, -3.75023e-15, -8.88178e-16, -3.55271e-15, 1, 1, 1, 1 )
+tracks/3/type = "transform"
+tracks/3/path = NodePath("Armature/Skeleton:Bone.003")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/keys = PoolRealArray( 0, 1, 3.81419e-11, 3.33452e-18, -2.92994e-35, 0, -1.7983e-25, 6.02558e-44, 1, 1, 1, 1, 0.375, 1, 3.82272e-11, -1.49011e-07, -9.53674e-07, -7.45058e-09, -2.88658e-15, 3.55271e-15, 1, 1, 1, 1, 0.416667, 1, 3.81064e-11, 1.78814e-07, -9.53674e-07, 0.00141536, 3.55272e-15, -3.55272e-15, 0.999999, 1, 1, 1, 0.458333, 1, 3.82272e-11, -1.19209e-07, -9.53674e-07, 0.00569658, -1.33229e-15, 1.15318e-31, 0.999984, 1, 1, 1, 0.5, 1, 3.81704e-11, -1.19209e-07, -9.53674e-07, 0.0128651, 8.88252e-16, 2.60435e-31, 0.999917, 1, 1, 1, 0.541667, 1, 3.81988e-11, -4.76837e-07, -5.85989e-35, 0.0228866, -4.44206e-16, 4.63303e-31, 0.999738, 1, 1, 1, 0.625, 1, 3.82698e-11, -4.76837e-07, -1.90735e-06, 0.0509511, 1.77867e-15, -3.55733e-15, 0.998701, 1, 1, 1, 1.04167, 1, 3.79146e-11, 2.38419e-07, 8.78984e-35, 0.234587, 4.56837e-15, 4.74886e-30, 0.972095, 1, 1, 1, 1.08333, 1, 3.80282e-11, 4.76837e-07, -9.53674e-07, 0.244319, -4.57968e-15, -3.66374e-15, 0.969695, 1, 1, 1, 1.125, 1, 3.78577e-11, 7.15256e-07, 9.53674e-07, 0.251264, -4.58808e-15, 5.08645e-30, 0.967919, 1, 1, 1, 1.16667, 1, 3.81704e-11, 1.57211e-13, -9.53674e-07, 0.255405, -9.18646e-16, -3.67458e-15, 0.966834, 1, 1, 1, 1.20833, 1, 3.81135e-11, 1.60764e-13, -9.53674e-07, 0.256774, 2.30017e-08, 5.78563e-10, 0.966472, 1, 1, 1, 1.25, 1, 3.80851e-11, 2.38419e-07, -9.53674e-07, 0.255959, 2.30068e-08, 5.78695e-10, 0.966688, 1, 1, 1, 1.29167, 1, 3.81135e-11, 1.70534e-13, 9.53674e-07, 0.253499, 2.30222e-08, 5.79082e-10, 0.967336, 1, 1, 1, 1.33333, 1, 3.82556e-11, -2.38418e-07, -8.78983e-35, 0.249369, 2.30477e-08, 5.79721e-10, 0.968409, 1, 1, 1, 1.375, 1, 3.82556e-11, -2.38418e-07, -9.53674e-07, 0.243546, 2.30828e-08, 5.80605e-10, 0.96989, 1, 1, 1, 1.41667, 1, 3.82272e-11, -4.76837e-07, -7.32486e-35, 0.236012, 2.31269e-08, 5.81716e-10, 0.97175, 1, 1, 1, 1.5, 1, 3.81988e-11, -1.19209e-07, -5.85989e-35, 0.215779, 2.32379e-08, 5.84499e-10, 0.976442, 1, 1, 1, 1.91667, 1, 3.81277e-11, -5.96045e-08, -2.19746e-35, 0.0260671, 2.37722e-08, 5.97944e-10, 0.99966, 1, 1, 1, 2.29167, 1, 3.80282e-11, 4.76837e-07, -9.53674e-07, -0.160927, 2.34159e-08, 5.88982e-10, 0.986966, 1, 1, 1, 2.41667, 1, 3.77725e-11, 7.15256e-07, -9.53674e-07, -0.199233, 2.32223e-08, 5.84116e-10, 0.979952, 1, 1, 1, 2.45833, 1, 3.7943e-11, 2.38419e-07, 1.90735e-06, -0.208535, 2.31664e-08, 5.82709e-10, 0.978015, 1, 1, 1, 2.5, 1, 3.79146e-11, 7.15256e-07, 8.78983e-35, -0.216087, 2.31172e-08, 5.81469e-10, 0.976374, 1, 1, 1, 2.54167, 1, 3.81135e-11, -2.38419e-07, -1.46497e-35, -0.221899, 2.30755e-08, 5.80421e-10, 0.97507, 1, 1, 1, 2.58333, 1, 3.81135e-11, 6.21758e-14, -9.53674e-07, -0.225988, 2.30421e-08, 5.7958e-10, 0.97413, 1, 1, 1, 2.625, 1, 3.81419e-11, -2.38419e-07, -2.92994e-35, -0.228377, 2.30175e-08, 5.78963e-10, 0.973573, 1, 1, 1, 2.66667, 1, 3.79572e-11, 7.15256e-07, -1.90735e-06, -0.229092, -1.29146e-08, 2.10264e-08, 0.973405, 1, 1, 1, 2.70833, 1, 3.82983e-11, 4.76837e-07, -1.90735e-06, -0.226057, -1.29134e-08, 2.10244e-08, 0.974114, 1, 1, 1, 2.75, 1, 3.81419e-11, -4.76837e-07, -2.92994e-35, -0.217098, -1.29219e-08, 2.10382e-08, 0.97615, 1, 1, 1, 2.79167, 1, 3.80425e-11, 4.76837e-07, 1.90735e-06, -0.202268, -1.29379e-08, 2.10643e-08, 0.97933, 1, 1, 1, 2.875, 1, 3.7943e-11, -1.19209e-07, 9.53674e-07, -0.157126, -1.29757e-08, 2.11257e-08, 0.987579, 1, 1, 1, 3.08333, 1, 3.80851e-11, 2.06061e-13, 2.53229e-41, -0.0261024, -1.29473e-08, 2.10796e-08, 0.999659, 1, 1, 1, 3.125, 1, 3.80531e-11, -7.45056e-08, 9.53674e-07, -0.0109783, -1.29303e-08, 2.10519e-08, 0.99994, 1, 1, 1, 3.16667, 1, 3.79261e-11, -1.11757e-08, 8.19469e-35, -0.00186216, -1.29187e-08, 2.1033e-08, 0.999998, 1, 1, 1, 3.20833, 1, 3.81069e-11, 5.58813e-09, -9.53674e-07, 0.00115177, 2.57296e-09, 1.79925e-08, 0.999999, 1, 1, 1, 3.25, 1, 3.80354e-11, -1.86245e-09, 9.53674e-07, 0.00115177, 2.57296e-09, 1.79925e-08, 0.999999, 1, 1, 1 )
+
+[sub_resource type="BoxShape" id=3]
 
 extents = Vector3( 0.992953, 2.28984, 0.926052 )
 
-[sub_resource type="BoxShape" id=69]
+[sub_resource type="BoxShape" id=4]
 
 extents = Vector3( 1.43466, 2.78911, 1.78504 )
 
-[sub_resource type="BoxShape" id=70]
+[sub_resource type="BoxShape" id=5]
 
 extents = Vector3( 4.92518, 1.94791, 2.65811 )
 
-[sub_resource type="BoxShape" id=71]
+[sub_resource type="BoxShape" id=6]
 
 extents = Vector3( 1.37099, 2.10582, 1.28705 )
 
-[sub_resource type="BoxShape" id=72]
+[sub_resource type="BoxShape" id=7]
 
 extents = Vector3( 0.835191, 5.51755, 19.2712 )
 
-[sub_resource type="BoxShape" id=73]
+[sub_resource type="BoxShape" id=8]
 
 extents = Vector3( 1.15351, 5.5448, 12.7206 )
 
-[sub_resource type="BoxShape" id=74]
+[sub_resource type="BoxShape" id=9]
 
 extents = Vector3( 0.912925, 5.59896, 5.32914 )
 
-[sub_resource type="BoxShape" id=75]
+[sub_resource type="BoxShape" id=10]
 
 extents = Vector3( 12.6128, 2.87797, 19.7101 )
 
-[sub_resource type="BoxShape" id=76]
+[sub_resource type="BoxShape" id=11]
 
 extents = Vector3( 2.08352, 2.82546, 3.47736 )
 
-[sub_resource type="BoxShape" id=77]
+[sub_resource type="BoxShape" id=12]
 
 extents = Vector3( 36.0147, 1, 49.1857 )
 
-[sub_resource type="BoxShape" id=78]
+[sub_resource type="BoxShape" id=13]
 
 extents = Vector3( 20.3583, 1, 17.4179 )
 
-[sub_resource type="BoxShape" id=66]
+[sub_resource type="BoxShape" id=14]
 
 extents = Vector3( 17.8569, 1, 13.2799 )
 
-[sub_resource type="BoxShape" id=79]
+[sub_resource type="BoxShape" id=15]
 
 extents = Vector3( 1.30587, 5.89021, 4.1266 )
 
-[sub_resource type="BoxShape" id=80]
+[sub_resource type="BoxShape" id=16]
 
-extents = Vector3( 1, 4.94662, 3.17918 )
+extents = Vector3( 1, 4.94662, 4.64602 )
 
-[sub_resource type="BoxShape" id=81]
+[sub_resource type="BoxShape" id=17]
+
+extents = Vector3( 1, 11.0644, 4.86346 )
+
+[sub_resource type="BoxShape" id=18]
+
+extents = Vector3( 11.7737, 45.8404, 36.0841 )
+_sections_unfolded = [ "Resource" ]
+
+[sub_resource type="BoxShape" id=19]
+
+extents = Vector3( 3.67607, 15.6997, 2.50549 )
+
+[sub_resource type="BoxShape" id=20]
+
+extents = Vector3( 2.63808, 15.0711, 2.79308 )
+
+[sub_resource type="BoxShape" id=21]
 
 extents = Vector3( 9.24182, 1, 7.52383 )
 
-[sub_resource type="BoxShape" id=82]
+[sub_resource type="BoxShape" id=22]
 
 extents = Vector3( 3.10794, 1, 7.00936 )
 
-[sub_resource type="BoxShape" id=83]
+[sub_resource type="BoxShape" id=23]
 
 extents = Vector3( 11.3475, 0.83009, 7.31064 )
 
-[sub_resource type="BoxShape" id=84]
+[sub_resource type="BoxShape" id=24]
 
 extents = Vector3( 0.761604, 5.17518, 0.715587 )
 
-[sub_resource type="BoxShape" id=85]
+[sub_resource type="BoxShape" id=25]
 
-extents = Vector3( 6.75708, 0.268687, 5.11716 )
+extents = Vector3( 101.861, 33.1271, 1 )
 
-[sub_resource type="BoxShape" id=86]
-
-extents = Vector3( 0.451295, 9.09659, 5.72168 )
-
-[sub_resource type="BoxShape" id=87]
-
-extents = Vector3( 2.60005, 7.73347, 0.625227 )
-
-[sub_resource type="BoxShape" id=88]
-
-extents = Vector3( 6.87537, 0.533491, 5.5461 )
-
-[sub_resource type="BoxShape" id=89]
-
-extents = Vector3( 5.6749, 0.525143, 1.66816 )
-
-[sub_resource type="BoxShape" id=90]
-
-extents = Vector3( 2.26692, 0.322462, 1.36608 )
-
-[sub_resource type="BoxShape" id=91]
+[sub_resource type="BoxShape" id=26]
 
 extents = Vector3( 170.977, 4.02619, 173.393 )
 
-[sub_resource type="BoxShape" id=92]
+[sub_resource type="BoxShape" id=27]
 
 extents = Vector3( 94.8955, 32.3195, 6.36795 )
 
-[sub_resource type="BoxShape" id=93]
+[sub_resource type="BoxShape" id=28]
 
 extents = Vector3( 59.8523, 108.793, 4.56425 )
 
-[sub_resource type="BoxShape" id=94]
+[sub_resource type="BoxShape" id=29]
 
 extents = Vector3( 54.2066, 2.34949, 60.4062 )
 
-[sub_resource type="BoxShape" id=95]
+[sub_resource type="BoxShape" id=30]
 
 extents = Vector3( 6.8253, 1, 25.8369 )
 
-[sub_resource type="BoxShape" id=96]
+[sub_resource type="BoxShape" id=31]
 
 extents = Vector3( 59.3101, 2.31351, 88.6019 )
 
-[sub_resource type="BoxShape" id=97]
+[sub_resource type="BoxShape" id=32]
 
 extents = Vector3( 12.1987, 36.9071, 59.7752 )
 
-[sub_resource type="BoxShape" id=98]
+[sub_resource type="BoxShape" id=33]
+
+extents = Vector3( 0.451295, 9.09659, 5.72168 )
+
+[sub_resource type="BoxShape" id=34]
+
+extents = Vector3( 2.60005, 7.73347, 0.625227 )
+
+[sub_resource type="BoxShape" id=35]
+
+extents = Vector3( 6.87537, 0.533491, 5.5461 )
+
+[sub_resource type="BoxShape" id=36]
+
+extents = Vector3( 5.6749, 0.525143, 1.66816 )
+
+[sub_resource type="BoxShape" id=37]
+
+extents = Vector3( 2.26692, 0.322462, 1.48821 )
+
+[sub_resource type="BoxShape" id=38]
+
+extents = Vector3( 1.48636, 2.13423, 0.712785 )
+
+[sub_resource type="BoxShape" id=39]
 
 extents = Vector3( 180.507, 2.24303, 176.833 )
 
-[sub_resource type="BoxShape" id=99]
-
-extents = Vector3( 11.7737, 44.0084, 36.0841 )
-_sections_unfolded = [ "Resource" ]
-
-[sub_resource type="BoxShape" id=100]
-
-extents = Vector3( 2.82652, 15.6997, 2.50549 )
-
-[sub_resource type="BoxShape" id=101]
-
-extents = Vector3( 2.98596, 15.0711, 2.79308 )
-
-[sub_resource type="BoxShape" id=102]
+[sub_resource type="BoxShape" id=40]
 
 extents = Vector3( 24.3216, 22.2197, 0.678358 )
 
-[sub_resource type="BoxShape" id=103]
+[sub_resource type="BoxShape" id=41]
 
 extents = Vector3( 173.405, 3.50615, 174.119 )
 
-[sub_resource type="BoxShape" id=104]
+[sub_resource type="BoxShape" id=42]
 
 extents = Vector3( 0.394194, 1.58912, 0.40103 )
 
-[sub_resource type="BoxShape" id=105]
+[sub_resource type="BoxShape" id=43]
 
 extents = Vector3( 0.410231, 1.59902, 0.441988 )
 
-[sub_resource type="BoxShape" id=106]
+[sub_resource type="BoxShape" id=44]
 
 extents = Vector3( 0.426924, 1.89967, 0.367068 )
 
-[sub_resource type="BoxShape" id=107]
+[sub_resource type="BoxShape" id=45]
 
 extents = Vector3( 0.159865, 0.248447, 0.360157 )
 
-[sub_resource type="BoxShape" id=108]
+[sub_resource type="BoxShape" id=46]
 
 extents = Vector3( 0.341279, 0.24352, 0.230341 )
 
-[sub_resource type="BoxShape" id=109]
+[sub_resource type="BoxShape" id=47]
 
 extents = Vector3( 1, 1, 7.60975 )
 
-[sub_resource type="BoxShape" id=110]
+[sub_resource type="BoxShape" id=48]
 
 extents = Vector3( 1.00966, 0.629253, 8.08093 )
 
-[sub_resource type="BoxShape" id=111]
+[sub_resource type="BoxShape" id=49]
 
 extents = Vector3( 1, 1, 8.32899 )
 
-[sub_resource type="BoxShape" id=112]
+[sub_resource type="BoxShape" id=50]
 
 extents = Vector3( 3.56286, 3.07282, 0.151898 )
 
-[sub_resource type="BoxShape" id=113]
+[sub_resource type="BoxShape" id=51]
 
 extents = Vector3( 1.93212, 2.62381, 1.94222 )
 
-[sub_resource type="BoxShape" id=114]
+[sub_resource type="BoxShape" id=52]
+
+extents = Vector3( 2.89805, 1.1749, 2.73769 )
+
+[sub_resource type="BoxShape" id=53]
+
+extents = Vector3( 12.7548, 1, 4.17046 )
+
+[sub_resource type="BoxShape" id=54]
 
 extents = Vector3( 0.70148, 2.74072, 0.189069 )
 
-[sub_resource type="BoxShape" id=115]
+[sub_resource type="BoxShape" id=55]
 
 extents = Vector3( 9.67455, 8.55278, 0.113057 )
 
-[sub_resource type="BoxShape" id=116]
+[sub_resource type="BoxShape" id=56]
 
 extents = Vector3( 0.0701907, 1.52444, 0.79511 )
 
-[sub_resource type="Animation" id=117]
+[sub_resource type="Animation" id=57]
 
 length = 0.0416667
 loop = false
@@ -1197,11 +1256,11 @@ tracks/133/imported = true
 tracks/133/enabled = true
 tracks/133/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
-[sub_resource type="BoxShape" id=118]
+[sub_resource type="BoxShape" id=58]
 
 extents = Vector3( 0.621506, 8.32065, 0.928499 )
 
-[sub_resource type="Animation" id=119]
+[sub_resource type="Animation" id=59]
 
 length = 0.0416667
 loop = false
@@ -2145,7 +2204,7 @@ tracks/133/imported = true
 tracks/133/enabled = true
 tracks/133/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=120]
+[sub_resource type="Animation" id=60]
 
 length = 0.0416667
 loop = false
@@ -9585,7 +9644,7 @@ tracks/1061/imported = true
 tracks/1061/enabled = true
 tracks/1061/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=121]
+[sub_resource type="Animation" id=61]
 
 length = 0.0416667
 loop = false
@@ -10529,7 +10588,7 @@ tracks/133/imported = true
 tracks/133/enabled = true
 tracks/133/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=122]
+[sub_resource type="Animation" id=62]
 
 length = 0.0416667
 loop = false
@@ -17969,7 +18028,7 @@ tracks/1061/imported = true
 tracks/1061/enabled = true
 tracks/1061/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=123]
+[sub_resource type="Animation" id=63]
 
 length = 0.0416667
 loop = false
@@ -18913,7 +18972,7 @@ tracks/133/imported = true
 tracks/133/enabled = true
 tracks/133/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=124]
+[sub_resource type="Animation" id=64]
 
 length = 0.0416667
 loop = false
@@ -26353,7 +26412,7 @@ tracks/1061/imported = true
 tracks/1061/enabled = true
 tracks/1061/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=125]
+[sub_resource type="Animation" id=65]
 
 length = 0.0416667
 loop = false
@@ -27297,7 +27356,7 @@ tracks/133/imported = true
 tracks/133/enabled = true
 tracks/133/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=126]
+[sub_resource type="Animation" id=66]
 
 length = 0.0416667
 loop = false
@@ -34737,7 +34796,7 @@ tracks/1061/imported = true
 tracks/1061/enabled = true
 tracks/1061/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=127]
+[sub_resource type="Animation" id=67]
 
 length = 0.0416667
 loop = false
@@ -35681,7 +35740,7 @@ tracks/133/imported = true
 tracks/133/enabled = true
 tracks/133/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=128]
+[sub_resource type="Animation" id=68]
 
 length = 0.0416667
 loop = false
@@ -43121,7 +43180,7 @@ tracks/1061/imported = true
 tracks/1061/enabled = true
 tracks/1061/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=129]
+[sub_resource type="Animation" id=69]
 
 length = 0.0416667
 loop = false
@@ -44065,7 +44124,7 @@ tracks/133/imported = true
 tracks/133/enabled = true
 tracks/133/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=130]
+[sub_resource type="Animation" id=70]
 
 length = 0.0416667
 loop = false
@@ -51505,7 +51564,7 @@ tracks/1061/imported = true
 tracks/1061/enabled = true
 tracks/1061/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=131]
+[sub_resource type="Animation" id=71]
 
 length = 0.0416667
 loop = false
@@ -52449,7 +52508,7 @@ tracks/133/imported = true
 tracks/133/enabled = true
 tracks/133/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
-[sub_resource type="Animation" id=132]
+[sub_resource type="Animation" id=72]
 
 length = 0.0416667
 loop = false
@@ -59889,7 +59948,7 @@ tracks/1061/imported = true
 tracks/1061/enabled = true
 tracks/1061/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
 
-[sub_resource type="BoxShape" id=133]
+[sub_resource type="BoxShape" id=73]
 
 extents = Vector3( 0.501875, 7.07235, 0.359604 )
 
@@ -59897,13 +59956,18 @@ extents = Vector3( 0.501875, 7.07235, 0.359604 )
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.417542, 0.924114, -1.07033 )
 script = ExtResource( 1 )
-_sections_unfolded = [ "Pause" ]
+_sections_unfolded = [ "Pause", "Transform" ]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." index="0"]
 
 environment = ExtResource( 2 )
 
-[node name="player" type="RigidBody" parent="." index="1"]
+[node name="ladderBloc" parent="." index="1" instance=ExtResource( 3 )]
+
+transform = Transform( 0.682346, 0.012067, -0.730929, 0.000114619, 0.999862, 0.0166138, 0.731029, -0.0114202, 0.682251, -649.939, -0.413726, 123.412 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="player" type="RigidBody" parent="." index="2"]
 
 editor/display_folded = true
 transform = Transform( -0.549897, 0, -0.835232, 0, 1, 0, 0.835232, 0, -0.549897, -112.74, 0.511673, -94.9872 )
@@ -59932,10 +59996,10 @@ linear_velocity = Vector3( 0, 0, 0 )
 linear_damp = -1.0
 angular_velocity = Vector3( 0, 0, 0 )
 angular_damp = -1.0
-script = ExtResource( 3 )
+script = ExtResource( 4 )
 _sections_unfolded = [ "Axis Lock", "Collision", "Linear" ]
 
-[node name="model" parent="player" index="0" instance=ExtResource( 4 )]
+[node name="model" parent="player" index="0" instance=ExtResource( 5 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.370699, 1.52588e-05, 0.440626 )
 _sections_unfolded = [ "Pause" ]
@@ -59943,14 +60007,14 @@ _sections_unfolded = [ "Pause" ]
 [node name="CollisionShape" type="CollisionShape" parent="player" index="1"]
 
 transform = Transform( 1, 0, 5.30863e-14, 5.30863e-14, 1.62921e-07, -1, 0, 1, 1.62921e-07, 0.381762, 1.53985, 0.44266 )
-shape = SubResource( 67 )
+shape = SubResource( 1 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="Torch" parent="player" index="2" instance=ExtResource( 5 )]
+[node name="Torch" parent="player" index="2" instance=ExtResource( 6 )]
 
 transform = Transform( 1.50697, 0, 0, 0, 1.26871, 0.586819, 0, -0.679649, 1.46941, 0.620707, 1.43776, -0.153211 )
-script = ExtResource( 6 )
+script = ExtResource( 7 )
 
 [node name="Cooldown" type="Timer" parent="player/Torch" index="7"]
 
@@ -59959,11 +60023,11 @@ wait_time = 0.25
 one_shot = false
 autostart = false
 
-[node name="swingingPlank" parent="." index="2" instance=ExtResource( 7 )]
+[node name="swingingPlank" parent="." index="3" instance=ExtResource( 8 )]
 
 editor/display_folded = true
 transform = Transform( 0.732195, 0, -0.681095, 0, 1, 0, 0.681095, 0, 0.732195, -597.418, 109.965, 75.8592 )
-script = ExtResource( 8 )
+script = ExtResource( 9 )
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="swingingPlank" index="4"]
 
@@ -59972,10 +60036,48 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/ArmatureAction = ExtResource( 9 )
+anims/ArmatureAction = ExtResource( 10 )
 blend_times = [  ]
 
-[node name="House" type="StaticBody" parent="." index="3"]
+[node name="swingingPlank2" parent="." index="4" instance=ExtResource( 8 )]
+
+editor/display_folded = true
+transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, -626.437, 110.757, 67.6743 )
+script = ExtResource( 9 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="swingingPlank2" index="4"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/ArmatureAction = SubResource( 2 )
+blend_times = [  ]
+
+[node name="mountainKey" parent="." index="5" instance=ExtResource( 11 )]
+
+transform = Transform( 0.281768, 0, 0, 0, -6.56168e-08, -0.408338, 0, 0.32626, -5.38916e-08, 2.54372, 2.15036, -5.20236 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="keypad" parent="." index="6" instance=ExtResource( 12 )]
+
+editor/display_folded = true
+transform = Transform( 0.602748, 0, -0.608018, 0, 0.855457, 0, 0.582445, 0, 0.553503, -668.138, 0.0991957, 101.221 )
+script = ExtResource( 13 )
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="keypad" index="3"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/default = ExtResource( 14 )
+blend_times = [  ]
+
+[node name="House" type="StaticBody" parent="." index="7"]
 
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 0.565456, 0, 0, 0, 1, 98.6244, -0.0097279, 60.4589 )
@@ -60002,14 +60104,14 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Body" parent="House/Hallstand" index="0" instance=ExtResource( 10 )]
+[node name="Body" parent="House/Hallstand" index="0" instance=ExtResource( 15 )]
 
 transform = Transform( 0.594756, 0, -0.00175638, 0, 0.610839, 0, -0.00176803, 0, 0.621808, 2.30557, -0.0255011, 8.21609 )
 
 [node name="CollisionShape" type="CollisionShape" parent="House/Hallstand" index="1"]
 
 transform = Transform( 1, 0, 3.72529e-08, 0, 0.999995, 0, 0, 0, 0.999999, 2.30409, 2.04038, 8.20308 )
-shape = SubResource( 68 )
+shape = SubResource( 3 )
 disabled = false
 
 [node name="Chair4" type="StaticBody" parent="House" index="1"]
@@ -60026,14 +60128,14 @@ constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="chairBody" parent="House/Chair4" index="0" instance=ExtResource( 11 )]
+[node name="chairBody" parent="House/Chair4" index="0" instance=ExtResource( 16 )]
 
-[node name="chairBody2" parent="House/Chair4" index="1" instance=ExtResource( 11 )]
+[node name="chairBody2" parent="House/Chair4" index="1" instance=ExtResource( 16 )]
 
 [node name="CollisionShape" type="CollisionShape" parent="House/Chair4" index="2"]
 
 transform = Transform( 0.701946, 0, 0, 0, 0.626828, 0, 0, 0, 0.704275, 0.0540504, 1.72157, -0.0604982 )
-shape = SubResource( 69 )
+shape = SubResource( 4 )
 disabled = false
 
 [node name="Chair2" type="StaticBody" parent="House" index="2"]
@@ -60049,14 +60151,14 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chairBody" parent="House/Chair2" index="0" instance=ExtResource( 11 )]
+[node name="chairBody" parent="House/Chair2" index="0" instance=ExtResource( 16 )]
 
-[node name="chairBody2" parent="House/Chair2" index="1" instance=ExtResource( 11 )]
+[node name="chairBody2" parent="House/Chair2" index="1" instance=ExtResource( 16 )]
 
 [node name="CollisionShape" type="CollisionShape" parent="House/Chair2" index="2"]
 
 transform = Transform( 0.701946, 0, 0, 0, 0.626828, 0, 0, 0, 0.704275, 0.0540504, 1.72157, -0.0604982 )
-shape = SubResource( 69 )
+shape = SubResource( 4 )
 disabled = false
 
 [node name="Chair3" type="StaticBody" parent="House" index="3"]
@@ -60073,14 +60175,14 @@ constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="chairBody" parent="House/Chair3" index="0" instance=ExtResource( 11 )]
+[node name="chairBody" parent="House/Chair3" index="0" instance=ExtResource( 16 )]
 
-[node name="chairBody2" parent="House/Chair3" index="1" instance=ExtResource( 11 )]
+[node name="chairBody2" parent="House/Chair3" index="1" instance=ExtResource( 16 )]
 
 [node name="CollisionShape" type="CollisionShape" parent="House/Chair3" index="2"]
 
 transform = Transform( 0.701946, 0, 0, 0, 0.626828, 0, 0, 0, 0.704275, 0.0540504, 1.72157, -0.0604982 )
-shape = SubResource( 69 )
+shape = SubResource( 4 )
 disabled = false
 
 [node name="Chair1" type="StaticBody" parent="House" index="4"]
@@ -60096,19 +60198,18 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="chairBody" parent="House/Chair1" index="0" instance=ExtResource( 11 )]
+[node name="chairBody" parent="House/Chair1" index="0" instance=ExtResource( 16 )]
 
-[node name="chairBody2" parent="House/Chair1" index="1" instance=ExtResource( 11 )]
+[node name="chairBody2" parent="House/Chair1" index="1" instance=ExtResource( 16 )]
 
 [node name="CollisionShape" type="CollisionShape" parent="House/Chair1" index="2"]
 
 transform = Transform( 0.701946, 0, 0, 0, 0.626828, 0, 0, 0, 0.704275, 0.0540504, 1.72157, -0.0604982 )
-shape = SubResource( 69 )
+shape = SubResource( 4 )
 disabled = false
 
 [node name="Table" type="StaticBody" parent="House" index="5"]
 
-editor/display_folded = true
 transform = Transform( 0.999994, 0, 0.00360503, 0, 1, 0, -0.00345288, 0, 0.957788, 0, 0, 0 )
 input_ray_pickable = true
 input_capture_on_drag = false
@@ -60119,7 +60220,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="TableModel" parent="House/Table" index="0" instance=ExtResource( 12 )]
+[node name="TableModel" parent="House/Table" index="0" instance=ExtResource( 17 )]
 
 transform = Transform( -0.000367145, 0, 1.99641, 0, 1.03323, 0, -1.75241, 0, 0.000394679, -97.7427, 0.581138, -66.0457 )
 _sections_unfolded = [ "Transform" ]
@@ -60127,7 +60228,7 @@ _sections_unfolded = [ "Transform" ]
 [node name="CollisionShape" type="CollisionShape" parent="House/Table" index="1"]
 
 transform = Transform( -0.000311551, 0, 1.28061, 0, 1, 0, -1.19425, 0, 0.000311153, -97.7041, 2.06988, -63.3165 )
-shape = SubResource( 70 )
+shape = SubResource( 5 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
@@ -60144,7 +60245,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="TableModel" parent="House/Table2" index="0" instance=ExtResource( 12 )]
+[node name="TableModel" parent="House/Table2" index="0" instance=ExtResource( 17 )]
 
 transform = Transform( -0.000669565, 0, 0.507748, 0, 0.888623, 0, -0.285865, 0, 0.0007208, -97.7427, 0.581138, -66.0457 )
 _sections_unfolded = [ "Transform" ]
@@ -60152,51 +60253,51 @@ _sections_unfolded = [ "Transform" ]
 [node name="CollisionShape" type="CollisionShape" parent="House/Table2" index="1"]
 
 transform = Transform( -0.000184401, 0, 0.757943, 0, 0.648826, 0, -0.706831, 0, 0.000184157, -97.7703, 2.04104, -65.5332 )
-shape = SubResource( 71 )
+shape = SubResource( 6 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="HouseModel" parent="House" index="7" instance=ExtResource( 13 )]
+[node name="HouseModel" parent="House" index="7" instance=ExtResource( 18 )]
 
 transform = Transform( 2.07616, 0, 2.27374e-13, 0, 2.69722, 0, -1.09626e-13, 0, 3.19574, -98.1514, 0.0856586, -59.0465 )
 
 [node name="CollisionShape" type="CollisionShape" parent="House" index="8"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -109.927, 4.69545, -58.8682 )
-shape = SubResource( 72 )
+shape = SubResource( 7 )
 disabled = false
 
 [node name="CollisionShape2" type="CollisionShape" parent="House" index="9"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -86.1517, 4.69545, -58.8682 )
-shape = SubResource( 72 )
+shape = SubResource( 7 )
 disabled = false
 
 [node name="CollisionShape3" type="CollisionShape" parent="House" index="10"]
 
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -97.9698, 4.69545, -40.3083 )
-shape = SubResource( 73 )
+shape = SubResource( 8 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape4" type="CollisionShape" parent="House" index="11"]
 
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -90.6562, 4.69545, -77.2756 )
-shape = SubResource( 74 )
+shape = SubResource( 9 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape5" type="CollisionShape" parent="House" index="12"]
 
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -105.358, 4.69545, -77.2756 )
-shape = SubResource( 74 )
+shape = SubResource( 9 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape6" type="CollisionShape" parent="House" index="13"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -97.9654, 13.3511, -58.5654 )
-shape = SubResource( 75 )
+shape = SubResource( 10 )
 disabled = false
 
 [node name="Bed" type="StaticBody" parent="House" index="14"]
@@ -60212,7 +60313,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="bedmodel" parent="House/Bed" index="0" instance=ExtResource( 14 )]
+[node name="bedmodel" parent="House/Bed" index="0" instance=ExtResource( 19 )]
 
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 14.08, -0.36375, 2.87097 )
 _sections_unfolded = [ "Transform" ]
@@ -60220,14 +60321,14 @@ _sections_unfolded = [ "Transform" ]
 [node name="CollisionShape" type="CollisionShape" parent="House/Bed" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.2124, 0, 2.71543 )
-shape = SubResource( 76 )
+shape = SubResource( 11 )
 disabled = false
 
-[node name="lever" parent="." index="4" instance=ExtResource( 15 )]
+[node name="lever" parent="." index="8" instance=ExtResource( 20 )]
 
 editor/display_folded = true
 transform = Transform( 3.50178, 0, -3.63114, 0, 5.32441, 0, 3.73108, 0, 3.60172, -672.71, 57.5015, -76.4522 )
-script = ExtResource( 16 )
+script = ExtResource( 21 )
 
 [node name="AnimationPlayer2" type="AnimationPlayer" parent="lever" index="6"]
 
@@ -60236,12 +60337,12 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/default = ExtResource( 17 )
+anims/default = ExtResource( 22 )
 blend_times = [  ]
 
-[node name="cave" type="StaticBody" parent="." index="5"]
+[node name="cave" type="StaticBody" parent="." index="9"]
 
-transform = Transform( 3.07057, 0, -2.74239, 0, 3.7019, 0, 3.21012, 0, 3.67715, -581.559, 0.0549438, -519.181 )
+transform = Transform( 3.07057, 0, -2.74239, 0, 3.7019, 0, 3.21012, 0, 3.67715, -581.559, 1.62263, -519.181 )
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -60251,54 +60352,231 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="cave" index="0" instance=ExtResource( 18 )]
+[node name="Scene Root" parent="cave" index="0" instance=ExtResource( 23 )]
 
-transform = Transform( -0.198342, 0, -0.113019, 0, 0.270132, 0, 0.139819, 0, -0.171236, -0.00837708, -0.361849, 0.017334 )
+transform = Transform( -0.198342, 0, -0.113019, 0, 0.270132, 0, 0.139819, 0, -0.171236, -0.0083847, -0.361849, 0.0173264 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape" type="CollisionShape" parent="cave" index="1"]
 
-transform = Transform( 0.933275, 0, 0.563945, 0, 0.999999, 0, -0.528868, 0, 0.751919, -29.3055, 0, 20.9609 )
-shape = SubResource( 77 )
+transform = Transform( 0.933275, 0, 0.563945, 0, 0.999999, 0, -0.528868, 0, 0.751919, -29.3055, -1.27121, 20.9609 )
+shape = SubResource( 12 )
 disabled = false
 
 [node name="CollisionShape2" type="CollisionShape" parent="cave" index="2"]
 
-transform = Transform( 0.91547, 0, 0.601139, 0, 0.999999, 0, -0.563748, 0, 0.722153, 1.51376, -0.649521, -18.974 )
-shape = SubResource( 78 )
+transform = Transform( 0.91547, 0, 0.601139, 0, 0.999999, 0, -0.563748, 0, 0.722153, 1.51376, -1.13186, -18.974 )
+shape = SubResource( 13 )
 disabled = false
 
 [node name="CollisionShape3" type="CollisionShape" parent="cave" index="3"]
 
-transform = Transform( 0.91547, 0, 0.601139, 0, 0.999998, 0, -0.563748, 0, 0.722153, 28.2373, -0.64952, 10.9477 )
-shape = SubResource( 78 )
+transform = Transform( 0.91547, 0, 0.601139, 0, 0.999998, 0, -0.563748, 0, 0.722153, 28.8536, -1.34633, 11.6378 )
+shape = SubResource( 13 )
 disabled = false
 
 [node name="CollisionShape4" type="CollisionShape" parent="cave" index="4"]
 
-transform = Transform( 0.936325, 0, 0.55708, 0, 0.999997, 0, -0.52243, 0, 0.757177, 24.3068, -0.64952, -13.7189 )
-shape = SubResource( 66 )
+transform = Transform( 0.936325, 0, 0.55708, 0, 0.999997, 0, -0.52243, 0, 0.757177, 24.3068, -1.21874, -13.7189 )
+shape = SubResource( 14 )
 disabled = false
 
 [node name="CollisionShape5" type="CollisionShape" parent="cave" index="5"]
 
-transform = Transform( 0.933686, 0, 0.563029, 0, 0.999998, 0, -0.528008, 0, 0.752626, 4.77681, 3.31853, 1.15852 )
-shape = SubResource( 79 )
+transform = Transform( 0.933686, 0, 0.563029, 0, 0.999998, 0, -0.528008, 0, 0.752626, 4.77681, 5.37967, 1.15852 )
+shape = SubResource( 15 )
 disabled = false
 
 [node name="CollisionShape7" type="CollisionShape" parent="cave" index="6"]
 
-transform = Transform( 0.933686, 0, 0.563029, 0, 0.999997, 0, -0.528008, 0, 0.752626, 10.9769, 3.31853, -2.77966 )
-shape = SubResource( 79 )
+transform = Transform( 0.933686, 0, 0.563029, 0, 0.999997, 0, -0.528008, 0, 0.752626, 10.9769, 5.29999, -2.77966 )
+shape = SubResource( 15 )
 disabled = false
 
 [node name="CollisionShape6" type="CollisionShape" parent="cave" index="7"]
 
-transform = Transform( -0.382287, 0, 0.890899, 0, 0.999996, 0, -0.835484, 0, -0.668784, 9.9059, 3.14592, 2.9444 )
-shape = SubResource( 80 )
+transform = Transform( -0.382287, 0, 0.890899, 0, 0.999995, 0, -0.835484, 0, -0.668784, 10.1518, 4.53174, 2.46941 )
+shape = SubResource( 16 )
 disabled = false
 
-[node name="bridge" type="StaticBody" parent="." index="6"]
+[node name="CollisionShape8" type="CollisionShape" parent="cave" index="8"]
+
+transform = Transform( -0.468681, 0.33773, -0.89782, -0.921486, -0.626819, 0.00316768, -0.354126, 0.485477, 0.659038, 9.0966, -7.76752, 3.02208 )
+shape = SubResource( 17 )
+disabled = false
+
+[node name="CollisionShape9" type="CollisionShape" parent="cave" index="9"]
+
+transform = Transform( -0.202741, 0.375249, -0.936678, -1.16525, -0.208682, -0.0578203, -0.0939496, 0.642864, 0.59526, 20.1377, -14.7132, 18.7342 )
+shape = SubResource( 17 )
+disabled = false
+
+[node name="CollisionShape11" type="CollisionShape" parent="cave" index="10"]
+
+transform = Transform( 0.0354349, 0.472795, -0.849059, -1.18596, 0.142321, -0.13681, 0.137932, 0.582934, 0.711315, 22.4867, -16.9874, 24.6099 )
+shape = SubResource( 17 )
+disabled = false
+
+[node name="CollisionShape12" type="CollisionShape" parent="cave" index="11"]
+
+transform = Transform( -0.0797744, 0.399773, -0.919821, -1.19614, -0.0496412, -0.128593, -0.000681393, 0.645589, 0.614439, 32.7265, -15.8339, 36.8905 )
+shape = SubResource( 17 )
+disabled = false
+
+[node name="CollisionShape13" type="CollisionShape" parent="cave" index="12"]
+
+transform = Transform( -0.207256, 0.383072, -0.931456, -1.15404, -0.258233, -0.0859018, -0.143419, 0.626891, 0.601412, 42.2029, -18.6779, 47.5011 )
+shape = SubResource( 17 )
+disabled = false
+
+[node name="CollisionShape10" type="CollisionShape" parent="cave" index="13"]
+
+transform = Transform( -0.0651626, 0.386462, -0.927097, -1.19592, 0.0162273, -0.106601, 0.0600928, 0.65542, 0.605986, 11.9084, -12.9416, 5.02893 )
+shape = SubResource( 17 )
+disabled = false
+
+[node name="CollisionShape31" type="CollisionShape" parent="cave" index="14"]
+
+transform = Transform( -0.188905, 0, -0.0995113, 0, 0.366551, 0, 0.13166, 0, -0.159643, -31.2534, 9.931, 21.5163 )
+shape = SubResource( 18 )
+disabled = false
+
+[node name="CollisionShape32" type="CollisionShape" parent="cave" index="15"]
+
+transform = Transform( -0.134508, 0, -0.165817, 0, 0.366551, 0, 0.183858, 0, -0.0949562, -23.4355, 9.931, 29.3355 )
+shape = SubResource( 18 )
+disabled = false
+
+[node name="CollisionShape33" type="CollisionShape" parent="cave" index="16"]
+
+transform = Transform( -0.0707759, 0, -0.201441, 0, 0.366551, 0, 0.205101, 0, -0.0274583, -10.4044, 9.931, 34.6904 )
+shape = SubResource( 18 )
+disabled = false
+
+[node name="CollisionShape35" type="CollisionShape" parent="cave" index="17"]
+
+transform = Transform( 0.0150857, 0, -0.212979, 0, 0.366551, 0, 0.199127, 0, 0.0562914, 3.50809, 10.071, 33.784 )
+shape = SubResource( 18 )
+disabled = false
+
+[node name="CollisionShape20" type="CollisionShape" parent="cave" index="18"]
+
+transform = Transform( -0.0995112, 0, 0.188905, 0, 0.366551, 0, -0.159643, 0, -0.131659, 17.0853, 10.1028, 27.6107 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape21" type="CollisionShape" parent="cave" index="19"]
+
+transform = Transform( -0.160028, 0, 0.141346, 0, 0.366551, 0, -0.102586, 0, -0.179712, 27.3121, 10.1028, 17.623 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape27" type="CollisionShape" parent="cave" index="20"]
+
+transform = Transform( -0.183206, 0, 0.110864, 0, 0.36655, 0, -0.0687504, 0, -0.194519, 30.9114, 9.06771, 12.4653 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape34" type="CollisionShape" parent="cave" index="21"]
+
+transform = Transform( -0.213352, 0, -0.00827556, 0, 0.366551, 0, 0.0499025, 0, -0.200823, 35.1182, 10.7705, -13.8891 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape37" type="CollisionShape" parent="cave" index="22"]
+
+transform = Transform( -0.207446, 0, -0.0505392, 0, 0.366551, 0, 0.0888429, 0, -0.186889, 33.5976, 10.7705, -15.8055 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape38" type="CollisionShape" parent="cave" index="23"]
+
+transform = Transform( 0.188905, 0, 0.0995112, 0, 0.366551, 0, -0.131659, 0, 0.159643, 30.7111, 10.1028, -21.8513 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape29" type="CollisionShape" parent="cave" index="24"]
+
+transform = Transform( 0.148732, 0, 0.153188, 0, 0.366551, 0, -0.174677, 0, 0.110943, 22.9849, 10.1028, -29.6587 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape30" type="CollisionShape" parent="cave" index="25"]
+
+transform = Transform( 0.081385, 0, 0.197394, 0, 0.366551, 0, -0.203351, 0, 0.0383233, 12.754, 10.2669, -33.7538 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape24" type="CollisionShape" parent="cave" index="26"]
+
+transform = Transform( 0.0203027, 0, 0.212545, 0, 0.366551, 0, -0.20569, 0, -0.0226249, 3.17716, 10.16, -34.0254 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape25" type="CollisionShape" parent="cave" index="27"]
+
+transform = Transform( -0.0415177, 0, 0.209438, 0, 0.366551, 0, -0.190557, 0, -0.0806752, -7.30195, 10.16, -31.5031 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape26" type="CollisionShape" parent="cave" index="28"]
+
+transform = Transform( 0.0995113, 0, -0.188905, 0, 0.366551, 0, 0.159643, 0, 0.131659, -16.3747, 10.3131, -26.9016 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape28" type="CollisionShape" parent="cave" index="29"]
+
+transform = Transform( 0.16252, 0, -0.138475, 0, 0.366551, 0, 0.0993701, 0, 0.18151, -27.109, 10.3537, -16.9016 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape22" type="CollisionShape" parent="cave" index="30"]
+
+transform = Transform( 0.197473, 0, -0.0811928, 0, 0.366551, 0, 0.0381253, 0, 0.203388, -33.2514, 10.2271, -5.76399 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape23" type="CollisionShape" parent="cave" index="31"]
+
+transform = Transform( 0.213314, 0, -0.00922534, 0, 0.366551, 0, -0.0332881, 0, 0.204236, -35.5108, 10.2271, 5.01433 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape36" type="CollisionShape" parent="cave" index="32"]
+
+transform = Transform( 0.208696, 0, 0.045096, 0, 0.366551, 0, -0.0839248, 0, 0.189148, -35.0093, 10.2271, 13.3847 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="nearDoor6" type="CollisionShape" parent="cave" index="33"]
+
+transform = Transform( 0.926317, 0, -0.00210223, 0, 1.11793, 0, -0.05643, 0, 0.907883, 36.86, 2.81145, -5.15353 )
+shape = SubResource( 19 )
+disabled = false
+
+[node name="nearDoor5" type="CollisionShape" parent="cave" index="34"]
+
+transform = Transform( 0.394933, 0, 0.937954, 0, 1.11793, 0, -0.882727, 0, 0.0326892, 34.6819, 2.99496, 5.54955 )
+shape = SubResource( 20 )
+disabled = false
+
+[node name="bridge" type="StaticBody" parent="." index="10"]
 
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -632.693, 200.626, -3.2439 )
@@ -60311,7 +60589,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="bridge" parent="bridge" index="0" instance=ExtResource( 19 )]
+[node name="bridge" parent="bridge" index="0" instance=ExtResource( 24 )]
 
 transform = Transform( -0.623537, 0.027018, -0.459405, -0.000544757, 0.999305, 0.023815, 0.677373, 0.0256743, -0.443488, 24.4543, -74.1842, 78.7944 )
 _sections_unfolded = [ "Transform" ]
@@ -60319,25 +60597,25 @@ _sections_unfolded = [ "Transform" ]
 [node name="CollisionShape" type="CollisionShape" parent="bridge" index="1"]
 
 transform = Transform( 0.722091, 0.0188881, -0.69154, -0.0299928, 0.999542, -0.00401721, 0.691148, 0.023642, 0.722327, 46.4529, -75.538, 99.8234 )
-shape = SubResource( 81 )
+shape = SubResource( 21 )
 disabled = false
 
 [node name="CollisionShape2" type="CollisionShape" parent="bridge" index="2"]
 
 transform = Transform( 0.722091, 0.0188881, -0.69154, -0.0299928, 0.999542, -0.00401721, 0.691148, 0.023642, 0.722327, 34.5695, -75.1383, 88.6255 )
-shape = SubResource( 82 )
+shape = SubResource( 22 )
 disabled = false
 
 [node name="CollisionShape3" type="CollisionShape" parent="bridge" index="3"]
 
 transform = Transform( 0.722091, 0.0188881, -0.69154, -0.0299928, 0.999542, -0.00401721, 0.691148, 0.023642, 0.722327, 21.1487, -74.2268, 75.4607 )
-shape = SubResource( 83 )
+shape = SubResource( 23 )
 disabled = false
 
 [node name="CollisionShape4" type="CollisionShape" parent="bridge" index="4"]
 
 transform = Transform( 0.722091, 0.0188881, -0.69154, -0.0299928, 0.999542, -0.00401721, 0.691148, 0.023642, 0.722327, 2.05927, -73.6645, 57.0225 )
-shape = SubResource( 83 )
+shape = SubResource( 23 )
 disabled = false
 
 [node name="pillar1" type="StaticBody" parent="bridge" index="5"]
@@ -60352,14 +60630,14 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="bridge/pillar1" index="0" instance=ExtResource( 20 )]
+[node name="Scene Root" parent="bridge/pillar1" index="0" instance=ExtResource( 25 )]
 
 transform = Transform( 1.94989, 0, 0, 0, 4.11314, 0, 0, 0, 1.80905, -8.02551, -73.1728, 56.8599 )
 
 [node name="CollisionShape" type="CollisionShape" parent="bridge/pillar1" index="1"]
 
 transform = Transform( 0.707978, 0, 0.706235, 0, 1, 0, -0.706235, 0, 0.707978, -8.03979, -68.0067, 56.8476 )
-shape = SubResource( 84 )
+shape = SubResource( 24 )
 disabled = false
 
 [node name="pillar2" type="StaticBody" parent="bridge" index="6"]
@@ -60374,14 +60652,14 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="bridge/pillar2" index="0" instance=ExtResource( 20 )]
+[node name="Scene Root" parent="bridge/pillar2" index="0" instance=ExtResource( 25 )]
 
 transform = Transform( 1.94989, 0, 0, 0, 4.11314, 0, 0, 0, 1.80905, 1.93524, -73.1728, 46.9878 )
 
 [node name="CollisionShape" type="CollisionShape" parent="bridge/pillar2" index="1"]
 
 transform = Transform( 0.707978, 0, 0.706235, 0, 1, 0, -0.706235, 0, 0.707978, 1.92096, -68.0067, 46.9756 )
-shape = SubResource( 84 )
+shape = SubResource( 24 )
 disabled = false
 
 [node name="pillar3" type="StaticBody" parent="bridge" index="7"]
@@ -60396,14 +60674,14 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="bridge/pillar3" index="0" instance=ExtResource( 20 )]
+[node name="Scene Root" parent="bridge/pillar3" index="0" instance=ExtResource( 25 )]
 
 transform = Transform( 1.94989, 0, 0, 0, 4.11314, 0, 0, 0, 1.80905, 59.5596, -76.6404, 102.475 )
 
 [node name="CollisionShape" type="CollisionShape" parent="bridge/pillar3" index="1"]
 
 transform = Transform( 0.707978, 0, 0.706235, 0, 1, 0, -0.706235, 0, 0.707978, 59.5453, -71.4743, 102.462 )
-shape = SubResource( 84 )
+shape = SubResource( 24 )
 disabled = false
 
 [node name="pillar4" type="StaticBody" parent="bridge" index="8"]
@@ -60418,20 +60696,20 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Scene Root" parent="bridge/pillar4" index="0" instance=ExtResource( 20 )]
+[node name="Scene Root" parent="bridge/pillar4" index="0" instance=ExtResource( 25 )]
 
 transform = Transform( 1.94989, 0, 0, 0, 4.11314, 0, 0, 0, 1.80905, 50.1246, -76.6404, 113.231 )
 
 [node name="CollisionShape" type="CollisionShape" parent="bridge/pillar4" index="1"]
 
 transform = Transform( 0.707978, 0, 0.706235, 0, 1, 0, -0.706235, 0, 0.707978, 50.1104, -71.4743, 113.219 )
-shape = SubResource( 84 )
+shape = SubResource( 24 )
 disabled = false
 
-[node name="bunker" type="StaticBody" parent="." index="7"]
+[node name="blocManteau" type="StaticBody" parent="." index="11"]
 
 editor/display_folded = true
-transform = Transform( 2.71903, 0, -2.00421, 0, 2.37892, 0, 2.76779, 0, 1.90478, -653.257, 7.09212, 125.275 )
+transform = Transform( 0.724861, 0, 0.688896, 0, 1.36411, 0, -0.688896, 0, 0.724861, -484.962, 89.0102, 18.5652 )
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -60440,79 +60718,15 @@ friction = 1.0
 bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
+script = ExtResource( 26 )
 
-[node name="model" parent="bunker" index="0" instance=ExtResource( 21 )]
+[node name="blocage manteau" type="CollisionShape" parent="blocManteau" index="0"]
 
-transform = Transform( 0.998713, 0, 0.0507202, 0, 1, 0, -0.0507202, 0, 0.998713, 0, 0, 0 )
-_sections_unfolded = [ "Transform" ]
-
-[node name="CollisionShape" type="CollisionShape" parent="bunker" index="1"]
-
-transform = Transform( 0.997775, 0, 0.0479884, 0, 1, 0, -0.0926121, 0, 0.997775, 0.206955, -3.05585, 0.0731201 )
-shape = SubResource( 85 )
+transform = Transform( 1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0 )
+shape = SubResource( 25 )
 disabled = false
 
-[node name="CollisionShape2" type="CollisionShape" parent="bunker" index="2"]
-
-transform = Transform( 0.997776, 0, 0.0479883, 0, 1, 0, -0.092612, 0, 0.997776, -6.60677, -3.02473, 0.871185 )
-shape = SubResource( 86 )
-disabled = false
-
-[node name="CollisionShape3" type="CollisionShape" parent="bunker" index="3"]
-
-transform = Transform( 0.997776, 0, 0.0479883, 0, 1, 0, -0.092612, 0, 0.997776, 6.68517, -3.02473, 0.136993 )
-shape = SubResource( 86 )
-disabled = false
-
-[node name="CollisionShape4" type="CollisionShape" parent="bunker" index="4"]
-
-transform = Transform( 1, 0, -2.98023e-08, 0, 1, 0, 0, 0, 1, -4.34799, -1.77518, -4.70248 )
-shape = SubResource( 87 )
-disabled = false
-
-[node name="CollisionShape5" type="CollisionShape" parent="bunker" index="5"]
-
-transform = Transform( 1, 0, -2.98023e-08, 0, 1, 0, 0, 0, 1, 3.89035, -1.77518, -4.88766 )
-shape = SubResource( 87 )
-disabled = false
-
-[node name="CollisionShape6" type="CollisionShape" parent="bunker" index="6"]
-
-transform = Transform( 1, 0, -2.98023e-08, 0, 1, 0, 0, 0, 1, 0, 5.68872, 0 )
-shape = SubResource( 88 )
-disabled = false
-
-[node name="CollisionShape7" type="CollisionShape" parent="bunker" index="7"]
-
-transform = Transform( 1, 0, -2.98023e-08, 0, 1, 0, 0, 0, 1, 0, -3.26709, 0 )
-shape = SubResource( 88 )
-disabled = false
-
-[node name="CollisionShape8" type="CollisionShape" parent="bunker" index="8"]
-
-transform = Transform( 0.999012, 0, 0.0319897, 0, 1, 0, -0.0617368, 0, 0.999012, -0.01474, 1.6008, -2.69376 )
-shape = SubResource( 89 )
-disabled = false
-
-[node name="CollisionShape9" type="CollisionShape" parent="bunker" index="9"]
-
-transform = Transform( 0.999013, 0, 0.0319897, 0, 1, 0, -0.0617368, 0, 0.999012, -0.0722198, 1.6008, 2.86871 )
-shape = SubResource( 89 )
-disabled = false
-
-[node name="CollisionShape10" type="CollisionShape" parent="bunker" index="10"]
-
-transform = Transform( 0.999284, 0, 0.0272325, 0, 1, 0, -0.0525557, 0, 0.999284, 3.60773, 1.55198, -0.359589 )
-shape = SubResource( 90 )
-disabled = false
-
-[node name="CollisionShape11" type="CollisionShape" parent="bunker" index="11"]
-
-transform = Transform( 0.999284, 0, 0.0272325, 0, 1, 0, -0.0525557, 0, 0.999284, -3.75629, 1.55198, 0.164978 )
-shape = SubResource( 90 )
-disabled = false
-
-[node name="mountainLevel" type="StaticBody" parent="." index="8"]
+[node name="mountainLevel" type="StaticBody" parent="." index="12"]
 
 editor/display_folded = true
 transform = Transform( 0.998713, 0, 0.0507202, 0, 1, 0, -0.0507202, 0, 0.998713, -565.22, -7.62939e-06, 26.4781 )
@@ -60526,92 +60740,311 @@ constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="environement" parent="mountainLevel" index="0" instance=ExtResource( 22 )]
+[node name="environement" parent="mountainLevel" index="0" instance=ExtResource( 27 )]
 
-transform = Transform( -0.152695, 0, -0.988273, 0, 1, 0, 0.988273, 0, -0.152695, 0.311523, 0.289768, 0.667904 )
+transform = Transform( -0.152695, 0, -0.988273, 0, 1, 0, 0.988273, 0, -0.152695, -0.142273, -0.219921, 0.384111 )
 
 [node name="Floor" type="CollisionShape" parent="mountainLevel" index="1"]
 
 transform = Transform( -0.987334, 0, 0.158653, 0, 1, 0, -0.158653, 0, -0.987334, -3.14832, -3.63261, 0.104618 )
-shape = SubResource( 91 )
+shape = SubResource( 26 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape" type="CollisionShape" parent="mountainLevel" index="2"]
 
 transform = Transform( 0.740142, 0.0104629, 0.672368, -0.0141349, 0.9999, 0, -0.672302, -0.00950385, 0.740216, 27.1282, 25.5398, -64.2381 )
-shape = SubResource( 92 )
+shape = SubResource( 27 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape2" type="CollisionShape" parent="mountainLevel" index="3"]
 
 transform = Transform( 0.764298, 0.0108043, 0.644773, -0.0141349, 0.9999, 0, -0.644708, -0.00911377, 0.764375, 70.6732, 25.5398, -13.813 )
-shape = SubResource( 92 )
+shape = SubResource( 27 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape3" type="CollisionShape" parent="mountainLevel" index="4"]
 
 transform = Transform( 0.702789, 0, 0.711398, 0, 1, 0, -0.711398, 0, 0.702789, -84.3673, 19.5429, 40.6179 )
-shape = SubResource( 93 )
+shape = SubResource( 28 )
 disabled = false
 
 [node name="CollisionShape4" type="CollisionShape" parent="mountainLevel" index="5"]
 
 transform = Transform( 0.735761, 0, 0.677239, 0, 1, 0, -0.677239, 0, 0.735761, -40.3141, 17.699, 91.5965 )
-shape = SubResource( 93 )
+shape = SubResource( 28 )
 disabled = false
 
 [node name="CollisionShape5" type="CollisionShape" parent="mountainLevel" index="6"]
 
 transform = Transform( 0.656924, 0, -0.753956, 0, 1, 0, 0.753956, 0, 0.656924, -4.74988, 123.741, 131.269 )
-shape = SubResource( 94 )
+shape = SubResource( 29 )
 disabled = false
 
 [node name="CollisionShape6" type="CollisionShape" parent="mountainLevel" index="7"]
 
 transform = Transform( 0.656924, 0, -0.753956, 0, 1, 0, 0.753956, 0, 0.656924, -124.17, 127.07, 1.50319 )
-shape = SubResource( 94 )
+shape = SubResource( 29 )
 disabled = false
 
 [node name="CollisionShape7" type="CollisionShape" parent="mountainLevel" index="8"]
 
 transform = Transform( 0.650443, -0.0193481, -0.759307, 0.0131471, 0.999812, -0.0142143, 0.75944, -0.000737081, 0.650577, -112.147, 126.369, 62.3308 )
-shape = SubResource( 95 )
+shape = SubResource( 30 )
 disabled = false
 
 [node name="CollisionShape8" type="CollisionShape" parent="mountainLevel" index="9"]
 
 transform = Transform( 0.648451, 0.0273782, -0.760762, -0.0576076, 0.998252, -0.0131782, 0.759073, 0.0523711, 0.648896, -62.7565, 125.067, 113.039 )
-shape = SubResource( 95 )
+shape = SubResource( 30 )
 disabled = false
 
 [node name="CollisionShape9" type="CollisionShape" parent="mountainLevel" index="10"]
 
 transform = Transform( -0.655718, 0.0478228, 0.75349, 0.0418625, 0.99876, -0.0269592, -0.753844, 0.0138654, -0.656905, 97.9542, 55.8172, 33.7494 )
-shape = SubResource( 96 )
+shape = SubResource( 31 )
 disabled = false
 
 [node name="CollisionShape10" type="CollisionShape" parent="mountainLevel" index="11"]
 
 transform = Transform( -0.655719, 0.0478229, 0.75349, 0.0418625, 0.99876, -0.0269592, -0.753844, 0.0138654, -0.656905, -14.4858, 63.6278, -101.588 )
-shape = SubResource( 96 )
+shape = SubResource( 31 )
 disabled = false
 
 [node name="CollisionShape11" type="CollisionShape" parent="mountainLevel" index="12"]
 
 transform = Transform( 0.741547, 0, 0.670901, 0, 1, 0, -0.670901, 0, 0.741547, 40.6204, 89.0118, 96.6837 )
-shape = SubResource( 97 )
+shape = SubResource( 32 )
 disabled = false
 
 [node name="CollisionShape12" type="CollisionShape" parent="mountainLevel" index="13"]
 
 transform = Transform( 0.741547, 0, 0.670901, 0, 1, 0, -0.670901, 0, 0.741547, -82.5509, 91.3083, -41.9632 )
-shape = SubResource( 97 )
+shape = SubResource( 32 )
 disabled = false
 
-[node name="Environement" type="StaticBody" parent="." index="9"]
+[node name="bunker" type="StaticBody" parent="mountainLevel" index="14"]
+
+editor/display_folded = true
+transform = Transform( 2.77996, 0, -2.61339, 0, 2.0897, 0, 3.5988, 0, 1.92302, -89.6995, 6.28379, 91.7885 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="model" parent="mountainLevel/bunker" index="0" instance=ExtResource( 28 )]
+
+transform = Transform( 0.998713, 0, 0.0507202, 0, 1, 0, -0.0507202, 0, 0.998713, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2" type="CollisionShape" parent="mountainLevel/bunker" index="1"]
+
+transform = Transform( 0.997776, 0, 0.0479883, 0, 1, 0, -0.092612, 0, 0.997776, -6.60677, -3.02473, 0.871185 )
+shape = SubResource( 33 )
+disabled = false
+
+[node name="CollisionShape3" type="CollisionShape" parent="mountainLevel/bunker" index="2"]
+
+transform = Transform( 0.997776, 0, 0.0479883, 0, 1, 0, -0.092612, 0, 0.997776, 6.68517, -3.02473, 0.136993 )
+shape = SubResource( 33 )
+disabled = false
+
+[node name="CollisionShape4" type="CollisionShape" parent="mountainLevel/bunker" index="3"]
+
+transform = Transform( 1, 0, -2.98023e-08, 0, 1, 0, 0, 0, 1, -4.34799, -1.77518, -4.70248 )
+shape = SubResource( 34 )
+disabled = false
+
+[node name="CollisionShape5" type="CollisionShape" parent="mountainLevel/bunker" index="4"]
+
+transform = Transform( 1, 0, -2.98023e-08, 0, 1, 0, 0, 0, 1, 3.89035, -1.77518, -4.88766 )
+shape = SubResource( 34 )
+disabled = false
+
+[node name="CollisionShape6" type="CollisionShape" parent="mountainLevel/bunker" index="5"]
+
+transform = Transform( 1, 0, -2.98023e-08, 0, 1, 0, 0, 0, 1, 0, 5.68872, 0 )
+shape = SubResource( 35 )
+disabled = false
+
+[node name="CollisionShape8" type="CollisionShape" parent="mountainLevel/bunker" index="6"]
+
+transform = Transform( 0.999012, 0, 0.0319897, 0, 1, 0, -0.0617369, 0, 0.999012, 0.0537415, 1.6008, -2.80896 )
+shape = SubResource( 36 )
+disabled = false
+
+[node name="CollisionShape9" type="CollisionShape" parent="mountainLevel/bunker" index="7"]
+
+transform = Transform( 0.999734, 0, 0.0224471, 0, 0.999999, 0, -0.0429195, 0, 0.999302, -0.0166092, 1.6008, 3.03201 )
+shape = SubResource( 36 )
+disabled = false
+
+[node name="CollisionShape10" type="CollisionShape" parent="mountainLevel/bunker" index="8"]
+
+transform = Transform( 0.999284, 0, 0.0272325, 0, 1, 0, -0.0525559, 0, 0.999284, 3.80837, 1.55198, -0.142563 )
+shape = SubResource( 37 )
+disabled = false
+
+[node name="CollisionShape11" type="CollisionShape" parent="mountainLevel/bunker" index="9"]
+
+transform = Transform( 0.999284, 0, 0.0272325, 0, 1, 0, -0.0525557, 0, 0.999284, -3.75629, 1.55198, 0.164978 )
+shape = SubResource( 37 )
+disabled = false
+
+[node name="CollisionShape" type="CollisionShape" parent="mountainLevel/bunker" index="10"]
+
+transform = Transform( 0.999175, 0, 0.0194607, 0, 1, 0, -0.0383203, 0, 1.00008, 0.0130157, 3.9293, -4.74706 )
+shape = SubResource( 38 )
+disabled = false
+
+[node name="CollisionShape40" type="CollisionShape" parent="mountainLevel" index="15"]
+
+transform = Transform( -0.118769, 0, -0.906998, 0, 3.14802, 0, 0.900616, 0, -0.123095, -22.2028, 136.575, 150.362 )
+shape = SubResource( 18 )
+disabled = false
+
+[node name="CollisionShape41" type="CollisionShape" parent="mountainLevel" index="16"]
+
+transform = Transform( 0.247716, 0, -0.880564, 0, 3.14802, 0, 0.876396, 0, 0.241224, 31.6382, 136.575, 147.708 )
+shape = SubResource( 18 )
+disabled = false
+
+[node name="CollisionShape57" type="CollisionShape" parent="mountainLevel" index="17"]
+
+transform = Transform( 0.529914, 0, -0.745618, 0, 3.14802, 0, 0.743881, 0, 0.522399, 93.0678, 136.575, 123.252 )
+shape = SubResource( 18 )
+disabled = false
+
+[node name="CollisionShape43" type="CollisionShape" parent="mountainLevel" index="18"]
+
+transform = Transform( 0.782538, 0, -0.473699, 0, 3.14802, 0, 0.475089, 0, 0.77495, 134.229, 137.777, 79.8601 )
+shape = SubResource( 18 )
+disabled = false
+
+[node name="CollisionShape44" type="CollisionShape" parent="mountainLevel" index="19"]
+
+transform = Transform( -0.907, 0, 0.118773, 0, 3.14802, 0, -0.123095, 0, -0.900613, 154.895, 138.05, 23.7125 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape50" type="CollisionShape" parent="mountainLevel" index="20"]
+
+transform = Transform( -0.890181, 0, -0.210553, 0, 3.14802, 0, 0.204245, 0, -0.885743, 150.779, 138.05, -32.5059 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape51" type="CollisionShape" parent="mountainLevel" index="21"]
+
+transform = Transform( -0.839553, 0, -0.362659, 0, 3.14801, 0, 0.360883, 0, -0.834487, 143.273, 129.161, -56.5781 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape54" type="CollisionShape" parent="mountainLevel" index="22"]
+
+transform = Transform( -0.498452, 0, -0.767006, 0, 3.14802, 0, 0.759379, 0, -0.499595, 59.5477, 143.785, -137.749 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape55" type="CollisionShape" parent="mountainLevel" index="23"]
+
+transform = Transform( -0.335967, 0, -0.850818, 0, 3.14802, 0, 0.84357, 0, -0.338604, 47.6172, 143.785, -138.266 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape56" type="CollisionShape" parent="mountainLevel" index="24"]
+
+transform = Transform( 0.118773, 0, 0.907, 0, 3.14802, 0, -0.900613, 0, 0.123095, 16.0907, 138.05, -145.529 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape42" type="CollisionShape" parent="mountainLevel" index="25"]
+
+transform = Transform( -0.16836, 0, 0.899117, 0, 3.14802, 0, -0.894387, 0, -0.162267, -37.415, 138.05, -143.115 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape45" type="CollisionShape" parent="mountainLevel" index="26"]
+
+transform = Transform( -0.489524, 0, 0.772736, 0, 3.14802, 0, -0.7706, 0, -0.482114, -85.2415, 139.46, -123.631 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape46" type="CollisionShape" parent="mountainLevel" index="27"]
+
+transform = Transform( -0.693535, 0, 0.596455, 0, 3.14802, 0, -0.596573, 0, -0.685827, -116.876, 138.542, -96.0976 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape39" type="CollisionShape" parent="mountainLevel" index="28"]
+
+transform = Transform( -0.835486, 0, 0.372456, 0, 3.14802, 0, -0.37478, 0, -0.828132, -141.097, 138.542, -58.6136 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape52" type="CollisionShape" parent="mountainLevel" index="29"]
+
+transform = Transform( 0.906998, 0, -0.118773, 0, 3.14802, 0, 0.123095, 0, 0.900613, -153.15, 139.857, -19.8511 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape53" type="CollisionShape" parent="mountainLevel" index="30"]
+
+transform = Transform( 0.886294, 0, 0.226367, 0, 3.14802, 0, -0.219985, 0, 0.88197, -150.612, 140.205, 37.897 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape48" type="CollisionShape" parent="mountainLevel" index="31"]
+
+transform = Transform( 0.77226, 0, 0.490275, 0, 3.14802, 0, -0.482865, 0, 0.770129, -129.191, 139.118, 85.0712 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape49" type="CollisionShape" parent="mountainLevel" index="32"]
+
+transform = Transform( 0.559597, 0, 0.723611, 0, 3.14802, 0, -0.715916, 0, 0.560112, -96.6719, 139.118, 119.858 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape47" type="CollisionShape" parent="mountainLevel" index="33"]
+
+transform = Transform( 0.358101, 0, 0.841734, 0, 3.14802, 0, -0.834422, 0, 0.36055, -64.2028, 139.118, 140.22 )
+shape = SubResource( 18 )
+disabled = false
+_sections_unfolded = [ "Transform" ]
+
+[node name="nearDoor7" type="CollisionShape" parent="mountainLevel" index="34"]
+
+transform = Transform( 2.75154, 0, 3.34362, 0, 9.60102, 0, -2.81084, 0, 2.32537, 103.672, 75.4308, -122.24 )
+shape = SubResource( 19 )
+disabled = false
+
+[node name="nearDoor8" type="CollisionShape" parent="mountainLevel" index="35"]
+
+transform = Transform( -2.01758, 0, 3.20814, 0, 9.60102, 0, -3.88961, 0, -3.09215, 132.117, 81.7234, -86.241 )
+shape = SubResource( 20 )
+disabled = false
+
+[node name="Environement" type="StaticBody" parent="." index="13"]
 
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 0.791013, 0, 0, 0, 1, 0.00197601, -0.0097279, -0.00477958 )
@@ -60624,7 +61057,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="environementModel" parent="Environement" index="0" instance=ExtResource( 23 )]
+[node name="environementModel" parent="Environement" index="0" instance=ExtResource( 29 )]
 
 transform = Transform( 1.06247, 0, 0, 0, 0.975872, 0, 0, 0, 1.07656, -0.00197601, 0.012298, 0.00478005 )
 _sections_unfolded = [ "Transform" ]
@@ -60632,152 +61065,152 @@ _sections_unfolded = [ "Transform" ]
 [node name="floor collision" type="CollisionShape" parent="Environement" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1.02, 0, -1.85609, 0 )
-shape = SubResource( 98 )
+shape = SubResource( 39 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape" type="CollisionShape" parent="Environement" index="2"]
 
 transform = Transform( 1.01073, 0, 0, 0, 1.00001, 0, 0, 0, 1.03161, 166.687, 42.1506, -1.40575 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 
 [node name="CollisionShape5" type="CollisionShape" parent="Environement" index="3"]
 
 transform = Transform( 0.929192, 0, 0.397722, 0, 1.00001, 0, -0.405937, 0, 0.948385, 155.706, 42.1506, -61.176 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 
 [node name="CollisionShape6" type="CollisionShape" parent="Environement" index="4"]
 
 transform = Transform( 0.740862, 0, 0.687535, 0, 1.00001, 0, -0.701736, 0, 0.756165, 118.99, 42.1506, -119.433 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 
 [node name="CollisionShape7" type="CollisionShape" parent="Environement" index="5"]
 
 transform = Transform( 0.406709, 0, 0.925293, 0, 1.00001, 0, -0.944406, 0, 0.415109, 67.0364, 42.5325, -155.01 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 
 [node name="CollisionShape2" type="CollisionShape" parent="Environement" index="6"]
 
 transform = Transform( -1.6467e-07, 0, -1.01073, 0, 1.00001, 0, 1.03161, 0, -1.68071e-07, 1.95634, 42.6194, -170.438 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape8" type="CollisionShape" parent="Environement" index="7"]
 
 transform = Transform( 0.358391, 0, -0.945059, 0, 1.00001, 0, 0.96458, 0, 0.365793, -60.8863, 42.6194, -156.563 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape9" type="CollisionShape" parent="Environement" index="8"]
 
 transform = Transform( 0.58689, 0, -0.822886, 0, 1.00001, 0, 0.839883, 0, 0.599012, -75.4872, 44.8666, -151.913 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape10" type="CollisionShape" parent="Environement" index="9"]
 
 transform = Transform( 0.911831, 0, -0.436055, 0, 1.00001, 0, 0.445062, 0, 0.930666, -163.199, 44.441, -50.297 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape11" type="CollisionShape" parent="Environement" index="10"]
 
 transform = Transform( 0.980336, 0, -0.246013, 0, 1.00001, 0, 0.251095, 0, 1.00059, -161.983, 44.441, -36.8901 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape3" type="CollisionShape" parent="Environement" index="11"]
 
 transform = Transform( -1.01073, 0, 3.29338e-07, 0, 1.00001, 0, -3.36141e-07, 0, -1.03161, -165.273, 42.6194, -0.591268 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape12" type="CollisionShape" parent="Environement" index="12"]
 
 transform = Transform( -0.960901, 0, -0.313446, 0, 1.00001, 0, 0.319921, 0, -0.980749, -154.606, 42.6194, 58.8381 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape13" type="CollisionShape" parent="Environement" index="13"]
 
 transform = Transform( -0.776366, 0, -0.647176, 0, 1.00001, 0, 0.660544, 0, -0.792402, -125.967, 43.067, 109.408 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape14" type="CollisionShape" parent="Environement" index="14"]
 
 transform = Transform( -0.553967, 0, -0.845399, 0, 1.00001, 0, 0.862861, 0, -0.56541, -90.8765, 42.7752, 140.7 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape15" type="CollisionShape" parent="Environement" index="15"]
 
 transform = Transform( -0.288191, 0, -0.968776, 0, 1.00001, 0, 0.988787, 0, -0.294144, -45.9246, 42.7752, 162.239 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape4" type="CollisionShape" parent="Environement" index="16"]
 
 transform = Transform( -1.6467e-07, 0, 1.01073, 0, 1.00001, 0, -1.03161, 0, -1.68071e-07, -1.38462, 43.193, 169.996 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape16" type="CollisionShape" parent="Environement" index="17"]
 
 transform = Transform( -0.375159, 0, 0.938529, 0, 1.00001, 0, -0.957915, 0, -0.382908, 61.9051, 43.3039, 158.65 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape17" type="CollisionShape" parent="Environement" index="18"]
 
 transform = Transform( -0.647931, 0, 0.775735, 0, 1.00001, 0, -0.791758, 0, -0.661314, 110.712, 42.9584, 127.762 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape18" type="CollisionShape" parent="Environement" index="19"]
 
 transform = Transform( -0.873057, 0, 0.509267, 0, 1.00001, 0, -0.519786, 0, -0.89109, 144.199, 42.9584, 86.3008 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape19" type="CollisionShape" parent="Environement" index="20"]
 
 transform = Transform( -0.973566, 0, 0.271568, 0, 1.00001, 0, -0.277177, 0, -0.993675, 161.79, 42.9584, 47.0186 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="nearDoor4" type="CollisionShape" parent="Environement" index="21"]
 
 transform = Transform( -3.55936, 0, 2.09623, 0, 4.67995, 0, -2.65788, 0, -4.0802, -146.406, 11.6205, -87.73 )
-shape = SubResource( 100 )
+shape = SubResource( 19 )
 disabled = false
 
 [node name="nearDoor3" type="CollisionShape" parent="Environement" index="22"]
 
 transform = Transform( -3.41239, 0, -3.48122, 0, 4.67995, 0, 2.84409, 0, -2.9872, -112.44, 12.3887, -128.707 )
-shape = SubResource( 101 )
+shape = SubResource( 20 )
 disabled = false
 
-[node name="EnvironementHub" type="StaticBody" parent="." index="10"]
+[node name="EnvironementHub" type="StaticBody" parent="." index="14"]
 
 editor/display_folded = true
 input_ray_pickable = true
@@ -60802,7 +61235,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="endZone" parent="EnvironementHub/endZone" index="0" instance=ExtResource( 24 )]
+[node name="endZone" parent="EnvironementHub/endZone" index="0" instance=ExtResource( 30 )]
 
 transform = Transform( 5.96537, 0, -4.52523, 0, 6.08953, 0, 4.93106, 0, 6.44084, -180.026, 0.115419, -390.207 )
 _sections_unfolded = [ "Transform" ]
@@ -60810,44 +61243,44 @@ _sections_unfolded = [ "Transform" ]
 [node name="CollisionShape" type="CollisionShape" parent="EnvironementHub/endZone" index="1"]
 
 transform = Transform( 0.567802, 0.00534365, 0.823148, -1.93464e-10, 0.999979, -0.00649158, -0.823165, 0.00368593, 0.56779, -183.024, 16.0076, -421.677 )
-shape = SubResource( 102 )
+shape = SubResource( 40 )
 disabled = false
 
 [node name="CollisionShape4" type="CollisionShape" parent="EnvironementHub/endZone" index="2"]
 
 transform = Transform( 0.800189, -0.599748, 1.30367e-07, 1.62921e-07, 2.65432e-14, -1, 0.659251, 0.879578, 1.07406e-07, -165.721, 32.9048, -409.864 )
-shape = SubResource( 102 )
+shape = SubResource( 40 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape5" type="CollisionShape" parent="EnvironementHub/endZone" index="3"]
 
 transform = Transform( 0.800189, -0.599748, 1.30367e-07, 1.62921e-07, 2.65432e-14, -1, 0.659251, 0.879578, 1.07406e-07, -165.721, 0.0355618, -409.864 )
-shape = SubResource( 102 )
+shape = SubResource( 40 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape3" type="CollisionShape" parent="EnvironementHub/endZone" index="4"]
 
 transform = Transform( 0.567802, 0.00534365, 0.823148, -1.93464e-10, 0.999979, -0.00649158, -0.823165, 0.00368593, 0.56779, -151.749, 16.0076, -394.939 )
-shape = SubResource( 102 )
+shape = SubResource( 40 )
 disabled = false
 
 [node name="CollisionShape2" type="CollisionShape" parent="EnvironementHub/endZone" index="5"]
 
 transform = Transform( -0.774182, 0.00410893, 0.63295, 0, 0.999979, -0.00649158, -0.632963, -0.00502567, -0.774166, -155.564, 16.0076, -424.632 )
-shape = SubResource( 102 )
+shape = SubResource( 40 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="floor" type="CollisionShape" parent="EnvironementHub" index="1"]
 
 transform = Transform( -0.0326434, 0, -1.07608, 0, 0.873642, 0, 1.06197, 0, -0.0322139, -300.631, -2.91539, -253.615 )
-shape = SubResource( 103 )
+shape = SubResource( 41 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="hubArena" parent="EnvironementHub" index="2" instance=ExtResource( 25 )]
+[node name="hubArena" parent="EnvironementHub" index="2" instance=ExtResource( 31 )]
 
 transform = Transform( -0.0326434, 0, -1.07605, 0, 0.747588, 0, 1.06197, 0, -0.0330763, -300.631, 0.172132, -253.615 )
 _sections_unfolded = [ "Transform" ]
@@ -60864,7 +61297,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="finalHubModel" parent="EnvironementHub/finalHub" index="0" instance=ExtResource( 26 )]
+[node name="finalHubModel" parent="EnvironementHub/finalHub" index="0" instance=ExtResource( 32 )]
 
 transform = Transform( 1.05406, 0, 0.00256109, 0, 1.62268, 0, 0.0187623, 0, 1.05629, -0.073082, 0.236727, -0.267998 )
 _sections_unfolded = [ "Transform" ]
@@ -60872,475 +61305,475 @@ _sections_unfolded = [ "Transform" ]
 [node name="pillar_1" type="CollisionShape" parent="EnvironementHub/finalHub" index="1"]
 
 transform = Transform( 1.05384, 0, -0.0228395, 0, 2.34313, 0, 0.0451247, 0, 1.05605, 5.8239, 3.83231, 0.184835 )
-shape = SubResource( 104 )
+shape = SubResource( 42 )
 disabled = false
 
 [node name="pillar_4" type="CollisionShape" parent="EnvironementHub/finalHub" index="2"]
 
 transform = Transform( 1.05384, 0, -0.0228395, 0, 2.34313, 0, 0.0451247, 0, 1.05605, -6.95019, 4.18769, -0.0263195 )
-shape = SubResource( 105 )
+shape = SubResource( 43 )
 disabled = false
 
 [node name="pillar_2" type="CollisionShape" parent="EnvironementHub/finalHub" index="3"]
 
 transform = Transform( 1.05384, 0, -0.0228395, 0, 2.34313, 0, 0.0451247, 0, 1.05605, -0.186483, 3.26558, -6.82735 )
-shape = SubResource( 106 )
+shape = SubResource( 44 )
 disabled = false
 
 [node name="pillar_3" type="CollisionShape" parent="EnvironementHub/finalHub" index="4"]
 
 transform = Transform( 1.05384, 0, -0.0228392, 0, 2.34313, 0, 0.0451248, 0, 1.05605, -0.109211, 3.28677, 6.97386 )
-shape = SubResource( 106 )
+shape = SubResource( 44 )
 disabled = false
 
 [node name="tokenSpace1" type="CollisionShape" parent="EnvironementHub/finalHub" index="5"]
 
 transform = Transform( 1.05394, 0, 0.0107552, 0, 2.34313, 0, 0.0109155, 0, 1.05704, 5.3891, 2.39302, 0.183371 )
-shape = SubResource( 107 )
+shape = SubResource( 45 )
 disabled = false
 
 [node name="tokenSpace2" type="CollisionShape" parent="EnvironementHub/finalHub" index="6"]
 
 transform = Transform( 1.05394, 0, 0.0107552, 0, 2.34313, 0, 0.0109155, 0, 1.05704, -0.124298, 2.38759, 6.55406 )
-shape = SubResource( 108 )
+shape = SubResource( 46 )
 disabled = false
 
 [node name="tokenSpace3" type="CollisionShape" parent="EnvironementHub/finalHub" index="7"]
 
 transform = Transform( 1.05394, 0, 0.0107552, 0, 2.34313, 0, 0.0109155, 0, 1.05704, -0.152891, 2.40741, -6.4206 )
-shape = SubResource( 108 )
+shape = SubResource( 46 )
 disabled = false
 
 [node name="floor" type="CollisionShape" parent="EnvironementHub/finalHub" index="8"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00947952, 0.290498, -0.251928 )
-shape = SubResource( 109 )
+shape = SubResource( 47 )
 disabled = false
 
 [node name="floor2" type="CollisionShape" parent="EnvironementHub/finalHub" index="9"]
 
 transform = Transform( 0.963189, 0, 0.262798, 0, 1, 0, -0.267017, 0, 0.965364, -0.00947952, 0.290498, -0.251911 )
-shape = SubResource( 109 )
+shape = SubResource( 47 )
 disabled = false
 
 [node name="floor3" type="CollisionShape" parent="EnvironementHub/finalHub" index="10"]
 
 transform = Transform( 0.856008, 0, 0.509388, 0, 1, 0, -0.517566, 0, 0.860224, -0.00947952, 0.290498, -0.251911 )
-shape = SubResource( 109 )
+shape = SubResource( 47 )
 disabled = false
 
 [node name="floor4" type="CollisionShape" parent="EnvironementHub/finalHub" index="11"]
 
 transform = Transform( 0.684709, 0, 0.720252, 0, 1, 0, -0.731816, 0, 0.69067, -0.00947952, 0.290498, -0.251898 )
-shape = SubResource( 109 )
+shape = SubResource( 47 )
 disabled = false
 
 [node name="floor5" type="CollisionShape" parent="EnvironementHub/finalHub" index="12"]
 
 transform = Transform( 0.467834, 0, 0.874902, 0, 1, 0, -0.88895, 0, 0.475074, -0.00947762, 0.290498, -0.251888 )
-shape = SubResource( 109 )
+shape = SubResource( 47 )
 disabled = false
 
 [node name="floor6" type="CollisionShape" parent="EnvironementHub/finalHub" index="13"]
 
 transform = Transform( 0.215067, 0, 0.967977, 0, 1, 0, -0.983519, 0, 0.223078, -0.00947762, 0.290498, -0.251888 )
-shape = SubResource( 109 )
+shape = SubResource( 47 )
 disabled = false
 
 [node name="floor7" type="CollisionShape" parent="EnvironementHub/finalHub" index="14"]
 
 transform = Transform( -0.053586, 0, 0.99086, 0, 1, 0, -1.00677, 0, -0.0453857, -0.00947952, 0.290498, -0.251883 )
-shape = SubResource( 109 )
+shape = SubResource( 47 )
 disabled = false
 
 [node name="floor8" type="CollisionShape" parent="EnvironementHub/finalHub" index="15"]
 
 transform = Transform( -0.319398, 0, 0.941405, 0, 1, 0, -0.956521, 0, -0.311607, -0.00948524, 0.290498, -0.251877 )
-shape = SubResource( 109 )
+shape = SubResource( 47 )
 disabled = false
 
 [node name="floor9" type="CollisionShape" parent="EnvironementHub/finalHub" index="16"]
 
 transform = Transform( -0.563817, 0, 0.821648, 0, 1, 0, -0.83484, 0, -0.557017, -0.00948524, 0.290498, -0.251877 )
-shape = SubResource( 109 )
+shape = SubResource( 47 )
 disabled = false
 
 [node name="floor10" type="CollisionShape" parent="EnvironementHub/finalHub" index="17"]
 
 transform = Transform( -0.766044, 0, 0.640816, 0, 1, 0, -0.651105, 0, -0.760741, -0.00948524, 0.290498, -0.251877 )
-shape = SubResource( 109 )
+shape = SubResource( 47 )
 disabled = false
 
 [node name="floor11" type="CollisionShape" parent="EnvironementHub/finalHub" index="18"]
 
 transform = Transform( -0.908621, 0, 0.418026, 0, 1, 0, -0.424738, 0, -0.905161, -0.00948524, 0.290498, -0.251877 )
-shape = SubResource( 109 )
+shape = SubResource( 47 )
 disabled = false
 
 [node name="floor12" type="CollisionShape" parent="EnvironementHub/finalHub" index="19"]
 
 transform = Transform( -0.976984, 0, 0.215639, 0, 1, 0, -0.219101, 0, -0.975199, -0.00948524, 0.290498, -0.251877 )
-shape = SubResource( 109 )
+shape = SubResource( 47 )
 disabled = false
 
 [node name="floor13" type="CollisionShape" parent="EnvironementHub/finalHub" index="20"]
 
 transform = Transform( -0.87188, 0, 0.489399, 0, 1, 0, -0.497257, 0, -0.867829, -0.00948906, 0.235928, -0.251865 )
-shape = SubResource( 110 )
+shape = SubResource( 48 )
 disabled = false
 
 [node name="floor40" type="CollisionShape" parent="EnvironementHub/finalHub" index="21"]
 
 transform = Transform( -0.87188, 0, 0.489399, 0, 1, 0, -0.497257, 0, -0.867829, -0.00948906, -0.540562, -0.251865 )
-shape = SubResource( 111 )
+shape = SubResource( 49 )
 disabled = false
 
 [node name="floor14" type="CollisionShape" parent="EnvironementHub/finalHub" index="22"]
 
 transform = Transform( -0.958826, 0, 0.285675, 0, 1, 0, -0.290262, 0, -0.956461, -0.00948906, 0.235928, -0.25186 )
-shape = SubResource( 110 )
+shape = SubResource( 48 )
 disabled = false
 
 [node name="floor41" type="CollisionShape" parent="EnvironementHub/finalHub" index="23"]
 
 transform = Transform( -0.958826, 0, 0.285675, 0, 1, 0, -0.290262, 0, -0.956461, -0.00948906, -0.540562, -0.25186 )
-shape = SubResource( 111 )
+shape = SubResource( 49 )
 disabled = false
 
 [node name="floor15" type="CollisionShape" parent="EnvironementHub/finalHub" index="24"]
 
 transform = Transform( -0.997935, 0, 0.0679265, 0, 1, 0, -0.0690168, 0, -0.997372, -0.00948715, 0.235928, -0.251856 )
-shape = SubResource( 110 )
+shape = SubResource( 48 )
 disabled = false
 
 [node name="floor42" type="CollisionShape" parent="EnvironementHub/finalHub" index="25"]
 
 transform = Transform( -0.997935, 0, 0.0679264, 0, 1, 0, -0.0690168, 0, -0.997372, -0.00948906, -0.540562, -0.251846 )
-shape = SubResource( 111 )
+shape = SubResource( 49 )
 disabled = false
 
 [node name="floor16" type="CollisionShape" parent="EnvironementHub/finalHub" index="26"]
 
 transform = Transform( -0.987347, 0, -0.153348, 0, 1, 0, 0.15581, 0, -0.988616, -0.00948715, 0.235928, -0.25185 )
-shape = SubResource( 110 )
+shape = SubResource( 48 )
 disabled = false
 
 [node name="floor22" type="CollisionShape" parent="EnvironementHub/finalHub" index="27"]
 
 transform = Transform( -0.987347, 0, -0.153348, 0, 1, 0, 0.15581, 0, -0.988616, -0.00948906, -0.540562, -0.251846 )
-shape = SubResource( 111 )
+shape = SubResource( 49 )
 disabled = false
 
 [node name="floor17" type="CollisionShape" parent="EnvironementHub/finalHub" index="28"]
 
 transform = Transform( -0.928983, 0, -0.363422, 0, 1, 0, 0.369258, 0, -0.931991, -0.00948906, 0.235928, -0.251846 )
-shape = SubResource( 110 )
+shape = SubResource( 48 )
 disabled = false
 
 [node name="floor30" type="CollisionShape" parent="EnvironementHub/finalHub" index="29"]
 
 transform = Transform( -0.928983, 0, -0.363422, 0, 1, 0, 0.369258, 0, -0.931991, -0.00948906, -0.540562, -0.251846 )
-shape = SubResource( 111 )
+shape = SubResource( 49 )
 disabled = false
 
 [node name="floor18" type="CollisionShape" parent="EnvironementHub/finalHub" index="30"]
 
 transform = Transform( -0.823168, 0, -0.559951, 0, 1, 0, 0.568942, 0, -0.827803, -0.00948906, 0.235928, -0.251846 )
-shape = SubResource( 110 )
+shape = SubResource( 48 )
 disabled = false
 
 [node name="floor31" type="CollisionShape" parent="EnvironementHub/finalHub" index="31"]
 
 transform = Transform( -0.823168, 0, -0.559951, 0, 1, 0, 0.568942, 0, -0.827803, -0.00948906, -0.540562, -0.251846 )
-shape = SubResource( 111 )
+shape = SubResource( 49 )
 disabled = false
 
 [node name="floor19" type="CollisionShape" parent="EnvironementHub/finalHub" index="32"]
 
 transform = Transform( -0.678657, 0, -0.725872, 0, 1, 0, 0.737526, 0, -0.684664, -0.00948906, 0.235928, -0.251846 )
-shape = SubResource( 110 )
+shape = SubResource( 48 )
 disabled = false
 
 [node name="floor32" type="CollisionShape" parent="EnvironementHub/finalHub" index="33"]
 
 transform = Transform( -0.678657, 0, -0.725872, 0, 1, 0, 0.737526, 0, -0.684664, -0.00948906, -0.540562, -0.251846 )
-shape = SubResource( 111 )
+shape = SubResource( 49 )
 disabled = false
 
 [node name="floor20" type="CollisionShape" parent="EnvironementHub/finalHub" index="34"]
 
 transform = Transform( -0.499239, 0, -0.85756, 0, 1, 0, 0.871329, 0, -0.506337, -0.00948906, 0.235928, -0.251846 )
-shape = SubResource( 110 )
+shape = SubResource( 48 )
 disabled = false
 
 [node name="floor33" type="CollisionShape" parent="EnvironementHub/finalHub" index="35"]
 
 transform = Transform( -0.499239, 0, -0.85756, 0, 1, 0, 0.871329, 0, -0.506337, -0.00948906, -0.540562, -0.251846 )
-shape = SubResource( 111 )
+shape = SubResource( 49 )
 disabled = false
 
 [node name="floor21" type="CollisionShape" parent="EnvironementHub/finalHub" index="36"]
 
 transform = Transform( -0.299507, 0, -0.945307, 0, 1, 0, 0.960485, 0, -0.307331, -0.00948906, 0.235928, -0.251846 )
-shape = SubResource( 110 )
+shape = SubResource( 48 )
 disabled = false
 
 [node name="floor34" type="CollisionShape" parent="EnvironementHub/finalHub" index="37"]
 
 transform = Transform( -0.299507, 0, -0.945307, 0, 1, 0, 0.960485, 0, -0.307331, -0.00948906, -0.540562, -0.251846 )
-shape = SubResource( 111 )
+shape = SubResource( 49 )
 disabled = false
 
 [node name="floor23" type="CollisionShape" parent="EnvironementHub/finalHub" index="38"]
 
 transform = Transform( -0.0827198, 0, -0.988331, 0, 1, 0, 1.0042, 0, -0.0909003, -0.00949097, 0.235928, -0.251841 )
-shape = SubResource( 110 )
+shape = SubResource( 48 )
 disabled = false
 
 [node name="floor25" type="CollisionShape" parent="EnvironementHub/finalHub" index="39"]
 
 transform = Transform( -0.0827198, 0, -0.988331, 0, 1, 0, 1.0042, 0, -0.0909003, -0.00949097, -0.540562, -0.251841 )
-shape = SubResource( 111 )
+shape = SubResource( 49 )
 disabled = false
 
 [node name="floor24" type="CollisionShape" parent="EnvironementHub/finalHub" index="40"]
 
 transform = Transform( 0.142402, 0, -0.982538, 0, 1, 0, 0.998314, 0, 0.13427, -0.00949097, 0.235928, -0.251841 )
-shape = SubResource( 110 )
+shape = SubResource( 48 )
 disabled = false
 
 [node name="floor37" type="CollisionShape" parent="EnvironementHub/finalHub" index="41"]
 
 transform = Transform( 0.142402, 0, -0.982538, 0, 1, 0, 0.998314, 0, 0.13427, -0.00949097, -0.540562, -0.251841 )
-shape = SubResource( 111 )
+shape = SubResource( 49 )
 disabled = false
 
 [node name="floor26" type="CollisionShape" parent="EnvironementHub/finalHub" index="42"]
 
 transform = Transform( 0.353096, 0, -0.929606, 0, 1, 0, 0.944531, 0, 0.345401, -0.00949097, 0.235928, -0.251841 )
-shape = SubResource( 110 )
+shape = SubResource( 48 )
 disabled = false
 
 [node name="floor38" type="CollisionShape" parent="EnvironementHub/finalHub" index="43"]
 
 transform = Transform( 0.353096, 0, -0.929606, 0, 1, 0, 0.944531, 0, 0.345401, -0.00949097, -0.540562, -0.251841 )
-shape = SubResource( 111 )
+shape = SubResource( 49 )
 disabled = false
 
 [node name="floor27" type="CollisionShape" parent="EnvironementHub/finalHub" index="44"]
 
 transform = Transform( 0.547702, 0, -0.832271, 0, 1, 0, 0.845635, 0, 0.540812, -0.00949097, 0.235928, -0.251841 )
-shape = SubResource( 110 )
+shape = SubResource( 48 )
 disabled = false
 
 [node name="floor39" type="CollisionShape" parent="EnvironementHub/finalHub" index="45"]
 
 transform = Transform( 0.547702, 0, -0.832271, 0, 1, 0, 0.845635, 0, 0.540812, -0.00949097, -0.540562, -0.251841 )
-shape = SubResource( 111 )
+shape = SubResource( 49 )
 disabled = false
 
 [node name="floor28" type="CollisionShape" parent="EnvironementHub/finalHub" index="46"]
 
 transform = Transform( 0.717144, 0, -0.694325, 0, 1, 0, 0.705472, 0, 0.711396, -0.00949097, 0.235928, -0.251841 )
-shape = SubResource( 110 )
+shape = SubResource( 48 )
 disabled = false
 
 [node name="floor35" type="CollisionShape" parent="EnvironementHub/finalHub" index="47"]
 
 transform = Transform( 0.717144, 0, -0.694325, 0, 1, 0, 0.705472, 0, 0.711396, -0.00949097, -0.540562, -0.251841 )
-shape = SubResource( 111 )
+shape = SubResource( 49 )
 disabled = false
 
 [node name="floor29" type="CollisionShape" parent="EnvironementHub/finalHub" index="48"]
 
 transform = Transform( 0.801345, 0, -0.596731, 0, 1, 0, 0.606312, 0, 0.796405, -0.00949097, 0.235928, -0.251841 )
-shape = SubResource( 110 )
+shape = SubResource( 48 )
 disabled = false
 
 [node name="floor36" type="CollisionShape" parent="EnvironementHub/finalHub" index="49"]
 
 transform = Transform( 0.801345, 0, -0.596731, 0, 1, 0, 0.606312, 0, 0.796405, -0.00949097, -0.540562, -0.251841 )
-shape = SubResource( 111 )
+shape = SubResource( 49 )
 disabled = false
 
 [node name="nearDoor2" type="CollisionShape" parent="EnvironementHub" index="4"]
 
 transform = Transform( -3.62394, 0, -2.87469, 0, 3.7019, 0, -2.6356, 0, 4.43198, -151.395, 8.98646, -163.96 )
-shape = SubResource( 101 )
+shape = SubResource( 20 )
 disabled = false
 
 [node name="nearDoor3" type="CollisionShape" parent="EnvironementHub" index="5"]
 
 transform = Transform( 2.4388, 0, -4.57883, 0, 3.7019, 0, -3.7592, 0, -2.6345, -391.665, 8.98646, -108.549 )
-shape = SubResource( 101 )
+shape = SubResource( 20 )
 disabled = false
 
 [node name="nearDoor5" type="CollisionShape" parent="EnvironementHub" index="6"]
 
 transform = Transform( -2.74191, 0, 4.34479, 0, 3.7019, 0, 3.54419, 0, 3.00485, -210.47, 8.98646, -399.389 )
-shape = SubResource( 101 )
+shape = SubResource( 20 )
 disabled = false
 
 [node name="nearDoor1" type="CollisionShape" parent="EnvironementHub" index="7"]
 
 transform = Transform( 3.32657, 0, 3.61557, 0, 3.7019, 0, 3.14087, 0, -2.92206, -184.256, 9.7899, -118.532 )
-shape = SubResource( 101 )
+shape = SubResource( 20 )
 disabled = false
 
 [node name="nearDoor4" type="CollisionShape" parent="EnvironementHub" index="8"]
 
 transform = Transform( -3.35421, 0, 2.67629, 0, 3.7019, 0, 3.11134, 0, 3.80109, -434.396, 9.7899, -143.833 )
-shape = SubResource( 101 )
+shape = SubResource( 20 )
 disabled = false
 
 [node name="nearDoor6" type="CollisionShape" parent="EnvironementHub" index="9"]
 
 transform = Transform( 3.40649, 0, -2.61145, 0, 3.7019, 0, -3.05401, 0, -3.84593, -168.668, 9.7899, -363.19 )
-shape = SubResource( 101 )
+shape = SubResource( 20 )
 disabled = false
 
 [node name="nearDoor7" type="CollisionShape" parent="EnvironementHub" index="10"]
 
 transform = Transform( 2.14119, 0, -3.77964, 0, 3.7019, 0, -4.04307, 0, -2.7065, -446.946, 9.7899, -342.793 )
-shape = SubResource( 101 )
+shape = SubResource( 20 )
 disabled = false
 
 [node name="nearDoor8" type="CollisionShape" parent="EnvironementHub" index="11"]
 
 transform = Transform( -2.71164, -4.5459e-05, 3.34127, -4.56078e-05, 3.7019, 3.02336e-05, 3.68485, 1.23661e-05, 3.23214, -413.33, 9.7899, -387.372 )
-shape = SubResource( 101 )
+shape = SubResource( 20 )
 disabled = false
 
 [node name="CollisionShape29" type="CollisionShape" parent="EnvironementHub" index="12"]
 
 transform = Transform( 1.01073, 0, 0, 0, 0.791021, 0, 0, 0, 1.03161, -130.578, 33.0356, -253.957 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 
 [node name="CollisionShape36" type="CollisionShape" parent="EnvironementHub" index="13"]
 
 transform = Transform( 0.929192, 0, 0.397722, 0, 0.791021, 0, -0.405937, 0, 0.948385, -144.252, 33.0356, -319.539 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 
 [node name="CollisionShape37" type="CollisionShape" parent="EnvironementHub" index="14"]
 
 transform = Transform( 0.740862, 0, 0.687535, 0, 0.791021, 0, -0.701736, 0, 0.756165, -148.093, 33.0356, -337.523 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 
 [node name="CollisionShape30" type="CollisionShape" parent="EnvironementHub" index="15"]
 
 transform = Transform( 0.406709, 0, 0.925293, 0, 0.791021, 0, -0.944406, 0, 0.415109, -235.292, 33.3376, -407.561 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 
 [node name="CollisionShape31" type="CollisionShape" parent="EnvironementHub" index="16"]
 
 transform = Transform( -1.6467e-07, 0, -1.01073, 0, 0.791021, 0, 1.03161, 0, -1.68071e-07, -300.372, 33.4064, -420.779 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape32" type="CollisionShape" parent="EnvironementHub" index="17"]
 
 transform = Transform( 0.358391, 0, -0.945059, 0, 0.791021, 0, 0.96458, 0, 0.365793, -363.215, 33.4064, -408.945 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape25" type="CollisionShape" parent="EnvironementHub" index="18"]
 
 transform = Transform( 0.58689, 0, -0.822886, 0, 0.791021, 0, 0.839883, 0, 0.599012, -382.209, 35.1839, -403.127 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape38" type="CollisionShape" parent="EnvironementHub" index="19"]
 
 transform = Transform( 0.911831, 0, -0.436055, 0, 0.791021, 0, 0.445062, 0, 0.930666, -461.546, 34.8473, -309.993 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape22" type="CollisionShape" parent="EnvironementHub" index="20"]
 
 transform = Transform( 0.980336, 0, -0.246013, 0, 0.791021, 0, 0.251095, 0, 1.00059, -464.371, 34.8473, -289.441 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape26" type="CollisionShape" parent="EnvironementHub" index="21"]
 
 transform = Transform( -1.01073, 0, 3.29338e-07, 0, 0.791021, 0, -3.36141e-07, 0, -1.03161, -468.861, 33.4064, -253.142 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape33" type="CollisionShape" parent="EnvironementHub" index="22"]
 
 transform = Transform( -0.960901, 0, -0.313446, 0, 0.791021, 0, 0.319921, 0, -0.980749, -457.977, 33.4064, -193.713 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape34" type="CollisionShape" parent="EnvironementHub" index="23"]
 
 transform = Transform( -0.776366, 0, -0.647176, 0, 0.791021, 0, 0.660544, 0, -0.792402, -449.337, 33.7604, -169.162 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape27" type="CollisionShape" parent="EnvironementHub" index="24"]
 
 transform = Transform( -0.502877, 0, -0.876834, 0, 0.791021, 0, 0.893601, 0, -0.515316, -367.488, 33.5296, -96.9122 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape28" type="CollisionShape" parent="EnvironementHub" index="25"]
 
 transform = Transform( -0.288191, 0, -0.968776, 0, 0.791021, 0, 0.988787, 0, -0.294144, -348.253, 33.5296, -93.775 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape20" type="CollisionShape" parent="EnvironementHub" index="26"]
 
 transform = Transform( -1.6467e-07, 0, 1.01073, 0, 0.791021, 0, -1.03161, 0, -1.68071e-07, -303.713, 33.8601, -87.4599 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape21" type="CollisionShape" parent="EnvironementHub" index="27"]
 
 transform = Transform( -0.375159, 0, 0.938529, 0, 0.791021, 0, -0.957915, 0, -0.382908, -240.486, 33.9478, -96.6648 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape23" type="CollisionShape" parent="EnvironementHub" index="28"]
 
 transform = Transform( -0.647931, 0, 0.775735, 0, 0.791021, 0, -0.791758, 0, -0.661314, -210.962, 33.6745, -108.59 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape24" type="CollisionShape" parent="EnvironementHub" index="29"]
 
 transform = Transform( -0.953767, 0, 0.336679, 0, 0.791021, 0, -0.350335, 0, -0.969557, -133.547, 33.6745, -205.038 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape35" type="CollisionShape" parent="EnvironementHub" index="30"]
 
 transform = Transform( -0.973566, 0, 0.271568, 0, 0.791021, 0, -0.277177, 0, -0.993675, -140.539, 33.6745, -205.532 )
-shape = SubResource( 99 )
+shape = SubResource( 18 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="hub" type="StaticBody" parent="." index="11"]
+[node name="hub" type="StaticBody" parent="." index="15"]
 
 editor/display_folded = true
 transform = Transform( 3.02317, 0, -2.79601, 0, 3.7019, 0, 3.2548, 0, 3.63654, -150.167, 0.0549438, -124.289 )
@@ -61353,67 +61786,67 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="tunnel_lvl1_" parent="hub" index="0" instance=ExtResource( 27 )]
+[node name="tunnel_lvl1_" parent="hub" index="0" instance=ExtResource( 33 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -2.98023e-08, 0, 1, 0, 0, 0 )
 
-[node name="tunnel_lvl2" parent="hub" index="1" instance=ExtResource( 27 )]
+[node name="tunnel_lvl2" parent="hub" index="1" instance=ExtResource( 33 )]
 
 transform = Transform( 0.174228, 0, 1.04715, 0, 1, 0, -0.982016, 0, -0.162519, -48.5141, 0, 48.7119 )
 
-[node name="tunnel_lvl3" parent="hub" index="2" instance=ExtResource( 27 )]
+[node name="tunnel_lvl3" parent="hub" index="2" instance=ExtResource( 33 )]
 
 transform = Transform( 0.993922, 0, -0.0344512, 0, 1, 0, 0.0323092, 0, 1.005, -90.5817, 0, 9.44386 )
 
 [node name="wall1" type="CollisionShape" parent="hub" index="3"]
 
 transform = Transform( 1.0113, 0, 0.0969818, 0, 0.999995, 0, -0.0909496, 0, 0.980108, 0.311777, 3.04649, -4.42399 )
-shape = SubResource( 112 )
+shape = SubResource( 50 )
 disabled = false
 
 [node name="wall2-1" type="CollisionShape" parent="hub" index="4"]
 
 transform = Transform( 0.0809587, 0, 1.04322, 0, 0.999995, 0, -0.978332, 0, -0.254523, -53.0923, 3.04649, 49.1248 )
-shape = SubResource( 112 )
+shape = SubResource( 50 )
 disabled = false
 
 [node name="wall3-1" type="CollisionShape" parent="hub" index="5"]
 
 transform = Transform( 1.00829, 0, 0.0626253, 0, 0.999995, 0, -0.0587306, 0, 0.988148, -90.1195, 3.04649, 5.00784 )
-shape = SubResource( 112 )
+shape = SubResource( 50 )
 disabled = false
 
 [node name="wall2" type="CollisionShape" parent="hub" index="6"]
 
 transform = Transform( 1.0113, 0, 0.0969818, 0, 0.999992, 0, -0.0909496, 0, 0.980108, -0.0646973, 3.04649, 4.44918 )
-shape = SubResource( 112 )
+shape = SubResource( 50 )
 disabled = false
 
 [node name="wall2-2" type="CollisionShape" parent="hub" index="7"]
 
 transform = Transform( 0.0809587, 0, 1.04322, 0, 0.999992, 0, -0.978332, 0, -0.254523, -43.8664, 3.04649, 48.0524 )
-shape = SubResource( 112 )
+shape = SubResource( 50 )
 disabled = false
 
 [node name="wall3-2" type="CollisionShape" parent="hub" index="8"]
 
 transform = Transform( 1.00829, 0, 0.0626253, 0, 0.999992, 0, -0.0587306, 0, 0.988148, -90.7993, 3.04649, 13.9132 )
-shape = SubResource( 112 )
+shape = SubResource( 50 )
 disabled = false
 
-[node name="setDetector1" parent="." index="12" instance=ExtResource( 28 )]
+[node name="setDetector1" parent="." index="16" instance=ExtResource( 3 )]
 
 transform = Transform( -0.512703, 0, -0.550132, 0, 0.827047, 0, 0.504459, 0, -0.463078, -328.035, 3.60519, -222.503 )
 
-[node name="setDetector2" parent="." index="13" instance=ExtResource( 28 )]
+[node name="setDetector2" parent="." index="17" instance=ExtResource( 3 )]
 
 transform = Transform( -0.512703, 0, -0.550132, 0, 0.827048, 0, 0.504459, 0, -0.463078, -263.533, 3.6526, -222.658 )
 
-[node name="setDetector3" parent="." index="14" instance=ExtResource( 28 )]
+[node name="setDetector3" parent="." index="18" instance=ExtResource( 3 )]
 
 transform = Transform( -0.512703, 0, -0.550132, 0, 0.827049, 0, 0.504459, 0, -0.463078, -336.647, 3.6526, -285.835 )
 
-[node name="token1" type="StaticBody" parent="." index="15"]
+[node name="token1" type="StaticBody" parent="." index="19"]
 
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, -2.98023e-08, 0, 0, 1, 0.609024, -0.0296073, 17.2144 )
@@ -61427,25 +61860,25 @@ constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 _sections_unfolded = [ "Collision" ]
 
-[node name="Token" parent="token1" index="0" instance=ExtResource( 29 )]
+[node name="Token" parent="token1" index="0" instance=ExtResource( 34 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.04777e-07, 0 )
-script = ExtResource( 30 )
+script = ExtResource( 35 )
 
-[node name="unanimated" parent="token1" index="1" instance=ExtResource( 31 )]
+[node name="unanimated" parent="token1" index="1" instance=ExtResource( 36 )]
 
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape" type="CollisionShape" parent="token1" index="2"]
 
 transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.04777e-07, 0 )
-shape = SubResource( 113 )
+shape = SubResource( 51 )
 disabled = false
 
-[node name="token2" type="StaticBody" parent="." index="16"]
+[node name="token2" type="StaticBody" parent="." index="20"]
 
 editor/display_folded = true
-transform = Transform( 1, 0, 0, 0, 1, -2.98023e-08, 0, 0, 1, -646.542, 10.1253, 142.265 )
+transform = Transform( 0.746388, 0, 0.665511, 0, 1, -2.98023e-08, -0.665511, 0, 0.746388, -647.757, 10.138, 141.074 )
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -61455,23 +61888,23 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Token" parent="token2" index="0" instance=ExtResource( 29 )]
+[node name="Token" parent="token2" index="0" instance=ExtResource( 34 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.04777e-07, 0 )
-script = ExtResource( 30 )
+script = ExtResource( 35 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="unanimated" parent="token2" index="1" instance=ExtResource( 31 )]
+[node name="unanimated" parent="token2" index="1" instance=ExtResource( 36 )]
 
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape" type="CollisionShape" parent="token2" index="2"]
 
 transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.04777e-07, 0 )
-shape = SubResource( 113 )
+shape = SubResource( 51 )
 disabled = false
 
-[node name="token3" type="StaticBody" parent="." index="17"]
+[node name="token3" type="StaticBody" parent="." index="21"]
 
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, -2.98023e-08, 0, 0, 1, -393.999, -0.0296073, -148.673 )
@@ -61484,49 +61917,50 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="Token" parent="token3" index="0" instance=ExtResource( 29 )]
+[node name="Token" parent="token3" index="0" instance=ExtResource( 34 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.04777e-07, 0 )
-script = ExtResource( 30 )
+script = ExtResource( 35 )
 
-[node name="unanimated" parent="token3" index="1" instance=ExtResource( 31 )]
+[node name="unanimated" parent="token3" index="1" instance=ExtResource( 36 )]
 
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape" type="CollisionShape" parent="token3" index="2"]
 
 transform = Transform( 1, 0, 0, 0, 1, 2.98023e-08, 0, 0, 1, 1.19209e-07, -5.04777e-07, 0 )
-shape = SubResource( 113 )
+shape = SubResource( 51 )
 disabled = false
 
-[node name="coat" parent="." index="18" instance=ExtResource( 32 )]
+[node name="coat" parent="." index="22" instance=ExtResource( 37 )]
 
 transform = Transform( -0.622913, 0, -0.782291, 0, 1, 0, 0.782291, 0, -0.622913, -8.86763, 1.67884, -13.9748 )
 
-[node name="branch" parent="." index="19" instance=ExtResource( 33 )]
+[node name="branch" parent="." index="23" instance=ExtResource( 38 )]
 
 transform = Transform( 5.86072, 0, 0, 0, 6.62071, 0, 0, 0, 6.36917, 68.0538, 0.0841786, 55.3278 )
 
-[node name="strip" parent="." index="20" instance=ExtResource( 34 )]
+[node name="strip" parent="." index="24" instance=ExtResource( 39 )]
 
 transform = Transform( 0.288615, 0, 0, 0, 0.316314, 0, 0, 0, 0.3019, -5.81371, 1.91582, 17.5063 )
 
-[node name="silex" parent="." index="21" instance=ExtResource( 35 )]
+[node name="silex" parent="." index="25" instance=ExtResource( 40 )]
 
 transform = Transform( 0.135858, 0, 0, 0, 0.125908, 0, 0, 0, 0.118296, -5.76005, 0.0336365, -23.9279 )
 
-[node name="Key" parent="." index="22" instance=ExtResource( 36 )]
+[node name="Key" parent="." index="26" instance=ExtResource( 41 )]
 
 transform = Transform( 0.18591, 0, 0, 0, 0.166563, 0, 0, 0, 0.16994, -10.8044, 0.0323732, -25.8828 )
 
-[node name="ladder" parent="." index="23" instance=ExtResource( 37 )]
+[node name="ladder" parent="." index="27" instance=ExtResource( 42 )]
 
-transform = Transform( -0.270026, -0.024852, 0.962532, 0.962853, -0.00696958, 0.269936, 0, 0.999667, 0.0258108, 13.2206, 0.670403, -10.8534 )
+transform = Transform( 0.56639, -1.22955e-07, -0.753143, -0.663013, -1.05036e-07, -0.643385, 0, 0.992576, -1.61379e-07, 13.1239, 0.466032, -16.0627 )
+_sections_unfolded = [ "Transform" ]
 
-[node name="ladderPlay" type="StaticBody" parent="." index="24"]
+[node name="plateform2" type="StaticBody" parent="." index="28"]
 
 editor/display_folded = true
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 70.8477, -24.9923, -33.1639 )
+transform = Transform( -0.118816, 0, -5.44045, 0, 6.86313, 0, 5.51187, 0, -0.0978266, -612.104, 121.533, -19.243 )
 input_ray_pickable = true
 input_capture_on_drag = false
 collision_layer = 1
@@ -61535,16 +61969,123 @@ friction = 1.0
 bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
-script = ExtResource( 38 )
 
-[node name="Model" parent="ladderPlay" index="0" instance=ExtResource( 37 )]
+[node name="Scene Root" parent="plateform2" index="0" instance=ExtResource( 43 )]
 
+transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="plateform2" index="1"]
+
+transform = Transform( 0.640132, 0, 0.694408, 0, 1, 0, -0.838003, 0, 0.653124, 2.37742, -0.24251, 2.10402 )
+shape = SubResource( 52 )
+disabled = false
+
+[node name="CollisionShape2" type="CollisionShape" parent="plateform2" index="2"]
+
+transform = Transform( 0.298088, 0, -0.053788, 0, 0.675171, 0, 0.0586448, 0, 0.276652, 5.5579, 0.165867, -0.0123444 )
+shape = SubResource( 53 )
+disabled = false
+
+[node name="CollisionShape3" type="CollisionShape" parent="plateform2" index="3"]
+
+transform = Transform( 0.0806673, 0, -0.268085, 0, 0.675171, 0, 0.29653, 0, 0.0759378, 0.674253, 0.234028, 6.22845 )
+shape = SubResource( 53 )
+disabled = false
+
+[node name="ladderPlay2" type="StaticBody" parent="." index="29"]
+
+editor/display_folded = true
+transform = Transform( 0.949327, 0, 0, 0, 0.915359, 0, 0, 0, 0.72979, -200, -200, -200 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+script = ExtResource( 44 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="ladder" parent="ladderPlay2" index="0" instance=ExtResource( 42 )]
+
+transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="ladderPlay2" index="1"]
+
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0.0160542, 2.66688, 0 )
+shape = SubResource( 54 )
+disabled = false
+
+[node name="Cooldown" type="Timer" parent="ladderPlay2" index="2"]
+
+process_mode = 1
+wait_time = 0.25
+one_shot = false
+autostart = false
+
+[node name="plateform" type="StaticBody" parent="." index="30"]
+
+editor/display_folded = true
+transform = Transform( -0.169659, 0, -7.76851, 0, 6.86313, 0, 9.7116, 0, -0.172365, -608.993, 100.488, -33.3144 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="Scene Root" parent="plateform" index="0" instance=ExtResource( 43 )]
+
+transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="plateform" index="1"]
+
+transform = Transform( 0.640132, 0, 0.694408, 0, 1, 0, -0.838003, 0, 0.653124, 2.37742, -0.24251, 2.10402 )
+shape = SubResource( 52 )
+disabled = false
+
+[node name="CollisionShape2" type="CollisionShape" parent="plateform" index="2"]
+
+transform = Transform( 0.298088, 0, -0.053788, 0, 0.675171, 0, 0.0586448, 0, 0.276652, 5.5579, 0.165867, -0.0123444 )
+shape = SubResource( 53 )
+disabled = false
+
+[node name="CollisionShape3" type="CollisionShape" parent="plateform" index="3"]
+
+transform = Transform( 0.0806673, 0, -0.268085, 0, 0.675171, 0, 0.29653, 0, 0.0759378, 0.674253, 0.234028, 6.22845 )
+shape = SubResource( 53 )
+disabled = false
+
+[node name="ladderPlay" type="StaticBody" parent="." index="31"]
+
+editor/display_folded = true
+transform = Transform( 5.94087, -0.0118931, 0.849929, 0.0171696, 3.97952, 0.00435508, -1.52004, -0.00153168, 4.71562, -638.424, 105.865, -24.7397 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+script = ExtResource( 44 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="ladder" parent="ladderPlay" index="0" instance=ExtResource( 42 )]
+
+transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape" type="CollisionShape" parent="ladderPlay" index="1"]
 
 transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0.0160542, 2.66688, 0 )
-shape = SubResource( 114 )
+shape = SubResource( 54 )
 disabled = false
 
 [node name="Cooldown" type="Timer" parent="ladderPlay" index="2"]
@@ -61554,7 +62095,487 @@ wait_time = 0.25
 one_shot = false
 autostart = false
 
-[node name="Herse" type="KinematicBody" parent="." index="25"]
+[node name="plateform3" type="StaticBody" parent="." index="32"]
+
+editor/display_folded = true
+transform = Transform( -0.118816, 0, -5.44045, 0, 6.86313, 0, 5.51187, 0, -0.0978266, -649.543, 76.3693, -50.7971 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="Scene Root" parent="plateform3" index="0" instance=ExtResource( 43 )]
+
+transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="plateform3" index="1"]
+
+transform = Transform( 0.640132, 0, 0.694408, 0, 1, 0, -0.838003, 0, 0.653124, 2.37742, -0.24251, 2.10402 )
+shape = SubResource( 52 )
+disabled = false
+
+[node name="CollisionShape2" type="CollisionShape" parent="plateform3" index="2"]
+
+transform = Transform( 0.298088, 0, -0.053788, 0, 0.675171, 0, 0.0586448, 0, 0.276652, 5.5579, 0.165867, -0.0123444 )
+shape = SubResource( 53 )
+disabled = false
+
+[node name="CollisionShape3" type="CollisionShape" parent="plateform3" index="3"]
+
+transform = Transform( 0.0806673, 0, -0.268085, 0, 0.675171, 0, 0.29653, 0, 0.0759378, 0.674253, 0.234028, 6.22845 )
+shape = SubResource( 53 )
+disabled = false
+
+[node name="ladderPlay3" type="StaticBody" parent="." index="33"]
+
+editor/display_folded = true
+transform = Transform( 5.94501, 0, 0.837085, 0, 4.83327, 0, -1.50384, 0, 4.71792, -654.487, 81.4575, -40.2843 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+script = ExtResource( 44 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="ladder" parent="ladderPlay3" index="0" instance=ExtResource( 42 )]
+
+transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="ladderPlay3" index="1"]
+
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0.0160542, 2.66688, 0 )
+shape = SubResource( 54 )
+disabled = false
+
+[node name="Cooldown" type="Timer" parent="ladderPlay3" index="2"]
+
+process_mode = 1
+wait_time = 0.25
+one_shot = false
+autostart = false
+
+[node name="ladderPlay7" type="StaticBody" parent="." index="34"]
+
+editor/display_folded = true
+transform = Transform( 5.94501, 0, 0.837085, 0, 4.83327, 0, -1.50384, 0, 4.71792, -519.888, 79.6925, 92.9468 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+script = ExtResource( 44 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="ladder" parent="ladderPlay7" index="0" instance=ExtResource( 42 )]
+
+transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="ladderPlay7" index="1"]
+
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0.0160542, 2.66688, 0 )
+shape = SubResource( 54 )
+disabled = false
+
+[node name="Cooldown" type="Timer" parent="ladderPlay7" index="2"]
+
+process_mode = 1
+wait_time = 0.25
+one_shot = false
+autostart = false
+
+[node name="plateform4" type="StaticBody" parent="." index="35"]
+
+editor/display_folded = true
+transform = Transform( -0.118816, 0, -5.44045, 0, 6.86313, 0, 5.51187, 0, -0.0978266, -477.505, 119.768, 113.988 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="Scene Root" parent="plateform4" index="0" instance=ExtResource( 43 )]
+
+transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="plateform4" index="1"]
+
+transform = Transform( 0.640132, 0, 0.694408, 0, 1, 0, -0.838003, 0, 0.653124, 2.37742, -0.24251, 2.10402 )
+shape = SubResource( 52 )
+disabled = false
+
+[node name="CollisionShape2" type="CollisionShape" parent="plateform4" index="2"]
+
+transform = Transform( 0.298088, 0, -0.053788, 0, 0.675171, 0, 0.0586448, 0, 0.276652, 5.5579, 0.165867, -0.0123444 )
+shape = SubResource( 53 )
+disabled = false
+
+[node name="CollisionShape3" type="CollisionShape" parent="plateform4" index="3"]
+
+transform = Transform( 0.0806673, 0, -0.268085, 0, 0.675171, 0, 0.29653, 0, 0.0759378, 0.674253, 0.234028, 6.22845 )
+shape = SubResource( 53 )
+disabled = false
+
+[node name="ladderPlay4" type="StaticBody" parent="." index="36"]
+
+editor/display_folded = true
+transform = Transform( -4.69215, 0, 3.34136, 0, 4.21244, 0, -3.94822, 0, -3.43436, -660.324, 60.947, -54.8676 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+script = ExtResource( 44 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="ladder" parent="ladderPlay4" index="0" instance=ExtResource( 42 )]
+
+transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="ladderPlay4" index="1"]
+
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0.0160542, 2.66688, 0 )
+shape = SubResource( 54 )
+disabled = false
+
+[node name="Cooldown" type="Timer" parent="ladderPlay4" index="2"]
+
+process_mode = 1
+wait_time = 0.25
+one_shot = false
+autostart = false
+
+[node name="plateform6" type="StaticBody" parent="." index="37"]
+
+editor/display_folded = true
+transform = Transform( -0.169659, 0, -7.76851, 0, 6.86313, 0, 9.7116, 0, -0.172365, -474.394, 98.723, 99.9167 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="Scene Root" parent="plateform6" index="0" instance=ExtResource( 43 )]
+
+transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="plateform6" index="1"]
+
+transform = Transform( 0.640132, 0, 0.694408, 0, 1, 0, -0.838003, 0, 0.653124, 2.37742, -0.24251, 2.10402 )
+shape = SubResource( 52 )
+disabled = false
+
+[node name="CollisionShape2" type="CollisionShape" parent="plateform6" index="2"]
+
+transform = Transform( 0.298088, 0, -0.053788, 0, 0.675171, 0, 0.0586448, 0, 0.276652, 5.5579, 0.165867, -0.0123444 )
+shape = SubResource( 53 )
+disabled = false
+
+[node name="CollisionShape3" type="CollisionShape" parent="plateform6" index="3"]
+
+transform = Transform( 0.0806673, 0, -0.268085, 0, 0.675171, 0, 0.29653, 0, 0.0759378, 0.674253, 0.234028, 6.22845 )
+shape = SubResource( 53 )
+disabled = false
+
+[node name="ladderPlay6" type="StaticBody" parent="." index="38"]
+
+editor/display_folded = true
+transform = Transform( -4.69215, 0, 3.34136, 0, 4.21244, 0, -3.94822, 0, -3.43436, -525.724, 59.182, 78.3635 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+script = ExtResource( 44 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="ladder" parent="ladderPlay6" index="0" instance=ExtResource( 42 )]
+
+transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="ladderPlay6" index="1"]
+
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0.0160542, 2.66688, 0 )
+shape = SubResource( 54 )
+disabled = false
+
+[node name="Cooldown" type="Timer" parent="ladderPlay6" index="2"]
+
+process_mode = 1
+wait_time = 0.25
+one_shot = false
+autostart = false
+
+[node name="ladderPlay5" type="StaticBody" parent="." index="39"]
+
+editor/display_folded = true
+transform = Transform( 5.94087, -0.0118931, 0.849929, 0.0171696, 3.97952, 0.00435508, -1.52004, -0.00153168, 4.71562, -503.825, 104.1, 108.491 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+script = ExtResource( 44 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="ladder" parent="ladderPlay5" index="0" instance=ExtResource( 42 )]
+
+transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="ladderPlay5" index="1"]
+
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0.0160542, 2.66688, 0 )
+shape = SubResource( 54 )
+disabled = false
+
+[node name="Cooldown" type="Timer" parent="ladderPlay5" index="2"]
+
+process_mode = 1
+wait_time = 0.25
+one_shot = false
+autostart = false
+
+[node name="plateform5" type="StaticBody" parent="." index="40"]
+
+editor/display_folded = true
+transform = Transform( -0.118816, 0, -5.44045, 0, 6.86313, 0, 5.51187, 0, -0.0978266, -514.944, 74.6043, 82.434 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="Scene Root" parent="plateform5" index="0" instance=ExtResource( 43 )]
+
+transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="plateform5" index="1"]
+
+transform = Transform( 0.640132, 0, 0.694408, 0, 1, 0, -0.838003, 0, 0.653124, 2.37742, -0.24251, 2.10402 )
+shape = SubResource( 52 )
+disabled = false
+
+[node name="CollisionShape2" type="CollisionShape" parent="plateform5" index="2"]
+
+transform = Transform( 0.298088, 0, -0.053788, 0, 0.675171, 0, 0.0586448, 0, 0.276652, 5.5579, 0.165867, -0.0123444 )
+shape = SubResource( 53 )
+disabled = false
+
+[node name="CollisionShape3" type="CollisionShape" parent="plateform5" index="3"]
+
+transform = Transform( 0.0806673, 0, -0.268085, 0, 0.675171, 0, 0.29653, 0, 0.0759378, 0.674253, 0.234028, 6.22845 )
+shape = SubResource( 53 )
+disabled = false
+
+[node name="plateform7" type="StaticBody" parent="." index="41"]
+
+editor/display_folded = true
+transform = Transform( 5.50761, 0, 0.263204, 0, 6.86313, 0, -0.246997, 0, 5.43496, -556.263, 14.5303, 24.2712 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="Scene Root" parent="plateform7" index="0" instance=ExtResource( 43 )]
+
+transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="plateform7" index="1"]
+
+transform = Transform( 0.640132, 0, 0.694408, 0, 1, 0, -0.838003, 0, 0.653124, 2.37742, -0.24251, 2.10402 )
+shape = SubResource( 52 )
+disabled = false
+
+[node name="CollisionShape2" type="CollisionShape" parent="plateform7" index="2"]
+
+transform = Transform( 0.298088, 0, -0.053788, 0, 0.675171, 0, 0.0586448, 0, 0.276652, 5.5579, 0.165867, -0.0123444 )
+shape = SubResource( 53 )
+disabled = false
+
+[node name="CollisionShape3" type="CollisionShape" parent="plateform7" index="3"]
+
+transform = Transform( 0.0806673, 0, -0.268085, 0, 0.675171, 0, 0.29653, 0, 0.0759378, 0.674253, 0.234028, 6.22845 )
+shape = SubResource( 53 )
+disabled = false
+
+[node name="plateform8" type="StaticBody" parent="." index="42"]
+
+editor/display_folded = true
+transform = Transform( 5.51244, 0, -0.0679967, 0, 6.86313, 0, 0.088594, 0, 5.4409, -532.799, 37.7216, -0.0140949 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+
+[node name="Scene Root" parent="plateform8" index="0" instance=ExtResource( 43 )]
+
+transform = Transform( -0.732195, 0, 0.681095, 0, 1, 0, -0.681095, 0, -0.732195, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="plateform8" index="1"]
+
+transform = Transform( 0.640132, 0, 0.694408, 0, 1, 0, -0.838003, 0, 0.653124, 2.37742, -0.24251, 2.10402 )
+shape = SubResource( 52 )
+disabled = false
+
+[node name="CollisionShape2" type="CollisionShape" parent="plateform8" index="2"]
+
+transform = Transform( 0.298088, 0, -0.053788, 0, 0.675171, 0, 0.0586448, 0, 0.276652, 5.5579, 0.165867, -0.0123444 )
+shape = SubResource( 53 )
+disabled = false
+
+[node name="CollisionShape3" type="CollisionShape" parent="plateform8" index="3"]
+
+transform = Transform( 0.0806673, 0, -0.268085, 0, 0.675171, 0, 0.29653, 0, 0.0759378, 0.674253, 0.234028, 6.22845 )
+shape = SubResource( 53 )
+disabled = false
+
+[node name="ladderPlay8" type="StaticBody" parent="." index="43"]
+
+editor/display_folded = true
+transform = Transform( -3.62834, 0, -3.6484, 0, 4.21244, 0, 4.94367, 0, -3.10623, -559.61, -0.892029, 35.2974 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+script = ExtResource( 44 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="ladder" parent="ladderPlay8" index="0" instance=ExtResource( 42 )]
+
+transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="ladderPlay8" index="1"]
+
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0.0160542, 2.66688, 0 )
+shape = SubResource( 54 )
+disabled = false
+
+[node name="Cooldown" type="Timer" parent="ladderPlay8" index="2"]
+
+process_mode = 1
+wait_time = 0.25
+one_shot = false
+autostart = false
+
+[node name="ladderPlay9" type="StaticBody" parent="." index="44"]
+
+editor/display_folded = true
+transform = Transform( 1.53517, 0, -4.71344, 0, 4.21244, 0, 5.937, 0, 0.861952, -538.269, 19.868, 28.7615 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+script = ExtResource( 44 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="ladder" parent="ladderPlay9" index="0" instance=ExtResource( 42 )]
+
+transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="ladderPlay9" index="1"]
+
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0.0160542, 2.66688, 0 )
+shape = SubResource( 54 )
+disabled = false
+
+[node name="Cooldown" type="Timer" parent="ladderPlay9" index="2"]
+
+process_mode = 1
+wait_time = 0.25
+one_shot = false
+autostart = false
+
+[node name="ladderPlay10" type="StaticBody" parent="." index="45"]
+
+editor/display_folded = true
+transform = Transform( -4.08157, 0, -3.33681, 0, 3.66688, 0, 4.57662, 0, -3.43878, -503.885, 43.2486, 7.58006 )
+input_ray_pickable = true
+input_capture_on_drag = false
+collision_layer = 1
+collision_mask = 1
+friction = 1.0
+bounce = 0.0
+constant_linear_velocity = Vector3( 0, 0, 0 )
+constant_angular_velocity = Vector3( 0, 0, 0 )
+script = ExtResource( 44 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="ladder" parent="ladderPlay10" index="0" instance=ExtResource( 42 )]
+
+transform = Transform( 0.872, 0, 0, 0, 0.999994, 0, 0, 0, 0.990539, 0, 0, 0 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape" type="CollisionShape" parent="ladderPlay10" index="1"]
+
+transform = Transform( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0.0160542, 2.66688, 0 )
+shape = SubResource( 54 )
+disabled = false
+
+[node name="Cooldown" type="Timer" parent="ladderPlay10" index="2"]
+
+process_mode = 1
+wait_time = 0.25
+one_shot = false
+autostart = false
+
+[node name="Herse" type="KinematicBody" parent="." index="46"]
 
 editor/display_folded = true
 transform = Transform( 1.19172, 0, 0.753323, 0, 1.64735, 0, -1.36509, 0, 0.657651, -106.164, -1.51386, -133.614 )
@@ -61569,33 +62590,34 @@ axis_lock_angular_x = false
 axis_lock_angular_y = false
 axis_lock_angular_z = false
 collision/safe_margin = 0.001
-script = ExtResource( 39 )
+script = ExtResource( 45 )
 _sections_unfolded = [ "Collision" ]
 
 [node name="CollisionShape" type="CollisionShape" parent="Herse" index="0"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, -20.8099, 8.51087, 0.0703583 )
-shape = SubResource( 115 )
+shape = SubResource( 55 )
 disabled = false
 
-[node name="herse" parent="Herse" index="1" instance=ExtResource( 40 )]
+[node name="herse" parent="Herse" index="1" instance=ExtResource( 46 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, -16.1208, 0, 0.0397186 )
 
-[node name="herse2" parent="Herse" index="2" instance=ExtResource( 40 )]
+[node name="herse2" parent="Herse" index="2" instance=ExtResource( 46 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.4459, 0, 0 )
 
-[node name="herse3" parent="Herse" index="3" instance=ExtResource( 40 )]
+[node name="herse3" parent="Herse" index="3" instance=ExtResource( 46 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, -25.4122, 7.00914, 0.0325165 )
 
-[node name="herse4" parent="Herse" index="4" instance=ExtResource( 40 )]
+[node name="herse4" parent="Herse" index="4" instance=ExtResource( 46 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, -16.0815, 7.00955, -0.0379181 )
 
-[node name="HerseEnd" type="KinematicBody" parent="." index="26"]
+[node name="HerseEnd" type="KinematicBody" parent="." index="47"]
 
+editor/display_folded = true
 transform = Transform( -1.38419, 0, 0.64538, 0, 1.64735, 0, -1.16949, 0, -0.763862, -190.343, -2.70355, -380.53 )
 input_ray_pickable = true
 input_capture_on_drag = false
@@ -61608,37 +62630,37 @@ axis_lock_angular_x = false
 axis_lock_angular_y = false
 axis_lock_angular_z = false
 collision/safe_margin = 0.001
-script = ExtResource( 39 )
+script = ExtResource( 45 )
 _sections_unfolded = [ "Collision", "Transform" ]
 
 [node name="CollisionShape" type="CollisionShape" parent="HerseEnd" index="0"]
 
 transform = Transform( 1, 0, 0, 0, 0.999999, 0, -1.43051e-06, 0, 1, 0.258606, 8.10755, 0.0213089 )
-shape = SubResource( 115 )
+shape = SubResource( 55 )
 disabled = false
 _sections_unfolded = [ "Transform" ]
 
-[node name="herse" parent="HerseEnd" index="1" instance=ExtResource( 40 )]
+[node name="herse" parent="HerseEnd" index="1" instance=ExtResource( 46 )]
 
 transform = Transform( 1, 0, 0, 0, 0.999996, 0, -1.66893e-06, 0, 1, 4.73922, 0, -0.0174408 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="herse2" parent="HerseEnd" index="2" instance=ExtResource( 40 )]
+[node name="herse2" parent="HerseEnd" index="2" instance=ExtResource( 46 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0, 0 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="herse3" parent="HerseEnd" index="3" instance=ExtResource( 40 )]
+[node name="herse3" parent="HerseEnd" index="3" instance=ExtResource( 46 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, 4.73922, 7.00914, 0.032517 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="herse4" parent="HerseEnd" index="4" instance=ExtResource( 40 )]
+[node name="herse4" parent="HerseEnd" index="4" instance=ExtResource( 46 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, -5.96046e-08, 0, 1, -4.5, 7.00955, -0.037918 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Door" type="StaticBody" parent="." index="27"]
+[node name="Door" type="StaticBody" parent="." index="48"]
 
 editor/display_folded = true
 transform = Transform( 1.43051e-06, 0, 2.82484, 0, 1.886, 0, -2.82484, 0, 1.43051e-06, 2.62166, -0.128666, -17.6562 )
@@ -61650,16 +62672,16 @@ friction = 1.0
 bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
-script = ExtResource( 41 )
+script = ExtResource( 47 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="CollisionShape" type="CollisionShape" parent="Door" index="0"]
 
 transform = Transform( 1, 0, 5.68434e-14, 0, 1, 0, -5.68434e-14, 0, 1, 0.0386489, 1.62446, -0.756939 )
-shape = SubResource( 116 )
+shape = SubResource( 56 )
 disabled = false
 
-[node name="DoorModele" parent="Door" index="1" instance=ExtResource( 42 )]
+[node name="DoorModele" parent="Door" index="1" instance=ExtResource( 48 )]
 
 transform = Transform( 1, 0, 9.67122e-07, 0, 0.947226, 0, -9.66788e-07, 0, 1.00034, -0.105144, 0.136246, 0.0408831 )
 _sections_unfolded = [ "Transform" ]
@@ -61671,11 +62693,12 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/default = ExtResource( 43 )
+anims/default = ExtResource( 49 )
 blend_times = [  ]
 
-[node name="Forêt" type="Spatial" parent="." index="28"]
+[node name="Forêt" type="Spatial" parent="." index="49"]
 
+editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 0.791013, 0, 0, 0, 1, -1.65656, -0.0097279, 107.437 )
 
 [node name="arbre2" type="StaticBody" parent="Forêt" index="0"]
@@ -61692,7 +62715,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre2" index="0" instance=ExtResource( 44 )]
+[node name="arbreModele" parent="Forêt/arbre2" index="0" instance=ExtResource( 50 )]
 
 [node name="animArbre" type="AnimationPlayer" parent="Forêt/arbre2/arbreModele" index="2"]
 
@@ -61701,14 +62724,14 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/windAction = SubResource( 117 )
-anims/windAction_002 = ExtResource( 45 )
+anims/windAction = SubResource( 57 )
+anims/windAction_002 = ExtResource( 51 )
 blend_times = [  ]
 
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre2" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.74821, 0 )
-shape = SubResource( 118 )
+shape = SubResource( 58 )
 disabled = false
 
 [node name="arbre13" type="StaticBody" parent="Forêt" index="1"]
@@ -61725,7 +62748,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre13" index="0" instance=ExtResource( 44 )]
+[node name="arbreModele" parent="Forêt/arbre13" index="0" instance=ExtResource( 50 )]
 
 [node name="animArbre" type="AnimationPlayer" parent="Forêt/arbre13/arbreModele" index="2"]
 
@@ -61734,14 +62757,14 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/windAction = SubResource( 119 )
-anims/windAction_002 = SubResource( 120 )
+anims/windAction = SubResource( 59 )
+anims/windAction_002 = SubResource( 60 )
 blend_times = [  ]
 
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre13" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.74821, 0 )
-shape = SubResource( 118 )
+shape = SubResource( 58 )
 disabled = false
 
 [node name="arbre8" type="StaticBody" parent="Forêt" index="2"]
@@ -61758,7 +62781,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre8" index="0" instance=ExtResource( 44 )]
+[node name="arbreModele" parent="Forêt/arbre8" index="0" instance=ExtResource( 50 )]
 
 [node name="animArbre" type="AnimationPlayer" parent="Forêt/arbre8/arbreModele" index="2"]
 
@@ -61767,14 +62790,14 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/windAction = SubResource( 121 )
-anims/windAction_002 = SubResource( 122 )
+anims/windAction = SubResource( 61 )
+anims/windAction_002 = SubResource( 62 )
 blend_times = [  ]
 
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre8" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.74821, 0 )
-shape = SubResource( 118 )
+shape = SubResource( 58 )
 disabled = false
 
 [node name="arbre16" type="StaticBody" parent="Forêt" index="3"]
@@ -61791,7 +62814,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre16" index="0" instance=ExtResource( 44 )]
+[node name="arbreModele" parent="Forêt/arbre16" index="0" instance=ExtResource( 50 )]
 
 [node name="animArbre" type="AnimationPlayer" parent="Forêt/arbre16/arbreModele" index="2"]
 
@@ -61800,14 +62823,14 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/windAction = SubResource( 123 )
-anims/windAction_002 = SubResource( 124 )
+anims/windAction = SubResource( 63 )
+anims/windAction_002 = SubResource( 64 )
 blend_times = [  ]
 
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre16" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.74821, 0 )
-shape = SubResource( 118 )
+shape = SubResource( 58 )
 disabled = false
 
 [node name="arbre4" type="StaticBody" parent="Forêt" index="4"]
@@ -61824,7 +62847,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre4" index="0" instance=ExtResource( 44 )]
+[node name="arbreModele" parent="Forêt/arbre4" index="0" instance=ExtResource( 50 )]
 
 [node name="animArbre" type="AnimationPlayer" parent="Forêt/arbre4/arbreModele" index="2"]
 
@@ -61833,14 +62856,14 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/windAction = SubResource( 125 )
-anims/windAction_002 = SubResource( 126 )
+anims/windAction = SubResource( 65 )
+anims/windAction_002 = SubResource( 66 )
 blend_times = [  ]
 
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre4" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.74821, 0 )
-shape = SubResource( 118 )
+shape = SubResource( 58 )
 disabled = false
 
 [node name="arbre11" type="StaticBody" parent="Forêt" index="5"]
@@ -61857,7 +62880,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre11" index="0" instance=ExtResource( 44 )]
+[node name="arbreModele" parent="Forêt/arbre11" index="0" instance=ExtResource( 50 )]
 
 [node name="animArbre" type="AnimationPlayer" parent="Forêt/arbre11/arbreModele" index="2"]
 
@@ -61866,14 +62889,14 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/windAction = SubResource( 127 )
-anims/windAction_002 = SubResource( 128 )
+anims/windAction = SubResource( 67 )
+anims/windAction_002 = SubResource( 68 )
 blend_times = [  ]
 
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre11" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.74821, 0 )
-shape = SubResource( 118 )
+shape = SubResource( 58 )
 disabled = false
 
 [node name="arbre6" type="StaticBody" parent="Forêt" index="6"]
@@ -61890,7 +62913,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre6" index="0" instance=ExtResource( 44 )]
+[node name="arbreModele" parent="Forêt/arbre6" index="0" instance=ExtResource( 50 )]
 
 [node name="animArbre" type="AnimationPlayer" parent="Forêt/arbre6/arbreModele" index="2"]
 
@@ -61899,14 +62922,14 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/windAction = SubResource( 129 )
-anims/windAction_002 = SubResource( 130 )
+anims/windAction = SubResource( 69 )
+anims/windAction_002 = SubResource( 70 )
 blend_times = [  ]
 
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre6" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.74821, 0 )
-shape = SubResource( 118 )
+shape = SubResource( 58 )
 disabled = false
 
 [node name="arbre14" type="StaticBody" parent="Forêt" index="7"]
@@ -61923,7 +62946,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre14" index="0" instance=ExtResource( 44 )]
+[node name="arbreModele" parent="Forêt/arbre14" index="0" instance=ExtResource( 50 )]
 
 [node name="animArbre" type="AnimationPlayer" parent="Forêt/arbre14/arbreModele" index="2"]
 
@@ -61932,14 +62955,14 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/windAction = SubResource( 131 )
-anims/windAction_002 = SubResource( 132 )
+anims/windAction = SubResource( 71 )
+anims/windAction_002 = SubResource( 72 )
 blend_times = [  ]
 
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre14" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.74821, 0 )
-shape = SubResource( 118 )
+shape = SubResource( 58 )
 disabled = false
 
 [node name="arbre1" type="StaticBody" parent="Forêt" index="8"]
@@ -61956,7 +62979,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre1" index="0" instance=ExtResource( 46 )]
+[node name="arbreModele" parent="Forêt/arbre1" index="0" instance=ExtResource( 52 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0356712, 0.0189627, -0.11512 )
 
@@ -61972,7 +62995,7 @@ blend_times = [  ]
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre1" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.6694, 0 )
-shape = SubResource( 133 )
+shape = SubResource( 73 )
 disabled = false
 
 [node name="arbre17" type="StaticBody" parent="Forêt" index="9"]
@@ -61989,7 +63012,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre17" index="0" instance=ExtResource( 46 )]
+[node name="arbreModele" parent="Forêt/arbre17" index="0" instance=ExtResource( 52 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0356712, 0.0189627, -0.11512 )
 
@@ -62005,7 +63028,7 @@ blend_times = [  ]
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre17" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.6694, 0 )
-shape = SubResource( 133 )
+shape = SubResource( 73 )
 disabled = false
 
 [node name="arbre12" type="StaticBody" parent="Forêt" index="10"]
@@ -62022,7 +63045,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre12" index="0" instance=ExtResource( 46 )]
+[node name="arbreModele" parent="Forêt/arbre12" index="0" instance=ExtResource( 52 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0356712, 0.0189627, -0.11512 )
 
@@ -62038,7 +63061,7 @@ blend_times = [  ]
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre12" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.6694, 0 )
-shape = SubResource( 133 )
+shape = SubResource( 73 )
 disabled = false
 
 [node name="arbre7" type="StaticBody" parent="Forêt" index="11"]
@@ -62055,7 +63078,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre7" index="0" instance=ExtResource( 46 )]
+[node name="arbreModele" parent="Forêt/arbre7" index="0" instance=ExtResource( 52 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0356712, 0.0189627, -0.11512 )
 
@@ -62071,7 +63094,7 @@ blend_times = [  ]
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre7" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.6694, 0 )
-shape = SubResource( 133 )
+shape = SubResource( 73 )
 disabled = false
 
 [node name="arbre10" type="StaticBody" parent="Forêt" index="12"]
@@ -62088,7 +63111,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre10" index="0" instance=ExtResource( 46 )]
+[node name="arbreModele" parent="Forêt/arbre10" index="0" instance=ExtResource( 52 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0356712, 0.0189627, -0.11512 )
 
@@ -62104,7 +63127,7 @@ blend_times = [  ]
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre10" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.6694, 0 )
-shape = SubResource( 133 )
+shape = SubResource( 73 )
 disabled = false
 
 [node name="arbre3" type="StaticBody" parent="Forêt" index="13"]
@@ -62121,7 +63144,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre3" index="0" instance=ExtResource( 46 )]
+[node name="arbreModele" parent="Forêt/arbre3" index="0" instance=ExtResource( 52 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0356712, 0.0189627, -0.11512 )
 
@@ -62137,7 +63160,7 @@ blend_times = [  ]
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre3" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.6694, 0 )
-shape = SubResource( 133 )
+shape = SubResource( 73 )
 disabled = false
 
 [node name="arbre9" type="StaticBody" parent="Forêt" index="14"]
@@ -62154,7 +63177,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre9" index="0" instance=ExtResource( 46 )]
+[node name="arbreModele" parent="Forêt/arbre9" index="0" instance=ExtResource( 52 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0356712, 0.0189627, -0.11512 )
 
@@ -62170,7 +63193,7 @@ blend_times = [  ]
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre9" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.6694, 0 )
-shape = SubResource( 133 )
+shape = SubResource( 73 )
 disabled = false
 
 [node name="arbre5" type="StaticBody" parent="Forêt" index="15"]
@@ -62187,7 +63210,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre5" index="0" instance=ExtResource( 46 )]
+[node name="arbreModele" parent="Forêt/arbre5" index="0" instance=ExtResource( 52 )]
 
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.9422, 0.0189627, 8.04739 )
@@ -62204,7 +63227,7 @@ blend_times = [  ]
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre5" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.6694, 0 )
-shape = SubResource( 133 )
+shape = SubResource( 73 )
 disabled = false
 
 [node name="arbre15" type="StaticBody" parent="Forêt" index="16"]
@@ -62221,7 +63244,7 @@ bounce = 0.0
 constant_linear_velocity = Vector3( 0, 0, 0 )
 constant_angular_velocity = Vector3( 0, 0, 0 )
 
-[node name="arbreModele" parent="Forêt/arbre15" index="0" instance=ExtResource( 46 )]
+[node name="arbreModele" parent="Forêt/arbre15" index="0" instance=ExtResource( 52 )]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0356712, 0.0189627, -0.11512 )
 
@@ -62237,15 +63260,45 @@ blend_times = [  ]
 [node name="CollisionShape" type="CollisionShape" parent="Forêt/arbre15" index="1"]
 
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.6694, 0 )
-shape = SubResource( 133 )
+shape = SubResource( 73 )
 disabled = false
 
-[node name="ladderBloc" parent="." index="29" instance=ExtResource( 28 )]
+[node name="Cold" type="Sprite" parent="." index="50"]
 
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18.0132, -0.914385, -108.813 )
+position = Vector2( 520.255, 1083.21 )
+texture = ExtResource( 53 )
+script = ExtResource( 54 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Timer" type="Timer" parent="Cold" index="0"]
+
+process_mode = 1
+wait_time = 6.0
+one_shot = false
+autostart = false
 
 [connection signal="timeout" from="player/Torch/Cooldown" to="player/Torch" method="_on_Cooldown_timeout"]
 
+[connection signal="timeout" from="ladderPlay2/Cooldown" to="ladderPlay2" method="_on_Cooldown_timeout"]
+
 [connection signal="timeout" from="ladderPlay/Cooldown" to="ladderPlay" method="_on_Cooldown_timeout"]
+
+[connection signal="timeout" from="ladderPlay3/Cooldown" to="ladderPlay3" method="_on_Cooldown_timeout"]
+
+[connection signal="timeout" from="ladderPlay7/Cooldown" to="ladderPlay7" method="_on_Cooldown_timeout"]
+
+[connection signal="timeout" from="ladderPlay4/Cooldown" to="ladderPlay4" method="_on_Cooldown_timeout"]
+
+[connection signal="timeout" from="ladderPlay6/Cooldown" to="ladderPlay6" method="_on_Cooldown_timeout"]
+
+[connection signal="timeout" from="ladderPlay5/Cooldown" to="ladderPlay5" method="_on_Cooldown_timeout"]
+
+[connection signal="timeout" from="ladderPlay8/Cooldown" to="ladderPlay8" method="_on_Cooldown_timeout"]
+
+[connection signal="timeout" from="ladderPlay9/Cooldown" to="ladderPlay9" method="_on_Cooldown_timeout"]
+
+[connection signal="timeout" from="ladderPlay10/Cooldown" to="ladderPlay10" method="_on_Cooldown_timeout"]
+
+[connection signal="timeout" from="Cold/Timer" to="Cold" method="_on_Timer_timeout"]
 
 

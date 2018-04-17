@@ -2,15 +2,15 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/tokenHouse.dae-9eebadb119d0c5c2b5e82c656419a918.scn"
+path="res://.import/key.dae-b12bc125197765a88e54a5b54b2643b2.scn"
 
 [deps]
 
-source_file="res://originals/exported/mountain/bunker/tokenHouse.dae"
-source_md5="5806a865bf1eed9e4d9b6e6ba3045710"
+source_file="res://originals/exported/mountain/key/key.dae"
+source_md5="5e4e86a8d0c9c0ae1709722f882f22d1"
 
-dest_files=[ "res://.import/tokenHouse.dae-9eebadb119d0c5c2b5e82c656419a918.scn" ]
-dest_md5="3dc12c95a97617a4cdec17ca22191fb9"
+dest_files=[ "res://.import/key.dae-b12bc125197765a88e54a5b54b2643b2.scn" ]
+dest_md5="0bd7c555e8516a1f36a43f5b7b50f4de"
 
 [params]
 

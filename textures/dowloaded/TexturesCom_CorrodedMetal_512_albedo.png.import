@@ -2,31 +2,32 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TexturesCom_CorrodedMetal_512_albedo.png-7d8e3a3dd2b7c685631d883bc41dd75b.stex"
+path.s3tc="res://.import/TexturesCom_CorrodedMetal_512_albedo.png-7d8e3a3dd2b7c685631d883bc41dd75b.s3tc.stex"
+path.etc2="res://.import/TexturesCom_CorrodedMetal_512_albedo.png-7d8e3a3dd2b7c685631d883bc41dd75b.etc2.stex"
 
 [deps]
 
 source_file="res://textures/dowloaded/TexturesCom_CorrodedMetal_512_albedo.png"
 source_md5="7a5600aced475bd201872dd5405c4a7f"
 
-dest_files=[ "res://.import/TexturesCom_CorrodedMetal_512_albedo.png-7d8e3a3dd2b7c685631d883bc41dd75b.stex" ]
-dest_md5="e8f5808f155f1374492a8e322ce157bb"
+dest_files=[ "res://.import/TexturesCom_CorrodedMetal_512_albedo.png-7d8e3a3dd2b7c685631d883bc41dd75b.s3tc.stex", "res://.import/TexturesCom_CorrodedMetal_512_albedo.png-7d8e3a3dd2b7c685631d883bc41dd75b.etc2.stex" ]
+dest_md5="1875e8a1cfe07deaa6f86c90d00721b3"
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
-flags/repeat=0
+flags/repeat=true
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
-flags/srgb=2
+flags/srgb=1
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

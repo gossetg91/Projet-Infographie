@@ -27,8 +27,11 @@ func toggle(pos, angle):
 			displayed= false
 		else:
 			set_rotation(Vector3(0,0,0))
-			translate(pos-get_translation())
+			var translation = Vector3(pos-get_translation())
+			print(translation)
+			translate(translation)
 			set_rotation(angle)
+			print(pos)
 			print(get_translation())
 			displayed = true
 		ok = false

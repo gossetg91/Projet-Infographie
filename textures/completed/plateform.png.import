@@ -2,31 +2,32 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/plateform.png-53fcfa6f8faa0bf1d1b24018ea423dca.stex"
+path.s3tc="res://.import/plateform.png-53fcfa6f8faa0bf1d1b24018ea423dca.s3tc.stex"
+path.etc2="res://.import/plateform.png-53fcfa6f8faa0bf1d1b24018ea423dca.etc2.stex"
 
 [deps]
 
 source_file="res://textures/completed/plateform.png"
 source_md5="bf1ca5a6a93c23f567c994bcd842eb15"
 
-dest_files=[ "res://.import/plateform.png-53fcfa6f8faa0bf1d1b24018ea423dca.stex" ]
-dest_md5="b224e0f7a7b2a363ffb184d3a42ff312"
+dest_files=[ "res://.import/plateform.png-53fcfa6f8faa0bf1d1b24018ea423dca.s3tc.stex", "res://.import/plateform.png-53fcfa6f8faa0bf1d1b24018ea423dca.etc2.stex" ]
+dest_md5="9f3b36290630cfdb67c6ca2683334d73"
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
-flags/repeat=0
+flags/repeat=true
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
-flags/srgb=2
+flags/srgb=1
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

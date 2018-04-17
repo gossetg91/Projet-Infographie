@@ -16,8 +16,8 @@ func _ready():
 	pass
 
 func _process(delta):
-	ladder = (get_node("../ladderPlay").get("displayed") == true && checkLadder())
-	if ladder:
+	
+	if checkLadder():
 		set_linear_velocity(get_mvt(true)*25)
 	else:
 		if(Input.is_key_pressed(KEY_SHIFT)):
@@ -97,18 +97,56 @@ func get_mvt(ladder):
 func jump():
 	if(Input.is_key_pressed(KEY_SPACE)):
 		for i in range(0, get_colliding_bodies().size()):
-			if (get_colliding_bodies()[i].get_name() == "Environement" || get_colliding_bodies()[i].get_name() == "EnvironementHub" || get_colliding_bodies()[i].get_name() == "finalHub" || get_colliding_bodies()[i].get_name() == "mountainLevel" || get_colliding_bodies()[i].get_name() == "bridge"): 
+			if (get_colliding_bodies()[i].get_name() == "Environement" || get_colliding_bodies()[i].get_name() == "EnvironementHub" || get_colliding_bodies()[i].get_name() == "finalHub" || get_colliding_bodies()[i].get_name() == "mountainLevel" || get_colliding_bodies()[i].get_name() == "bridge"|| get_colliding_bodies()[i].get_name() == "cave"): 
 				apply_impulse(Vector3(0,0,0),Vector3(0,300,0))
 
 func toggleLadder():
 	if(Input.is_key_pressed(KEY_L)):
-		var test = get_node("..").checkLadder()
-		if test != null:
-			get_node("../ladderPlay").toggle(test.get_translation(),get_rotation())
+		var ladderPoint = get_node("..").checkLadder()
+		if ladderPoint != null:
+			get_node("../ladderPlay").toggle(ladderPoint.get_translation(),get_rotation())
 
 func checkLadder():
-	if(get_translation().x < get_node("../ladderPlay").get_translation().x+2 and get_translation().x > get_node("../ladderPlay").get_translation().x-2):
-		if (get_translation().z < get_node("../ladderPlay").get_translation().z+2 and get_translation().z > get_node("../ladderPlay").get_translation().z-2):
-			if (get_translation().y < get_node("../ladderPlay").get_translation().y+8):
+	if(get_translation().x < get_node("../ladderPlay").get_translation().x+5 and get_translation().x > get_node("../ladderPlay").get_translation().x-5):
+		if (get_translation().z < get_node("../ladderPlay").get_translation().z+5 and get_translation().z > get_node("../ladderPlay").get_translation().z-5):
+			if (get_translation().y < get_node("../ladderPlay").get_translation().y+25):
+				return true
+	if(get_translation().x < get_node("../ladderPlay2").get_translation().x+5 and get_translation().x > get_node("../ladderPlay2").get_translation().x-5):
+		if (get_translation().z < get_node("../ladderPlay2").get_translation().z+5 and get_translation().z > get_node("../ladderPlay2").get_translation().z-5):
+			if (get_translation().y < get_node("../ladderPlay2").get_translation().y+25):
+				return true
+	if(get_translation().x < get_node("../ladderPlay3").get_translation().x+5 and get_translation().x > get_node("../ladderPlay3").get_translation().x-5):
+		if (get_translation().z < get_node("../ladderPlay3").get_translation().z+5 and get_translation().z > get_node("../ladderPlay3").get_translation().z-5):
+			if (get_translation().y < get_node("../ladderPlay3").get_translation().y+35):
+				return true
+	if(get_translation().x < get_node("../ladderPlay4").get_translation().x+5 and get_translation().x > get_node("../ladderPlay4").get_translation().x-5):
+		if (get_translation().z < get_node("../ladderPlay4").get_translation().z+5 and get_translation().z > get_node("../ladderPlay4").get_translation().z-5):
+			if (get_translation().y < get_node("../ladderPlay4").get_translation().y+25):
+				return true
+
+	if(get_translation().x < get_node("../ladderPlay5").get_translation().x+5 and get_translation().x > get_node("../ladderPlay5").get_translation().x-5):
+		if (get_translation().z < get_node("../ladderPlay5").get_translation().z+5 and get_translation().z > get_node("../ladderPlay5").get_translation().z-5):
+			if (get_translation().y < get_node("../ladderPlay5").get_translation().y+25):
+				return true
+	if(get_translation().x < get_node("../ladderPlay6").get_translation().x+5 and get_translation().x > get_node("../ladderPlay6").get_translation().x-5):
+		if (get_translation().z < get_node("../ladderPlay6").get_translation().z+5 and get_translation().z > get_node("../ladderPlay6").get_translation().z-5):
+			if (get_translation().y < get_node("../ladderPlay6").get_translation().y+25):
+				return true
+	if(get_translation().x < get_node("../ladderPlay7").get_translation().x+5 and get_translation().x > get_node("../ladderPlay7").get_translation().x-5):
+		if (get_translation().z < get_node("../ladderPlay7").get_translation().z+5 and get_translation().z > get_node("../ladderPlay7").get_translation().z-5):
+			if (get_translation().y < get_node("../ladderPlay7").get_translation().y+35):
+				return true
+				
+	if(get_translation().x < get_node("../ladderPlay8").get_translation().x+5 and get_translation().x > get_node("../ladderPlay8").get_translation().x-5):
+		if (get_translation().z < get_node("../ladderPlay8").get_translation().z+5 and get_translation().z > get_node("../ladderPlay8").get_translation().z-5):
+			if (get_translation().y < get_node("../ladderPlay8").get_translation().y+25):
+				return true
+	if(get_translation().x < get_node("../ladderPlay9").get_translation().x+5 and get_translation().x > get_node("../ladderPlay9").get_translation().x-5):
+		if (get_translation().z < get_node("../ladderPlay9").get_translation().z+5 and get_translation().z > get_node("../ladderPlay9").get_translation().z-5):
+			if (get_translation().y < get_node("../ladderPlay9").get_translation().y+25):
+				return true
+	if(get_translation().x < get_node("../ladderPlay10").get_translation().x+5 and get_translation().x > get_node("../ladderPlay10").get_translation().x-5):
+		if (get_translation().z < get_node("../ladderPlay10").get_translation().z+5 and get_translation().z > get_node("../ladderPlay10").get_translation().z-5):
+			if (get_translation().y < get_node("../ladderPlay10").get_translation().y+20):
 				return true
 	return false

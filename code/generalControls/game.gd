@@ -20,6 +20,9 @@ var tokenSetLst = []
 var tokenCount = 0
 var tokenSet = 0
 
+var mKeyTaken = false
+
+var keypadUsed = false
 
 func _ready():
 	ladderBlocs.push_back(get_node("ladderBloc"))
@@ -47,7 +50,6 @@ func _ready():
 func _process(delta):
 	# Called every frame. Delta is time since last frame.
 	# Update game logic here.
-	
 	#game logic when in forest world
 	for i in range(0, get_node("player").get_colliding_bodies().size()):
 		if (get_node("player").get_colliding_bodies()[i].get_name() == "Environement"): 
@@ -71,6 +73,8 @@ func _process(delta):
 					checktoken1()
 				if !stripTaken:
 					cTStrip()
+				if !mKeyTaken:
+					cMKey()
 			
 		elif( get_node("player").get_colliding_bodies()[i].get_name() == "finalHub"):
 			if !tokenSetLst[0]:
@@ -87,9 +91,13 @@ func _process(delta):
 		elif(get_node("player").get_colliding_bodies()[i].get_name() == "mountainLevel"):
 			if !tokenTaken[1]:
 				checktoken2()
+				
+			if !keypadUsed and mKeyTaken:
+				checkKeypad()
 			
 			if !leverPressed:
 				checkLever()
+	cContactManteau()
 	cEnableTorch()
 
 	if tokenSet == 3:
@@ -112,6 +120,7 @@ func cTCoat():
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("coat").translate(Vector3(0,-200,0))
 				coatTaken = true
+				get_node("blocManteau").set("toggled",false);
 				
 	pass
 	
@@ -181,6 +190,12 @@ func checkkey():
 			if(Input.is_key_pressed(KEY_E)):
 				get_node("Key").translate(Vector3(0,-200,0))
 				keyTaken = true
+func cMKey():
+	if(get_node("player").get_translation().x < get_node("mountainKey").get_translation().x+3 and get_node("player").get_translation().x > get_node("mountainKey").get_translation().x-3):
+		if (get_node("player").get_translation().z < get_node("mountainKey").get_translation().z+3 and get_node("player").get_translation().z > get_node("mountainKey").get_translation().z-3):
+			if(Input.is_key_pressed(KEY_E)):
+				get_node("mountainKey").translate(Vector3(0,-200,0))
+				mKeyTaken = true
 
 func openDoor():
 	if(get_node("player").get_translation().x < get_node("Door").get_translation().x+21 and get_node("player").get_translation().x > get_node("Door").get_translation().x-21):
@@ -242,8 +257,23 @@ func checkSet2():
 func checkSet3():
 	if(get_node("player").get_translation().x < get_node("setDetector3").get_translation().x+3 and get_node("player").get_translation().x > get_node("setDetector3").get_translation().x-3):
 		if (get_node("player").get_translation().z < get_node("setDetector3").get_translation().z+3 and get_node("player").get_translation().z > get_node("setDetector3").get_translation().z-3):
-			if tokenSet > 0 && tokenSetLst[2] == false && Input.is_key_pressed(KEY_E):
+			if tokenCount > 0 && tokenSetLst[2] == false && Input.is_key_pressed(KEY_E):
 				tokenSetLst[2] = true
 				tokenCount = tokenCount - 1 
 				print("3ok")
 				tokenSet += 1
+
+func checkKeypad():
+	print(get_node("player").get_translation().x)
+	print(get_node("keypad").get_translation().x+5)
+	print(get_node("keypad").get_translation().x-5)
+	if(get_node("player").get_translation().x < get_node("keypad").get_translation().x+5 and get_node("player").get_translation().x > get_node("keypad").get_translation().x-5):
+		if (get_node("player").get_translation().z < get_node("keypad").get_translation().z+5 and get_node("player").get_translation().z > get_node("keypad").get_translation().z-5):
+			if(Input.is_key_pressed(KEY_E)):
+				get_node("keypad").toggle()
+				keypadUsed = true
+
+func cContactManteau():
+	for i in range(0, get_node("player").get_colliding_bodies().size()):
+		if(get_node("player").get_colliding_bodies()[i].get_name() == "blocManteau"):
+			get_node("Cold").toggle()
