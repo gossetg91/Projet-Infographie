@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Montagne vu du dessous.png-12558bc0a8f44873a860aec9daa1a200.stex"
+
+[deps]
+
+source_file="res://pres/Nouveau dossier/Montagne vu du dessous.png"
+source_md5="1a4ac47ee3305f9661dd0514d2d11c66"
+
+dest_files=[ "res://.import/Montagne vu du dessous.png-12558bc0a8f44873a860aec9daa1a200.stex" ]
+dest_md5="9086c24ee812b24d5d9c13c363d451e1"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/grotte bifurcation.png-cde142ffdceff7776339508b76ef28aa.stex"
+
+[deps]
+
+source_file="res://pres/Nouveau dossier/grotte bifurcation.png"
+source_md5="95f525af0aeeb2cf8f420aa8cefaaf0e"
+
+dest_files=[ "res://.import/grotte bifurcation.png-cde142ffdceff7776339508b76ef28aa.stex" ]
+dest_md5="50dbb6f910f1fe66022b95155749c5e6"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

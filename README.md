@@ -1,5 +1,5 @@
 	Organisation des fichiers dans le repository
-	---------------------------------------------------------------
+	============================================
 	
 	Les fichiers dans le repository sont organisés de la façon suivante:
 	
@@ -12,7 +12,7 @@
 	-normalMaps contiens aussi bien les normal maps que l'on a effectués nous même et celle qui ont été téléchargées , la différenciation est faite dans le fichier de licence associé.
 	
 	Organisation des fichiers de licence.
-	-------------------------------------------------------
+	=====================================
 	
 	Dans le repository nous avons décidé d'utiliser principalement deux licences pour nos différents éléments que l'on a pa dans le repository:
 	
@@ -22,7 +22,7 @@
 	On a donc créer un fichier de licence par sous dossier pour adapter la licence au contenu qu'il y avait dedans , et dans le cas ou il y avait besoin de gérer des cas particuliers (fichiers qui ne sont pas régies par notre licence de part le fait qu'ils ont été réutilisés depuis un site donc ne nous appartenant pas par exemple) une explication des éléments concernés par la licence et l'exclusion ainsi que la raison de l'exclusion de certains éléments contenus dedans.
 	
 	Ouverture du projet et compilation a partir du projet
-	-----------------------------------------------------
+	=====================================================
 	
 	Pour pouvoir ouvrir le projet dans godot, il faut l'ouvrir le fichier project.godot stocké dans le repository.
 	
@@ -32,12 +32,14 @@
 	
 	Pour compiler le jeu il faut suivre la procédure classique sur godot pour l'exporter sur le système d'exploitation choisi.
 	
-	Lancement du jeu un exécutable du jeu est disponible directement dans le dossier "jeu" du repository, cependant il faudra aussi avoir les assets qui vont avec le jeu, le package qui les contiens étant trop grand pour git il faudra donc le télécharger au lien suivant [lien].
+	Lancement du jeu un exécutable du jeu est disponible directement dans le dossier "export" du repository (disponibles pour windows et linux), cependant il faudra aussi avoir les assets qui vont avec le jeu, le package qui les contiens étant trop grand pour git il faudra donc le télécharger au lien suivant https://drive.google.com/open?id=1zRRn0BjKaxTQTXDjLTSN_HWKgydwoKk3.
+
+	Le jeu pour mac étant directement encapsulé avec les données elles ne peut donc pas être mis sur git non plus, cependant, il est acessible par ce lien:https://drive.google.com/open?id=1VHmm7vOF__7rNyjbJw6giq4tafeWFPNU
 	
 	Encore une fois en fonctionnement le jeu peut demander jusqu'a 3go de ram car il n'est pas très optimisé. L'utilisation d'un pc avec une carte graphique dédiée est souhaitable.
 	
 	Informations sur le fonctionnement du jeu.
-	------------------------------------------
+	==========================================
 	
 	-Il y a un seul bug majeur concernant le saut, étant donné que je n'ai pas réussi a différencier les hitbox mur et sol des objets sur lesquels on a le droit de sauter, il est possible de ce coller a un mur et de sauter a l'infini, alors que normalement c'est capé de part le fait que l'on ne touche plus le sol , en dehors de ce cas le saut est parfaitement fonctionnel.
 	
@@ -79,7 +81,7 @@
 	space : sauter
 	
 	la soluce officielle du jeu 
-	---------------------------
+	===========================
 	
 	-Il faut tout d'abord ramasser la clé qui se trouve par terre devant la maison pour l'ouvrir 
 	-dans la maison ce trouve plusieurs objet a ramasser:
@@ -88,9 +90,9 @@
 		-le rouleau de bandage pour la torche et le premier token
 	
 	-une fois le token ramassé la grille donnant accès aux autres niveaux
-	-il faut cependant aller derrière le plus gros arbre pour ramasser la branche qui est placée qui sert a fabriquer la 		torche.
+	-il faut cependant aller derrière le plus gros arbre pour ramasser la branche qui est placée qui sert a fabriquer la torche.
 	
-	-il faut ensuite ce dirriger vers la montagne et l'escalader (sans manteau on est coincés rapidement après la première 		série d'échelle.
+	-il faut ensuite ce dirriger vers la montagne et l'escalader (sans manteau on est coincés rapidement après la première série d'échelle.
 	
 	-sur la plateforme juste après le pont, il faut chercher un silex sur le sol qui est la dernière pièce pour obtenir la torche qui devient ensuite utilisable. 
 	
@@ -108,7 +110,7 @@
 	
 	
 	(historique a titre indicatif) la répartition de la création des modèles principaux dans le groupe
-	--------------------------------------------------------------------------------------------------
+	==================================================================================================
 	- Grotte : NA
 	- Montagne : Guillaume
 	x Mur : Guigui

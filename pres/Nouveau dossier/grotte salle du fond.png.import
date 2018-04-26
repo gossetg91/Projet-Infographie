@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/grotte salle du fond.png-a199d790a7ff36e816108482d21aa2a6.stex"
+
+[deps]
+
+source_file="res://pres/Nouveau dossier/grotte salle du fond.png"
+source_md5="16a4004a8ea62da0823ebd07483e8f8d"
+
+dest_files=[ "res://.import/grotte salle du fond.png-a199d790a7ff36e816108482d21aa2a6.stex" ]
+dest_md5="586c66b6d8b04d9e8827bc0ab726d91f"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
